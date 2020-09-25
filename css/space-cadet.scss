@@ -27,21 +27,33 @@ body {
 /* NAVBAR */
 
 .navbar {
-    background-color: #906990;
+	background-color: #906990;
+	position: fixed;
 }
 
 .nav-link:hover {
 	text-decoration: overline;
 }
 
+// 这个应该是小箭头
 #theme-navigation > ul > li:nth-child(1) > a:before {
 	content: "\f100\00a0";
 	font: normal normal normal 0.875rem/1 FontAwesome;
-	display: inline-block;
+	// display: inline-block;
+	display: list-item;
     font-family: FontAwesome;
     text-rendering: auto;
     font-size: 1rem;
     -webkit-font-smoothing: antialiased;
+}
+//  自己写的nav配置
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #906990;
+}
+.left {
+    width: 120px;
+    border: 5px solid #ddd;
 }
 
 /* PAGE HEADER */
