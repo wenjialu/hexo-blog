@@ -92,3 +92,6 @@
   }
 
 })(jQuery);
+
+// <!-- 页面点击小心心 -->
+<script type="text/javascript" src="/js/clicklove.js"></script>
