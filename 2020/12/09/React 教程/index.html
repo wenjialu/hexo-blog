@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>React</title>
+        <title>React 简易教程</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 <link rel="stylesheet", href="/hexo_blog/./css/style.css">
@@ -10,6 +10,8 @@
 <link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
 
         
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     
     <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
 
@@ -71,7 +73,7 @@
             <article class="al_article">
                 <header>
                     <h1 class="al_page_title">
-                        React
+                        React 简易教程
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
@@ -80,7 +82,7 @@
 
                         
                             <div class="al_page_content_info">
-                                183 words
+                                387 words
                             </div>
                         
 
@@ -95,7 +97,7 @@
 
                 
                     <div class="al_page_content_outline">
-                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E6%A1%86%E6%9E%B6"><span class="toc-text">代码框架</span></a></li></ol>
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#react-%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B"><span class="toc-text">react 简易教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Lifecycle-hooks"><span class="toc-text">Lifecycle hooks</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#mounting"><span class="toc-text">mounting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#updating"><span class="toc-text">updating</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unmounting"><span class="toc-text">Unmounting</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Chirdren"><span class="toc-text">Chirdren</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E6%A1%86%E6%9E%B6"><span class="toc-text">代码框架</span></a></li></ol></li></ol>
                     </div>
                 
 
@@ -105,6 +107,32 @@
 <p>亮点 和 局限。<br>优化：<br>PureComponent 是优化 React 应用程序最重要的方法之一，易于实施，只要把继承类从 Component 换成 PureComponent 即可，可以减少不必要的 render 操作的次数，从而提高性能，而且可以少写 shouldComponentUpdate 函数，节省了点代码。</p>
 <p>和 vue区别</p>
 <p>然后案例 smartbrain</p>
+<h1 id="react-简易教程"><a href="#react-简易教程" class="headerlink" title="react 简易教程"></a>react 简易教程</h1><p>Component : 不仅包含html css 还有功能，可以之后被复用</p>
+<p>就像搭乐高一样搭 Component</p>
+<p>自上而下渲染，一个Component 节点修改，只有他孩子节点知道，父母节点不会知道。</p>
+<p>具体啥prop在主js里设定，</p>
+<p>组件js 的函数里面，prop只是个穿传去的参数 （所以具体prop是啥不知道，他只是个参数啊。具体的在主js里面定义），里面调用 this.prop.prop名</p>
+<p>export</p>
+<p>但凡要被import的文件 都要export</p>
+<h2 id="Lifecycle-hooks"><a href="#Lifecycle-hooks" class="headerlink" title="Lifecycle hooks"></a>Lifecycle hooks</h2><p><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html">https://reactjs.org/docs/react-component.html</a></p>
+<p>component </p>
+<p>every time  auto triggered</p>
+<h3 id="mounting"><a href="#mounting" class="headerlink" title="mounting"></a>mounting</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#constructor"><strong>constructor()</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops"><code>static getDerivedStateFromProps()</code></a></li>
+<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#render"><strong>render()</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#componentdidmount"><strong>componentDidMount()</strong></a></li>
+<li>render()</li>
+</ul>
+<h3 id="updating"><a href="#updating" class="headerlink" title="updating"></a>updating</h3><h3 id="Unmounting"><a href="#Unmounting" class="headerlink" title="Unmounting"></a>Unmounting</h3><h2 id="Chirdren"><a href="#Chirdren" class="headerlink" title="Chirdren"></a>Chirdren</h2><scroll>
+
+<p> 内部的内容就是它的chirldren</p>
+</scroll>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">function Scroll( props ) &#123;<br>    return (<br>     &lt;div style &#x3D;&#123; &#123;overflowY:&quot;scroll&quot;, border: &quot;1px solid black&quot;, height: &quot;500px&quot;&#125;   &#125;&gt;<br>        &#123;props.children&#125;<br>     &lt;&#x2F;div&gt;<br>    )<br>  &#125;;<br></code></pre></td></tr></table></figure>
+
+
+
 <h2 id="代码框架"><a href="#代码框架" class="headerlink" title="代码框架"></a>代码框架</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>&#123;<br>		<span class="hljs-comment">// 设置状态初始值（创参）</span><br>     <span class="hljs-keyword">constructor</span> ()&#123;<br>				<span class="hljs-built_in">super</span>();<br>    		<span class="hljs-built_in">this</span>.state = initialStatexxx;<br>     &#125;<br><br>    <span class="hljs-comment">// 给状态赋值的函数 (形参)</span><br>    <span class="hljs-comment">// 都是函数, 设定完了之后在组件里面使用 （用参），最后在 render 里面被调用 （实参）</span><br>    onRouteChange = <span class="hljs-function">() =&gt;</span>&#123;<br>      <span class="hljs-built_in">this</span>.setState(&#123;<span class="hljs-attr">route</span>: route&#125;);<br>    &#125;<br><br>    onXXX = <span class="hljs-function">() =&gt;</span>&#123;<br>      <br>    &#125;<br>    <br>render()&#123;<br>  <span class="hljs-keyword">const</span> &#123;route, ...&#125; = <span class="hljs-built_in">this</span>.state;<br>  <span class="hljs-keyword">return</span>(<br>  )<br>&#125;<br>  <br>&#125;<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;<br></code></pre></td></tr></table></figure>
 
 
@@ -114,23 +142,36 @@
 
                 
                 
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "github_clientID",
+            clientSecret: "github_clientSecret",
+            repo: "you site homepage",
+            owner: "your username",
+            admin: "same as [owner]",
+            id: "React 简易教程",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
                 
 
             </article>
 
             
             <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/%E4%B8%80%E4%BB%B6%E5%8F%91%E5%B8%83%E8%84%9A%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/electron/">
                     
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
                         </svg>
-                        <span class="al_text_ellipsis al_post_nav_desc">Script</span>
+                        <span class="al_text_ellipsis al_post_nav_desc">electron</span>
                     
                 </a>
                 <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/smartBrain%20react%20-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%BD%91%E7%AB%99/">
                     
-                        <span class="al_text_ellipsis al_post_nav_desc">SmartBrain</span>
+                        <span class="al_text_ellipsis al_post_nav_desc">SmartBrain -  用 React 做一个人脸识别网站</span>
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
                         </svg>

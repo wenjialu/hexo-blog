@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>About me</title>
+        <title>文章一键发布脚本操作</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 <link rel="stylesheet", href="/hexo_blog/./css/style.css">
@@ -73,16 +73,16 @@
             <article class="al_article">
                 <header>
                     <h1 class="al_page_title">
-                        About me
+                        文章一键发布脚本操作
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
-                            September 19, 2020 06:09 PM
+                            December 08, 2020 06:12 PM
                         </div>
 
                         
                             <div class="al_page_content_info">
-                                0 words
+                                83 words
                             </div>
                         
 
@@ -99,7 +99,12 @@
 
                 
                 <section id="post-body">
-                    
+                    <pre><code>npm install
+npm install electron --verbose
+(with --verbose it makes it much more obvious if you&#39;re somehow interrupting the electron module download during node_modules install)
+You can also download the ZIP file manually in your browser from here and place it in your C:\Users\&lt;username&gt;\.electron folder. Then it won&#39;t need to download itself 👍</code></pre>
+<p>这个是 win系统下的。mac用会有很多问题：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/44741972">https://zhuanlan.zhihu.com/p/44741972</a></p>
+
                 </section>
 
                 
@@ -113,7 +118,7 @@
             repo: "you site homepage",
             owner: "your username",
             admin: "same as [owner]",
-            id: "About me",
+            id: "文章一键发布脚本操作",
         });
         gitalk.render("al_gitalk_cnt")
     </script>
@@ -123,10 +128,20 @@
 
             
             <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/%E4%B8%8B%E4%B8%80%E4%B8%AA%E4%B8%BB%E9%A2%98%20-%20%E8%87%AA%E5%B7%B1%E9%80%A0%E8%AE%BA%E5%AD%90/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc"></span>
                     
                 </a>
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/electron/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">electron</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
                     
                 </a>
             </nav>
