@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>React 简易教程</title>
+        <title>50 projects - to do list</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 <link rel="stylesheet", href="/hexo_blog/./css/style.css">
@@ -113,22 +113,22 @@
             <article class="al_article">
                 <header>
                     <h1 class="al_page_title">
-                        React 简易教程
+                        50 projects - to do list
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
-                            December 08, 2020 06:12 PM
+                            January 02, 2020 04:01 PM
                         </div>
 
                         
                             <div class="al_page_content_info">
-                                387 words
+                                627 words
                             </div>
                         
 
                         
                             <div class="al_page_content_info">
-                                1 minutes read
+                                2 minutes read
                             </div>
                         
                         <span class="tags"></span>
@@ -137,46 +137,66 @@
 
                 
                     <div class="al_page_content_outline">
-                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#react-%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B"><span class="toc-text">react 简易教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Lifecycle-hooks"><span class="toc-text">Lifecycle hooks</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#mounting"><span class="toc-text">mounting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#updating"><span class="toc-text">updating</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unmounting"><span class="toc-text">Unmounting</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Chirdren"><span class="toc-text">Chirdren</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E6%A1%86%E6%9E%B6"><span class="toc-text">代码框架</span></a></li></ol></li></ol>
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#to-do-list"><span class="toc-text">to do list</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E6%A0%B7%E5%BC%8F%E5%8F%8A%E4%BB%A3%E7%A0%81%EF%BC%9A"><span class="toc-text">静态样式及代码：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E5%8A%9F%E8%83%BD%EF%BC%9A"><span class="toc-text">动态功能：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD1-ADD"><span class="toc-text">功能1: ADD</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD2-MARK-COMPLETE-amp-REMOVE"><span class="toc-text">功能2: MARK COMPLETE &amp; REMOVE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD3%EF%BC%9A-%E5%88%B7%E6%96%B0%E5%BE%85%E5%8A%9E%E4%B8%8D%E4%BC%9A%E6%B6%88%E5%A4%B1"><span class="toc-text">功能3： 刷新待办不会消失</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="toc-text">知识点总结：</span></a></li></ol></li></ol></li></ol>
                     </div>
                 
 
                 
                 <section id="post-body">
-                    <p>先做 react 介绍</p>
-<p>亮点 和 局限。<br>优化：<br>PureComponent 是优化 React 应用程序最重要的方法之一，易于实施，只要把继承类从 Component 换成 PureComponent 即可，可以减少不必要的 render 操作的次数，从而提高性能，而且可以少写 shouldComponentUpdate 函数，节省了点代码。</p>
-<p>和 vue区别</p>
-<p>然后案例 smartbrain</p>
-<h1 id="react-简易教程"><a href="#react-简易教程" class="headerlink" title="react 简易教程"></a>react 简易教程</h1><p>Component : 不仅包含html css 还有功能，可以之后被复用</p>
-<p>就像搭乐高一样搭 Component</p>
-<p>自上而下渲染，一个Component 节点修改，只有他孩子节点知道，父母节点不会知道。</p>
-<p>具体啥prop在主js里设定，</p>
-<p>组件js 的函数里面，prop只是个穿传去的参数 （所以具体prop是啥不知道，他只是个参数啊。具体的在主js里面定义），里面调用 this.prop.prop名</p>
-<p>export</p>
-<p>但凡要被import的文件 都要export</p>
-<h2 id="Lifecycle-hooks"><a href="#Lifecycle-hooks" class="headerlink" title="Lifecycle hooks"></a>Lifecycle hooks</h2><p><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html">https://reactjs.org/docs/react-component.html</a></p>
-<p>component </p>
-<p>every time  auto triggered</p>
-<h3 id="mounting"><a href="#mounting" class="headerlink" title="mounting"></a>mounting</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#constructor"><strong>constructor()</strong></a></li>
-<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops"><code>static getDerivedStateFromProps()</code></a></li>
-<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#render"><strong>render()</strong></a></li>
-<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#componentdidmount"><strong>componentDidMount()</strong></a></li>
-<li>render()</li>
-</ul>
-<h3 id="updating"><a href="#updating" class="headerlink" title="updating"></a>updating</h3><h3 id="Unmounting"><a href="#Unmounting" class="headerlink" title="Unmounting"></a>Unmounting</h3><h2 id="Chirdren"><a href="#Chirdren" class="headerlink" title="Chirdren"></a>Chirdren</h2><scroll>
-
-<p> 内部的内容就是它的chirldren</p>
-</scroll>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">function Scroll( props ) &#123;<br>    return (<br>     &lt;div style &#x3D;&#123; &#123;overflowY:&quot;scroll&quot;, border: &quot;1px solid black&quot;, height: &quot;500px&quot;&#125;   &#125;&gt;<br>        &#123;props.children&#125;<br>     &lt;&#x2F;div&gt;<br>    )<br>  &#125;;<br></code></pre></td></tr></table></figure>
+                    <p><img src="https://raw.githubusercontent.com/wenjialu/todolist-app/main/todo-list-demo1.gif" alt="效果展示"></p>
+<h2 id="to-do-list"><a href="#to-do-list" class="headerlink" title="to do list"></a>to do list</h2><h3 id="静态样式及代码："><a href="#静态样式及代码：" class="headerlink" title="静态样式及代码："></a>静态样式及代码：</h3><img src="/Users/lujiawen/Desktop/工作台/my_local_gitres_dont_git_init/hexo_blog/src/_posts/截屏2021-01-12 上午1.40.54.png" alt="截屏2021-01-12 上午1.40.54" style="zoom:50%;" />
 
 
 
-<h2 id="代码框架"><a href="#代码框架" class="headerlink" title="代码框架"></a>代码框架</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>&#123;<br>		<span class="hljs-comment">// 设置状态初始值（创参）</span><br>     <span class="hljs-keyword">constructor</span> ()&#123;<br>				<span class="hljs-built_in">super</span>();<br>    		<span class="hljs-built_in">this</span>.state = initialStatexxx;<br>     &#125;<br><br>    <span class="hljs-comment">// 给状态赋值的函数 (形参)</span><br>    <span class="hljs-comment">// 都是函数, 设定完了之后在组件里面使用 （用参），最后在 render 里面被调用 （实参）</span><br>    onRouteChange = <span class="hljs-function">() =&gt;</span>&#123;<br>      <span class="hljs-built_in">this</span>.setState(&#123;<span class="hljs-attr">route</span>: route&#125;);<br>    &#125;<br><br>    onXXX = <span class="hljs-function">() =&gt;</span>&#123;<br>      <br>    &#125;<br>    <br>render()&#123;<br>  <span class="hljs-keyword">const</span> &#123;route, ...&#125; = <span class="hljs-built_in">this</span>.state;<br>  <span class="hljs-keyword">return</span>(<br>  )<br>&#125;<br>  <br>&#125;<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;<br></code></pre></td></tr></table></figure>
+
+
+<h3 id="动态功能："><a href="#动态功能：" class="headerlink" title="动态功能："></a>动态功能：</h3><p><strong>知识点预览：</strong></p>
+<p> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/classList">classList</a> 的方法 add， toggle 等</p>
+<p>右键 – 检查 – application – storage – local storage</p>
+<p><a target="_blank" rel="noopener" href="https://developers.google.com/web/tools/chrome-devtools/storage/localstorage?utm_source=devtools">Localstorage</a> 的方法setItem, getItem.</p>
+<p>Local storage.setItem(key, value)</p>
+<p>js ：</p>
+<h4 id="功能1-ADD"><a href="#功能1-ADD" class="headerlink" title="功能1: ADD"></a><strong>功能1: ADD</strong></h4><p>填写todo，回车后会添加到我的待办列表里面。</p>
+<p><strong>实现思路：</strong>代办列表是个取名为 todosUL 的列表，</p>
+<p>只有document 的 element 才能被append进去, 而 text 不能被append到  todosUL 这个列表中。</p>
+<p>所以要创造一个 element，并赋值为 input.value。</p>
+<p>tips: 1.要先用一个变量 todoText 存储  input.value, 对其做个简单的判断防止其为空。</p>
+<ol start="2">
+<li><p>todo.text todotext </p>
+<p> todotext 不一定是当下输入的，也可能是之前输入的todo.text.</p>
+</li>
+</ol>
+<p> 1 what is  todo.completed?</p>
+<p><del>2 why <strong>if(todo &amp;&amp; todo.completed)</strong>{  。。 classList.add(。。）} 才能生效啊 。A：不，不是这样的</del></p>
+<p><strong>答疑：</strong>关于 classList.add(“completed”)。</p>
+<p>在这个功能中不是必要的。</p>
+<p>这只是打个标签，</p>
+<p>后续实现保存列表内容的功能时，会依据这个标签做出相应的方法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"># 伪代码<br><br>listen submit? <br><br>adddTodo(?)&#123;<br>  #输入的文字<br>  let todoText &#x3D; input.value<br><br>   # 1.what is ? ?  2. what is classList.add? 3 why set innerText<br>   if(todoText)&#123;<br>          const todoEL &#x3D; document.createElement(&quot;li&quot;)<br>          <br>          &#x2F;&#x2F;if( ？ &amp;&amp; ？.completed)&#123;<br>          &#x2F;&#x2F;    todoEL.classList.add(&quot;completed&quot;)<br>          &#x2F;&#x2F;&#125;<br>          <br>           todoEL.innerText &#x3D; todoText<br><br>            todosUL.appendChild(todoEL)<br>            console.log(todosUL)<br>            <br>            todo.value &#x3D; &quot;&quot;<br><br>      &#125;<br><br>&#125;<br><br></code></pre></td></tr></table></figure>
 
 
 
+<h4 id="功能2-MARK-COMPLETE-amp-REMOVE"><a href="#功能2-MARK-COMPLETE-amp-REMOVE" class="headerlink" title="功能2: MARK COMPLETE &amp; REMOVE"></a><strong>功能2: MARK COMPLETE &amp; REMOVE</strong></h4><p>MARK COMPLET: 鼠标左击，待办就用（下划线划掉的方式）标记为完成</p>
+<p>REMOVE: 鼠标右击，待办从列表中消失</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">todoEL.addEventListener(&quot;click&quot;,()&#x3D;&gt;todoEL.classList.toggle(&quot;completed&quot;))<br><br>todoEL.addEventListener(&quot;contextmenu&quot;,(e)&#x3D;&gt;&#123;<br>	e.preventDefault()<br>	todoEL.remove()<br>&#125;)<br><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="功能3：-刷新待办不会消失"><a href="#功能3：-刷新待办不会消失" class="headerlink" title="功能3： 刷新待办不会消失"></a><strong>功能3： 刷新待办不会消失</strong></h4><p>思路： 对于上述3种操作：增删改，每次操作都记录在 localstorage本地存储 中。</p>
+<p>写一个 updateLS() 函数实现保存功能，并在每个方法后触发。</p>
+<p>Q: 我已经写入到local storage了 ， 为啥还是一刷新就没了</p>
+<p>猜想；setitem 写对，getitem写错？</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&#x2F;&#x2F; change string to array<br>const todos &#x3D; JSON.parse(localStorage.getItem(&quot;todos&quot;))<br><br>if (todos)&#123;<br>    todos.forEach(todo &#x3D;&gt; addToDo(todo))<br>&#125;<br><br><br>方法1&#x2F;2&#x2F;3&#123;<br> ...<br> updateLS()<br>&#125;<br><br><br><br>function updateLS()&#123;<br>        todosEL &#x3D; document.querySelectorAll(&quot;li&quot;)<br>        <br>        todosEL.forEach(todoEL &#x3D;&gt;&#123;<br>            todos.push(&#123;<br>                text: todoEL.innerText,<br>                completed: todoEL.classList.contains(&quot;completed&quot;)<br>            &#125;)<br>        &#125;)<br>         &#x2F;&#x2F; todos is an object, change it to string<br>        localStorage.setItem(&quot;todos&quot;,JSON.stringify(todos))<br>    &#125;<br><br></code></pre></td></tr></table></figure>
+
+
+
+<h4 id="知识点总结："><a href="#知识点总结：" class="headerlink" title="知识点总结："></a>知识点总结：</h4><p>Localstorage 的方法setItem, getItem.</p>
+<p>每次增删改触发存储方法，把数据放到Localstorage；然后再从Localstorage里取出来的数据基础上，实现增删改</p>
+<p><strong>Resources :</strong></p>
+<p>Cdnjs -&gt;font-awesome</p>
+<p>Fonts.google.com</p>
 
                 </section>
 
@@ -191,7 +211,7 @@
             repo: "you site homepage",
             owner: "your username",
             admin: "same as [owner]",
-            id: "React 简易教程",
+            id: "50 projects - to do list",
         });
         gitalk.render("al_gitalk_cnt")
     </script>
@@ -201,20 +221,15 @@
 
             
             <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/electron/">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/09/20/About-me/">
                     
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
                         </svg>
-                        <span class="al_text_ellipsis al_post_nav_desc">electron</span>
+                        <span class="al_text_ellipsis al_post_nav_desc">About me</span>
                     
                 </a>
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/Git%20%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
-                    
-                        <span class="al_text_ellipsis al_post_nav_desc">git 疑难杂症大全 （更新中）</span>
-                        <svg class="al_arrow">
-                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
-                        </svg>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/">
                     
                 </a>
             </nav>

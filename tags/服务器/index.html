@@ -10,11 +10,6 @@
 <link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
 
         
-    
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-    
-    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
-
     <meta name="generator" content="Hexo 5.2.0"></head>
     <body>
         <header class="al_header al_pos_fixed">
@@ -103,88 +98,96 @@
 </div>
 
         
-    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
-        <img class="al_lightbox_img"/>
+    <div class="al_index_background dis_flex_center al_full_cover">
+        <div class="al_pos_ab al_letter al_index_background_letter">
+            W
+        </div>
+        <h2 class="al_index_background_bio">
+            Wenjia's Tech Blog
+        </h2>
     </div>
-    <div class="al_page_background dis_flex_center al_full_cover"></div>
-    <div class="al_page_container">
+
+    <div class="al_index_container">
         <div class="al_pos_ab al_fake_background"></div>
-        <div class="al_main_container al_shadow al_main_page_container">
-            <article class="al_article">
-                <header>
-                    <h1 class="al_page_title">
-                        No Title
-                    </h1>
-                    <div class="al_page_info dis_flex">
-                        <div class="al_page_content_info">
-                            January 10, 2021 0:01 PM
+        <div class="al_main_container al_shadow">
+            <div class="al_section_container dis_flex_jcenter">
+                <div class="section_header">
+                    LATEST PAGES
+                </div>
+            </div>
+
+            <ul class="al_post_list">
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                L
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/hexo_blog/2021/01/16/liunx%E6%9C%8D%E5%8A%A1%E5%99%A8%20%E4%B8%8A%E7%9A%84%E5%90%84%E7%A7%8D%E6%93%8D%E4%BD%9C/">
+                                    liunx服务器 上的各种操作
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2021-01-16 18:40:34
+                                </div>
+
+                                
+                                    <div class="al_index_post_read_time">
+                                        3 Min Read
+                                    </div>
+                                
+
+                            </div>
                         </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                liunx 命令大全： https://www.runoob.com/linux/linux-command-manual.html
 
-                        
-                            <div class="al_page_content_info">
-                                2 words
-                            </div>
-                        
+1 安装 jdk 包
 
-                        
-                            <div class="al_page_content_info">
-                                1 minutes read
-                            </div>
-                        
-                        <span class="tags"></span>
-                    </div>
-                </header>
+第一种：已经安装好了，那么解压就行了
 
+比如 Jdk包是rmp格式的，怎么解压呢。
+
+要先转换成cpio格式：
+
+rpm2cpio xxxx.rpm | cpio -idv
+
+第二种：去oracle官网下载
+
+选择合适的liunx版本jdk8
+
+那么怎么知道合不合适呢，
+
+查看getconf LONG_BIT
+
+如果显示32，则是32位的Linux系统，如果显示64，则是64位的Linux系统。这里是64位的，所以下载Linux x64
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="2021/01/16/liunx服务器 上的各种操作/">
+                                READ ON
+                            </a>
+                            <a class="al_button al_button_transparent al_index_post_button" target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://wenjialu.github.io/hexo_blog/">
+                                READ LATER
+                            </a>
+                        </div>
+                    </li>
                 
+            </ul>
 
-                
-                <section id="post-body">
-                    <p>wiki</p>
-<p>docsify </p>
-
-                </section>
-
-                
-                
-    <div id="al_gitalk_cnt">
-    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-    <script>
-        var gitalk = new Gitalk({
-            clientID: "github_clientID",
-            clientSecret: "github_clientSecret",
-            repo: "you site homepage",
-            owner: "your username",
-            admin: "same as [owner]",
-            id: "",
-        });
-        gitalk.render("al_gitalk_cnt")
-    </script>
-                
-
-            </article>
-
-            
             <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/11/about-50-projects/">
-                    
-                        <svg class="al_arrow">
-                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
-                        </svg>
-                        <span class="al_text_ellipsis al_post_nav_desc">about 50 projects</span>
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
                     
                 </a>
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/10/nvm%20%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%A4%A7%E5%85%A8/">
-                    
-                        <span class="al_text_ellipsis al_post_nav_desc"></span>
-                        <svg class="al_arrow">
-                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
-                        </svg>
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
                     
                 </a>
             </nav>
         </div>
     </div>
-
 
         <div class="al_index_footer dis_flex_center">
     <div class="al_index_footer_item al_index_footer_title">
