@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>About me</title>
+        <title>This's Irina Lu</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 <link rel="stylesheet", href="/hexo_blog/./css/style.css">
@@ -10,11 +10,6 @@
 <link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
 
         
-    
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-    
-    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
-
     <meta name="generator" content="Hexo 5.2.0"></head>
     <body>
         <header class="al_header al_pos_fixed">
@@ -103,87 +98,98 @@
 </div>
 
         
-    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
-        <img class="al_lightbox_img"/>
+    <div class="al_index_background dis_flex_center al_full_cover">
+        <div class="al_pos_ab al_letter al_index_background_letter">
+            W
+        </div>
+        <h2 class="al_index_background_bio">
+            Wenjia's Tech Blog
+        </h2>
     </div>
-    <div class="al_page_background dis_flex_center al_full_cover"></div>
-    <div class="al_page_container">
+
+    <div class="al_index_container">
         <div class="al_pos_ab al_fake_background"></div>
-        <div class="al_main_container al_shadow al_main_page_container">
-            <article class="al_article">
-                <header>
-                    <h1 class="al_page_title">
-                        About me
-                    </h1>
-                    <div class="al_page_info dis_flex">
-                        <div class="al_page_content_info">
-                            September 19, 2020 06:09 PM
+        <div class="al_main_container al_shadow">
+            <div class="al_section_container dis_flex_jcenter">
+                <div class="section_header">
+                    LATEST PAGES
+                </div>
+            </div>
+
+            <ul class="al_post_list">
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                给
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/hexo_blog/2020/01/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AEssl%E8%AF%81%E4%B9%A6/">
+                                    给自己的网站配置ssl证书
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2020-01-25 00:00:00
+                                </div>
+
+                                
+                                    <div class="al_index_post_read_time">
+                                        3 Min Read
+                                    </div>
+                                
+
+                            </div>
                         </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                添加 ssl 证书
+首先在平台上挑选一个免费的证书。
 
-                        
-                            <div class="al_page_content_info">
-                                55 words
-                            </div>
-                        
+我尝试过 lets-encrypt， Zerossl， FreeSSL。
 
-                        
-                            <div class="al_page_content_info">
-                                1 minutes read
-                            </div>
-                        
-                        <span class="tags"></span>
-                    </div>
-                </header>
+不过这些都比较不好，一方面是只有90天免费，另一方面是操作比较繁琐。
 
+找来找去，最方便还好用的还是在阿里云上：有一个免费一年的证书叫 Symantec。
+
+以下是一目了然的申请流程：
+
+
+
+1点这里购买免费证书
+2 到阿里云 管理控制台——云盾控制台——证书服务
+2.1 填写个人信息
+
+2.2 生成 以下记录，复制这些记录
+
+Type主机记录:记录值:T TLTXT_dnsauthxxxxxx3002.3 去DNS解析记录: hostinger - DNS
+
+
+
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="2020/01/25/给自己的网站配置ssl证书/">
+                                READ ON
+                            </a>
+                            <a class="al_button al_button_transparent al_index_post_button" target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://wenjialu.github.io/hexo_blog/">
+                                READ LATER
+                            </a>
+                        </div>
+                    </li>
                 
+            </ul>
 
-                
-                <section id="post-body">
-                    <p>In 1996, a little girl was born in Shanghai, China. In 2019 at her age of 23, she pursued her dream of studying NeuroPsychology and Computer Science in the University of Edinburgh. What makes her her and what would happened to her during her journey of foreign    land?<br>Let’s come and have a look! </p>
-
-                </section>
-
-                
-                
-    <div id="al_gitalk_cnt">
-    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-    <script>
-        var gitalk = new Gitalk({
-            clientID: "github_clientID",
-            clientSecret: "github_clientSecret",
-            repo: "you site homepage",
-            owner: "your username",
-            admin: "same as [owner]",
-            id: "About me",
-        });
-        gitalk.render("al_gitalk_cnt")
-    </script>
-                
-
-            </article>
-
-            
             <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/09/23/Intro-Of-the-Sidebar-Widgets/">
-                    
-                        <svg class="al_arrow">
-                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
-                        </svg>
-                        <span class="al_text_ellipsis al_post_nav_desc">Intro Of the Sidebar Widgets</span>
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
                     
                 </a>
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/01/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AEssl%E8%AF%81%E4%B9%A6/">
-                    
-                        <span class="al_text_ellipsis al_post_nav_desc">给自己的网站配置ssl证书</span>
-                        <svg class="al_arrow">
-                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
-                        </svg>
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
                     
                 </a>
             </nav>
         </div>
     </div>
-
 
         <div class="al_index_footer dis_flex_center">
     <div class="al_index_footer_item al_index_footer_title">
