@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>SpringBoot 数据库</title>
+        <title>SpringBoot 数据库操作指南</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 <link rel="stylesheet", href="/hexo_blog/./css/style.css">
@@ -113,16 +113,16 @@
             <article class="al_article">
                 <header>
                     <h1 class="al_page_title">
-                        SpringBoot 数据库
+                        SpringBoot 数据库操作指南
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
-                            January 23, 2021 10:01 AM
+                            January 19, 2021 04:01 PM
                         </div>
 
                         
                             <div class="al_page_content_info">
-                                10 words
+                                380 words
                             </div>
                         
 
@@ -136,12 +136,65 @@
                 </header>
 
                 
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#SpringBoot-%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">SpringBoot 连接数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SpringMVC-%E6%9E%B6%E6%9E%84"><span class="toc-text">SpringMVC 架构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#what%EF%BC%9A"><span class="toc-text">what：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#how%EF%BC%9A"><span class="toc-text">how：</span></a></li></ol></li></ol>
+                    </div>
+                
 
                 
                 <section id="post-body">
-                    <p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmyudci33oj307b05dq3l.jpg"></p>
+                    <h2 id="SpringBoot-连接数据库"><a href="#SpringBoot-连接数据库" class="headerlink" title="SpringBoot 连接数据库"></a>SpringBoot 连接数据库</h2><p>Spring中，数据从数据库到前端的流程：</p>
+<p><strong>Jdbc配置（pom.xml，application.yml） –&gt;  model –&gt; service(interface -&gt; impl(继承接口+@Override方法)) –&gt; controller –&gt; 前端</strong></p>
+<p>​                 其中：   model</p>
+<p>​                     – domain: RoundDictExample ?; </p>
+<p>​                     –persistence:  RoundDictMapper.xml,   RoundDictMapper (建立数据库与java代码的映射)</p>
+<p>Tips:</p>
+<ul>
+<li><p>本地远程连接数据库<br>注意: 使用远程连接时,使用的连接用户和该用户现在的ip地址应该是远程数据库中允许的用户和允许的ip,否则是不允许连接的.</p>
+<ul>
+<li><code>终端：mysql -Pxx -hxxx -uroot -p</code></li>
+<li>图形化界面：Navicat / SQLyog</li>
+</ul>
+</li>
+</ul>
+<p>问题：</p>
+<p>访问获得404 </p>
+<p>可能是jar包的问题</p>
+<p>Artificial – lib</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="SpringMVC-架构"><a href="#SpringMVC-架构" class="headerlink" title="SpringMVC 架构"></a>SpringMVC 架构</h2><h3 id="what："><a href="#what：" class="headerlink" title="what："></a>what：</h3><p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn0b9z0016j30jm0d5n1u.jpg"></p>
+<p><strong>M：model</strong></p>
 <p>jojo 建数据库</p>
-<p>dao 增删改查</p>
+<p>dao (vo value object 拆的更细的的实体类)增删改查</p>
+<p>servive</p>
+<p><strong>V：view</strong></p>
+<p><strong>C：controller</strong></p>
+<p>接收用户请求，交给模型处理，把模型处理完的数据返回给视图。</p>
+<p>一般来说是java类</p>
+<p>后端项目结构主要是MC，即 Model + Controller。</p>
+<p>举例：</p>
+<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmyudci33oj307b05dq3l.jpg"  />
+
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn0am3mgujj306806mmxj.jpg"></p>
+<p>admin文件夹: 管理员用户 - VO  + -Controller</p>
+<p>整个文件夹：-( mybatis + service ) + -Controller</p>
+<h3 id="how："><a href="#how：" class="headerlink" title="how："></a>how：</h3><p>Spring的核心：servlet</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn0cadg3yjj30jn0a2gq6.jpg"></p>
+<p>只有红框部分需要自己写，其他spring都帮忙做掉了。</p>
+<p>234 找请求url对应的类处理器</p>
+<p>5678 找并返回了数据库的数据。</p>
+<p>91011 拿到数据库数据，拼接url，去找对应的前端视图。</p>
+<p>====</p>
+<p>Selevlet</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn0be8se1mj30gd0e277r.jpg"></p>
+<p>dispatcherservlet</p>
+<p>![](/Users/lujiawen/Library/Application Support/typora-user-images/image-20210125223734010.png)</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn0bidh5swj30ov0c0q8d.jpg"></p>
+<p>鼻祖：selvelet</p>
+<p>实现 xxx（request, response)</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn0bk36cdoj30pd0bc44a.jpg"></p>
+<p>资源：</p>
+<p>spring自动注解原理：<a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904009577267207">https://juejin.cn/post/6844904009577267207</a></p>
+<p>Spring后端到数据库操作：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000010208184">https://segmentfault.com/a/1190000010208184</a></p>
 
                 </section>
 
@@ -156,7 +209,7 @@
             repo: "you site homepage",
             owner: "your username",
             admin: "same as [owner]",
-            id: "SpringBoot 数据库",
+            id: "SpringBoot 数据库操作指南",
         });
         gitalk.render("al_gitalk_cnt")
     </script>
@@ -166,17 +219,17 @@
 
             
             <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AEssl%E8%AF%81%E4%B9%A6/">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/22/%E6%80%8E%E4%B9%88%E5%90%AF%E5%8A%A8%E7%AC%AC%E4%B8%80%E4%B8%AA%20SpringBoot%20%E9%A1%B9%E7%9B%AE/">
                     
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
                         </svg>
-                        <span class="al_text_ellipsis al_post_nav_desc">给自己的网站配置ssl证书</span>
+                        <span class="al_text_ellipsis al_post_nav_desc">【教程】怎么启动第一个 SpringBoot项目</span>
                     
                 </a>
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/23/Google-Cloud-%E9%83%A8%E7%BD%B2%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/16/liunx%E6%9C%8D%E5%8A%A1%E5%99%A8%20%E4%B8%8A%E7%9A%84%E5%90%84%E7%A7%8D%E6%93%8D%E4%BD%9C/">
                     
-                        <span class="al_text_ellipsis al_post_nav_desc">Google Cloud 部署我的网站 (附宝塔面板安装教程)</span>
+                        <span class="al_text_ellipsis al_post_nav_desc">liunx服务器 上的各种操作</span>
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
                         </svg>
