@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>liunx服务器 上的各种操作</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.2.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        liunx服务器 上的各种操作
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            January 16, 2021 10:01 AM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                723 words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                3 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%BC%80-jar-%E5%8C%85"><span class="toc-text">打开 jar 包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-text">问题：</span></a></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <p>liunx 命令大全： <a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-command-manual.html">https://www.runoob.com/linux/linux-command-manual.html</a></p>
+<p>1 安装 jdk 包</p>
+<p>第一种：已经安装好了，那么解压就行了</p>
+<p>比如 Jdk包是rmp格式的，怎么解压呢。</p>
+<p>要先转换成cpio格式：</p>
+<p>rpm2cpio  xxxx.rpm | cpio -idv</p>
+<p>第二种：去oracle官网下载</p>
+<p>选择合适的liunx版本jdk8</p>
+<p>那么怎么知道合不合适呢，</p>
+<p>查看getconf LONG_BIT</p>
+<p>如果显示32，则是32位的Linux系统，如果显示64，则是64位的Linux系统。这里是64位的，所以下载<strong>Linux x64</strong>，如下图：</p>
+<p>![image-20210116181806625](/Users/lujiawen/Library/Application Support/typora-user-images/image-20210116181806625.png)</p>
+<p>详见 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/94010951">https://zhuanlan.zhihu.com/p/94010951</a></p>
+<p>ok, jdk装好了，</p>
+<p>接下来配置环境变量。</p>
+<p>2  配置环境变量</p>
+<p>2.1 找到相应的文件</p>
+<p>在.bashrc 或者 .bash_profile 里面配置，由于不知道具体叫啥名字</p>
+<p>cd ~</p>
+<p>ls -a显示全部文件，包括隐藏文件</p>
+<p>2.2 添加环境变量</p>
+<p>注意啦，这里 open 是打不开的，要用vim编辑器</p>
+<p>Vim .bashrc</p>
+<p>输入以下内容（ps：JAVA_HOME 路径写你自己的java安装路径 ）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java">#set java environment<br>JAVA_HOME=/root/usr/java/jdk1.<span class="hljs-number">8.0_131</span><br>CLASS_PATH=.:$JAVA_HOME/lib/<br>PATH=$PATH:$JAVA_HOME/bin<br>export JAVA_HOME CLASS_PATH PATH<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java">export JAVA_HOME=/root/usr/java/jdk1.<span class="hljs-number">8.0_131</span><br>export JRE_HOME=$&#123;JAVA_HOME&#125;/jre  <br>export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib  <br>export  PATH=$&#123;JAVA_HOME&#125;/bin:$PATH<br></code></pre></td></tr></table></figure>
+
+
+
+<p>![image-20210116175250183](/Users/lujiawen/Library/Application Support/typora-user-images/image-20210116175250183.png)</p>
+<p>关于vim的使用：打开后按i就可以进入编辑模式，在文件最后加上环境变量配置内容按exit退出编辑模式返回命令模式输入:wq保存并退出vim</p>
+<p>2.3 刷新一下使它生效</p>
+<p>source ~/.bashrc</p>
+<h2 id="打开-jar-包"><a href="#打开-jar-包" class="headerlink" title="打开 jar 包"></a>打开 jar 包</h2><p>假设Linux服务上已经有了打好的jar包，下面介绍几种常用的部署方式：</p>
+<p><strong>1、java -jar启动方式。</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">java -jar *.jar<br>复制代码<br></code></pre></td></tr></table></figure>
+
+<p>此中方式只会运行在当前窗口，当关闭窗口或断开连接，jar程序就会结束。</p>
+<p>![image-20210116182734012](/Users/lujiawen/Library/Application Support/typora-user-images/image-20210116182734012.png)</p>
+<p><strong>2、nohup启动方式。（推荐）</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"># nohup: 不挂断的运行命令<br># &amp;：后台运行<br># &gt;: 日志重定向输出到<br>nohup java -jar *.jar &gt;jarLog.txt &amp;<br>复制代码<br></code></pre></td></tr></table></figure>
+
+<p><strong>3、注册为Linux服务（推荐）</strong></p>
+<ul>
+<li>首先需要现修改pom中spring-boot-maven-plugin配置，其实spring boot 打成jar包以后，是可以直接像shell脚本一样直接运行的，要实现这样可以直接运行，pom.xml 的build节点需要增加这样的配置：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"><br></code></pre></td></tr></table></figure>
+
+<p>作者：BothEyes1993<br>链接：<a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904052153647111">https://juejin.cn/post/6844904052153647111</a><br>来源：掘金<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><p>I am trying to run java command in linux server when I tried to run java I got some error-</p>
+<blockquote>
+<p>Error occurred during initialization of VM</p>
+<p>Could not reserve enough space for object heap</p>
+<p>Could not create the Java virtual machine.</p>
+</blockquote>
+<p>memory space is -</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">free -m<br></code></pre></td></tr></table></figure>
+
+
+
+<p>Increase the amount of system resources in /etc/security/limits.conf, and then issue the “ulimit” command to check that the new resource limit has been changed to “unlimited”.</p>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "github_clientID",
+            clientSecret: "github_clientSecret",
+            repo: "you site homepage",
+            owner: "your username",
+            admin: "same as [owner]",
+            id: "liunx服务器 上的各种操作",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/20/SpringBoot-%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">SpringBoot 数据库操作指南</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/15/Tomcat%20on%20Google%20Cloud/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">Tomcat on Google Cloud</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    <script src="/hexo_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/hexo_blog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</html>
+        

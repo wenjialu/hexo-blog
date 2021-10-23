@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>Google Cloud 部署我的网站 (附宝塔面板安装教程)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.2.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        Google Cloud 部署我的网站 (附宝塔面板安装教程)
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            January 23, 2021 08:01 AM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                794 words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                3 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80%EF%BC%9A"><span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF"><span class="toc-text">安装宝塔面板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9"><span class="toc-text">添加站点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0%E5%AE%9D%E5%A1%94"><span class="toc-text">上传宝塔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="toc-text">安装插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5%EF%BC%9A"><span class="toc-text">参考链接：</span></a></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>我曾经在github 上部署过我的个人网站，不过github上的静态网页已经越来越不能满足我对网站的需求了。</p>
+<p>于是，我选择把整个网站迁移到自己的云服务器上。</p>
+<p>如果你对我的网站感兴趣，可以点<a target="_blank" rel="noopener" href="http://wenjialu.tech/">这里</a>参观。</p>
+<p>以下是我的教程。</p>
+<h3 id="安装宝塔面板"><a href="#安装宝塔面板" class="headerlink" title="安装宝塔面板"></a>安装宝塔面板</h3><p><strong>vm实例</strong>右侧有个<code>ssh</code>按钮，点击就可以进入到后台。</p>
+<p>1 sudo - i</p>
+<p>2 脚本安装 （一整行复制哦）</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text"># My google cloud instance is Centos<br>Centos安装脚本 <br>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh<br> <br>#My google cloud instance-1 is Debian<br>Debian安装脚本<br>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh<br> <br>Ubuntu/Deepin安装脚本 <br>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh<br> <br><br>Fedora安装脚本<br> wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; bash install.sh<br></code></pre></td></tr></table></figure>
+
+<p>3 安装完成后记录下自己的宝塔地址和密码</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmyueb5t6pj30lk08nmyg.jpg"></p>
+<p>4 浏览器登陆面板后，选择LNMP（推荐）</p>
+<p>5 按照提示注册</p>
+<p>安装完成～</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmytc9yq07j310j0l4q69.jpg"></p>
+<p>要注意将vps的临时ip设置为静态ip，不然关机重启会导致ip发生变化（设置方法：vpc网络-&gt;外部ip地址-&gt;类型）</p>
+<h3 id="添加站点"><a href="#添加站点" class="headerlink" title="添加站点"></a>添加站点</h3><p>Step1:  注册域名</p>
+<p>hostinger 上挑一个自己喜欢的域名。</p>
+<p>我花了10块钱在hostinger 上买了一个一年的域名 wenjia.tech</p>
+<p>有了域名相当于你生产的“宝宝”有了名字，</p>
+<p>但是宝宝光有名字不够啊，还得去公安局登记注册身份证号，</p>
+<p>同理，我们的域名也需要经过一个叫 DNS 的服务认证，才能建立起 域名和ip 的一对一联系。</p>
+<p>Step2: 解析域名</p>
+<p> hostinger - DNS/Nameservers</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Points to</th>
+<th>Til</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>www</td>
+<td>填写你的服务器 IP</td>
+<td>300</td>
+</tr>
+</tbody></table>
+<p>或者</p>
+<p>打开<a target="_blank" rel="noopener" href="https://help.aliyun.com/document_detail/29716.html">阿里云</a></p>
+<p>DNS解析 <a target="_blank" rel="noopener" href="https://dns.console.aliyun.com/?spm=5176.12901015.0.i12901015.7fc6525cUup6lY&amp;accounttraceid=d17d9f090e29430f9e46fae5c55b8f00vsgi#/dns/setting/wenjialu.tech">https://dns.console.aliyun.com/?spm=5176.12901015.0.i12901015.7fc6525cUup6lY&amp;accounttraceid=d17d9f090e29430f9e46fae5c55b8f00vsgi#/dns/setting/wenjialu.tech</a></p>
+<p>到 hostinger - DNS/Nameservers - change nameservers</p>
+<p>改成阿里云的 DNS 服务器</p>
+<table>
+<thead>
+<tr>
+<th><strong>ns1.alidns.com</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>ns2.alidns.com</strong></td>
+</tr>
+</tbody></table>
+<p>Step3: 宝塔 – 网站 – 添加站点</p>
+<p>把域名填进去</p>
+<p>保存好数据库等信息。</p>
+<p>Step4: 添加 ssl 证书</p>
+<p><a href="https://wenjialu.github.io/hexo_blog/2021/01/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AEssl%E8%AF%81%E4%B9%A6/">教程地址</a></p>
+<p>接下来，可以根据自己的需求，选择自己所需的教程部分。</p>
+<p>如果你以前已经有了网站，想迁移到这个新服务器上的，看上传宝塔。</p>
+<p>如果是建站小白或者是想要一个新网站的，到安装插件部分。</p>
+<h3 id="上传宝塔"><a href="#上传宝塔" class="headerlink" title="上传宝塔"></a>上传宝塔</h3><p>先把博客所在的文件夹 打包成<strong>压缩包</strong></p>
+<p>到网站的根目录 www - wwwroot </p>
+<p>依次点击：文件 - 上传</p>
+<p>上传完成之后再解压就可以啦。</p>
+<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>软件商店–宝塔插件 – 宝塔一键部署源码 </p>
+<p>里面有很多中博客模版可以选择。</p>
+<p>我推荐使用 wordpress, 口碑有保证。</p>
+<h3 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h3><p>添加 ssl 证书：<a href="https://wenjialu.github.io/hexo_blog/2021/01/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AEssl%E8%AF%81%E4%B9%A6/">https://wenjialu.github.io/hexo_blog/2021/01/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AEssl%E8%AF%81%E4%B9%A6/</a></p>
+<p>阿里云ssl： <a target="_blank" rel="noopener" href="https://yq.aliyun.com/articles/637307">https://yq.aliyun.com/articles/637307</a></p>
+<p>部署网站：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av57100951/">https://www.bilibili.com/video/av57100951/</a></p>
+<p>ssh： <a target="_blank" rel="noopener" href="https://www.vediotalk.com/archives/606">https://www.vediotalk.com/archives/606</a></p>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "github_clientID",
+            clientSecret: "github_clientSecret",
+            repo: "you site homepage",
+            owner: "your username",
+            admin: "same as [owner]",
+            id: "Google Cloud 部署我的网站 (附宝塔面板安装教程)",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AEssl%E8%AF%81%E4%B9%A6/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">给自己的网站配置ssl证书</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/22/%E6%80%8E%E4%B9%88%E5%90%AF%E5%8A%A8%E7%AC%AC%E4%B8%80%E4%B8%AA%20SpringBoot%20%E9%A1%B9%E7%9B%AE/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">【教程】怎么启动第一个 SpringBoot项目</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    <script src="/hexo_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/hexo_blog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</html>
+        

@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>git 疑难杂症大全 （更新中）</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.2.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        git 疑难杂症大全 （更新中）
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            December 08, 2020 06:12 PM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                2k words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                8 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-%E4%BB%A4%E4%BA%BA%E5%90%90%E8%A1%80%E4%BD%BF%E4%BA%BA%E7%AA%92%E6%81%AF%EF%BC%8C%E7%9C%8B%E6%88%91%E5%A6%82%E4%BD%95%E4%B8%8E%E5%AE%83%E6%96%97%E6%99%BA%E6%96%97%E5%8B%87%EF%BC%81"><span class="toc-text">Git 令人吐血使人窒息，看我如何与它斗智斗勇！</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E5%88%9D%E6%98%BE"><span class="toc-text">问题初显</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github%E4%B8%8A%E6%8F%90%E4%BA%A4%E7%9A%84%E4%BF%AE%E6%94%B9commit%E9%83%BD%E6%B2%A1%E6%88%90%E5%8A%9F%EF%BC%81"><span class="toc-text">github上提交的修改commit都没成功！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98"><span class="toc-text">解决问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7-1-github-desktop-image-20201113032007246-Users-lujiawen-Library-Application-Support-typora-user-images-image-20201113032007246-png"><span class="toc-text">工具 1 github desktop ![image-20201113032007246](&#x2F;Users&#x2F;lujiawen&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20201113032007246.png)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7-2-%E7%BB%88%E7%AB%AF"><span class="toc-text">工具 2 终端</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7-3-%E6%88%91%E8%87%AA%E5%B7%B1%E7%9A%84%E6%89%8B%F0%9F%91%8B%E2%80%93%E6%89%8B%E5%8A%A8%E5%90%8C%E6%AD%A5"><span class="toc-text">工具 3 我自己的手👋–手动同步</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8C%9C%E6%83%B3-%E2%80%93-%E4%B8%BA%E5%95%A5%E4%BC%9A%E5%87%BA%E7%8E%B0%E8%BF%99%E4%BA%9B%E9%97%AE%E9%A2%98%E5%91%A2%EF%BC%9F"><span class="toc-text">猜想 – 为啥会出现这些问题呢？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8C%9C%E6%B5%8B-1%EF%BC%9A%E5%AF%86%E9%92%A5%F0%9F%94%91%E4%B8%8D%E5%AF%B9%EF%BC%8C%E8%BF%9C%E7%A8%8B%E9%93%BE%E6%8E%A5%E4%B8%8D%E4%B8%8A"><span class="toc-text">猜测 1：密钥🔑不对，远程链接不上</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8C%9C%E6%B5%8B-2-%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E5%92%8C%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E4%B9%8B%E9%97%B4%E6%B2%A1%E5%90%8C%E6%AD%A5%E5%A5%BD"><span class="toc-text">猜测 2:  本地仓库和远程仓库之间没同步好</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8C%9C%E6%B5%8B-3-%E9%9A%BE%E9%81%93%E6%98%AF%E6%88%91%E6%9C%AC%E5%9C%B0%E7%A9%BA%E9%97%B4%E4%B8%8D%E5%A4%9F%EF%BC%9F"><span class="toc-text">猜测 3:  难道是我本地空间不够？</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81%E7%8C%9C%E6%83%B3-%E2%80%93-%E6%9D%A5%E5%98%9B%EF%BC%8C%E5%92%B1%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E6%9D%A5"><span class="toc-text">验证猜想 – 来嘛，咱一个一个来</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%AF%E4%B8%8D%E6%98%AF%E5%9B%A0%E4%B8%BA%E5%85%AC%E9%92%A5%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%8C%E5%8E%BB%E6%9F%A5%E6%9F%A5%E7%9C%8B"><span class="toc-text">是不是因为公钥的问题，去查查看</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3"><span class="toc-text">磁盘空间不足</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%8F%E6%8F%92%E6%9B%B2%EF%BC%9A"><span class="toc-text">小插曲：</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <h1 id="Git-令人吐血使人窒息，看我如何与它斗智斗勇！"><a href="#Git-令人吐血使人窒息，看我如何与它斗智斗勇！" class="headerlink" title="Git 令人吐血使人窒息，看我如何与它斗智斗勇！"></a>Git 令人吐血使人窒息，看我如何与它斗智斗勇！</h1><p>最新更新：</p>
+<p>花了 68 元 买了 daisy</p>
+<p>把磁盘空间的问题解决之后。</p>
+<p>终端的pull 和 push 操作没有啥问题了， 操作相当的丝滑。</p>
+<p>But 我终于发现了真正的问题所在，</p>
+<p>在于 github page 构建不成功诶。</p>
+<p>疑难杂症检查：</p>
+<p><a target="_blank" rel="noopener" href="https://docs.github.com/cn/free-pro-team@latest/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites">https://docs.github.com/cn/free-pro-team@latest/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites</a></p>
+<ul>
+<li>可能是我的仓库太大了。没有啊，才300m，没有超过1g。</li>
+</ul>
+<h2 id="问题初显"><a href="#问题初显" class="headerlink" title="问题初显"></a>问题初显</h2><p>事情的起因是这样的，我不是自己建了好几个网站嘛。</p>
+<p>有的是为了好玩，比如前文提到的hexo； 还有的我拿来当电子简历了（嘻嘻，简历网站就没有公开了啦）。</p>
+<p>我在面试某东的时候，面试官竟然对我的简历版的网站很有兴趣，并且对着我网站上列举出的技术栈进行了狂轰滥炸式的考察。</p>
+<p>面试最后还不忘夸了夸我的网站设计。 呜！受宠若惊～</p>
+<p>但其实我还有点不满意的点，于是在面试结束后就马不停蹄的去修改了。</p>
+<p>当我提交完，兴奋的想去看网站效果的时候。 </p>
+<p>咦，怎么毫无变化？ </p>
+<p>我反复刷新刷新页面，最后又回到github上看。</p>
+<p>嘶 !!! 竟然。。。</p>
+<h2 id="github上提交的修改commit都没成功！"><a href="#github上提交的修改commit都没成功！" class="headerlink" title="github上提交的修改commit都没成功！"></a>github上提交的修改commit都没成功！</h2><p>![image-20201113031438774](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113031438774.png)</p>
+<p>纳尼，咋都没提交上呢？？？  </p>
+<p>原来前一天终端的git commit 也没有成功，但是终端这个铁憨憨好像没有发现，还提示 Everything up-to-date (主人，一切都更新好了哦！), 仿佛一切安好的样子。</p>
+<p>![image-20201113000622941](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113000622941.png)</p>
+<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><p>工欲善其事， 必先利其器。</p>
+<p>但是好像我的解决问题工具都有些问题，哭哭。</p>
+<h4 id="工具-1-github-desktop-image-20201113032007246-Users-lujiawen-Library-Application-Support-typora-user-images-image-20201113032007246-png"><a href="#工具-1-github-desktop-image-20201113032007246-Users-lujiawen-Library-Application-Support-typora-user-images-image-20201113032007246-png" class="headerlink" title="工具 1 github desktop ![image-20201113032007246](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113032007246.png)"></a>工具 1 github desktop ![image-20201113032007246](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113032007246.png)</h4><p>曾经是个非常好用的一个应用端可视化管理git的平台。</p>
+<p>直到。。。我建了那个hexo_blog加了个ssh密钥之后。</p>
+<p><strong>总是有问题，不是ssh 连接失败，就是commit提交error -1.或者狂按fetch也没有反应。</strong></p>
+<p>哎，先不用它了。</p>
+<h4 id="工具-2-终端"><a href="#工具-2-终端" class="headerlink" title="工具 2 终端"></a>工具 2 终端</h4><p> 终端是个天真的铁憨憨，始终觉得自己同步完了，git树很干净。</p>
+<p>。。。 </p>
+<p>这究竟是为啥？</p>
+<p>嗷呜，先不去打扰它对这个世界的美好幻想了。</p>
+<p>![image-20201113023439128](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113023439128.png)</p>
+<h4 id="工具-3-我自己的手👋–手动同步"><a href="#工具-3-我自己的手👋–手动同步" class="headerlink" title="工具 3 我自己的手👋–手动同步"></a>工具 3 我自己的手👋–手动同步</h4><p>我的设想是这样，既然两个仓库冲突了，那我删掉其中一个。那不就铁定不会冲突了吗。</p>
+<p>呵呵，理想很美好。现实总是。。。啪啪啪打脸呢。</p>
+<p>我已经把本地仓库删光光，然后复制了远程的到本地，重新建立了他们的连接。竟然还是不行。</p>
+<p>到底是哪里出问题了呢？？</p>
+<p>难道是我本地空间不足，一些文件上传了云，所以本地没有，导致有冲突吗？</p>
+<p>下面是疯狂提示：</p>
+<p>![image-20201113021509915](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113021509915.png)</p>
+<p>![image-20201113021554349](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113021554349.png)![image-20201113021611872](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113021611872.png)</p>
+<p>不不不，应该不会。。。。吧</p>
+<h3 id="猜想-–-为啥会出现这些问题呢？"><a href="#猜想-–-为啥会出现这些问题呢？" class="headerlink" title="猜想 – 为啥会出现这些问题呢？"></a>猜想 – 为啥会出现这些问题呢？</h3><p>应该就是远程仓库和本地仓库同步有问题，导致版本冲突。那么为啥同步会有问题呢？</p>
+<h4 id="猜测-1：密钥🔑不对，远程链接不上"><a href="#猜测-1：密钥🔑不对，远程链接不上" class="headerlink" title="猜测 1：密钥🔑不对，远程链接不上"></a>猜测 1：密钥🔑不对，远程链接不上</h4><h4 id="猜测-2-本地仓库和远程仓库之间没同步好"><a href="#猜测-2-本地仓库和远程仓库之间没同步好" class="headerlink" title="猜测 2:  本地仓库和远程仓库之间没同步好"></a>猜测 2:  本地仓库和远程仓库之间没同步好</h4><h4 id="猜测-3-难道是我本地空间不够？"><a href="#猜测-3-难道是我本地空间不够？" class="headerlink" title="猜测 3:  难道是我本地空间不够？"></a>猜测 3:  难道是我本地空间不够？</h4><h3 id="验证猜想-–-来嘛，咱一个一个来"><a href="#验证猜想-–-来嘛，咱一个一个来" class="headerlink" title="验证猜想 – 来嘛，咱一个一个来"></a>验证猜想 – 来嘛，咱一个一个来</h3><p>问题总是一个一个一个一个一个一个一个…一个一个一个一被解决的嘛。</p>
+<p>别怕，先来验证第一个猜想。</p>
+<h4 id="是不是因为公钥的问题，去查查看"><a href="#是不是因为公钥的问题，去查查看" class="headerlink" title="是不是因为公钥的问题，去查查看"></a>是不是因为公钥的问题，去查查看</h4><ul>
+<li><pre><code class="bash">1.ssh-keygen -t rsa -C “youremail@example.com” # 创建SSH-Key
+将本地用户目录（用户目录/.ssh/id_rsa.pub）的ssh公钥添加到GitHub中
+2.git bash中输入
+cat ~/.ssh/id_rsa.pub
+复制好出现的内容
+3.打开github，在头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，名字随便。
+把刚刚复制的内容全部黏贴到框中，点击确定保存。
+
+# 以上步骤我以前已经做过了。也就是说我已经在github添加了我的ssh。我现在只要验证下是不是还连接成功。
+（这个ssh链接是和我的整个github的）
+4输入ssh -T git@github.com，（ssh -T git@code.aliyun.com ssh -T git@https://github.com/wenjialu/wenjialu.github.io）
+如果如下图所示，出现我的用户名，那就成功了。
+也可以直接进行项目的克隆或提交进行测试。
+
+我的建议是，在配置完成后，对各个平台都进行一次链接测试。
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"><br>- 可以看到，我已经与我的github建立了远程联系了：![image-20201113010754206](&#x2F;Users&#x2F;lujiawen&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20201113010754206.png)<br><br>- 就是好像和仓库的ssh连接有些问题，但是git里面又已经加了这个仓库了。<br><br>- ![image-20201113011658853](&#x2F;Users&#x2F;lujiawen&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20201113011658853.png)<br><br>- ![image-20201113012049666](&#x2F;Users&#x2F;lujiawen&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20201113012049666.png)<br><br>暂且认为这个是没问题的吧。继续验证下一个猜想。<br><br><br><br>#### 本地仓库和远程仓库之间没同步好？<br><br>**那我就重新建立一次远程连接嘛**<br><br>&#96;&#96;&#96;zsh<br>git init # 初始化本地仓库<br>git add .&#x2F; # 将文件添加到待提交区域<br>git commit -m “提交信息” # 提交<br>使用GitHub创建仓库（new Repository）<br>ssh-keygen -t rsa -C “youremail@example.com” # 创建SSH-Key<br>将本地用户目录（用户目录&#x2F;.ssh&#x2F;id_rsa.pub）的ssh公钥添加到GitHub中<br>git remote add origin git@github.com:XXXX.git # 将远程仓库与本地仓库建立连接<br>git pull origin master –allow-unrelated-histories # 首先将远程仓库的文件pull下来<br>#如果执行这句命令时，出现了“ couldn’t find remote ref –allow-unrelated-histories”的错误，输入如下命令即可解决：<br>​&#96;&#96;&#96;git pull --rebase origin master<br>​&#96;&#96;&#96;git push origin master<br>git push origin master # 将本地提交同步到远程仓库<br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+<p>注意那个绿色的代码，重大突破来咯！！！</p>
+<p>当我用那行绿色代码解决error的时候，这个解决error的语句也出现了error。。</p>
+<p>![image-20201113020540424](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113020540424.png)</p>
+<p>当我搜索解决方案的时候，stackoverflow[<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/16064513/git-fatal-unable-to-write-new-index-file]%E4%B8%8A%E7%9A%84%E8%BF%99%E4%BD%8D%E5%93%A5%E4%BB%AC%E4%B8%80%E4%B8%8B%E9%81%93%E7%A0%B4%E4%BA%86%E9%97%AE%E9%A2%98%E7%9A%84%E5%85%B3%E9%94%AE%E3%80%82">https://stackoverflow.com/questions/16064513/git-fatal-unable-to-write-new-index-file]上的这位哥们一下道破了问题的关键。</a></p>
+<p>![image-20201113020424628](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113020424628.png)</p>
+<p>喵个叽 果然和我磁盘空间脱不了关系。</p>
+<h4 id="磁盘空间不足"><a href="#磁盘空间不足" class="headerlink" title="磁盘空间不足"></a>磁盘空间不足</h4><p>我感觉我快接近问题的本质了！！！</p>
+<p>我再分析下其他人的回答，好像这个空间是服务器端，也就是github那边的问题。和我设想的本地空间不足好像有点不一样啊。</p>
+<p>再看这位的回答：</p>
+<p>![image-20201113021244491](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113021244491.png)</p>
+<p>妈呀我都快激动哭了，这么朋友也是由这个问题导致的commit不了。</p>
+<p>那么我赶紧来试试这个命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">chmod -RN /path/to/repo <span class="hljs-comment">#别忘了把/path/to/repo改成你本地仓库的地址哦</span><br></code></pre></td></tr></table></figure>
+
+<p>然后我们继续把刚刚中断的命令敲完：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git pull --rebase origin master <span class="hljs-comment">#可能会有一些小冲突，按照提示走就行了。</span><br>git push origin master<br></code></pre></td></tr></table></figure>
+
+<p>上图！啊哈哈 虽然有些安全性上的小问题，但是我就先无视了。</p>
+<p>![image-20201113022526522](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113022526522.png)</p>
+<p>完结撒花～～～～～！！</p>
+<p>什么？   你以为这就完结了，还是太天真了哦。</p>
+<p>未完待续。。。。。。</p>
+<p>嵌套git</p>
+<p>![image-20201118102445779](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201118102445779.png)</p>
+<h4 id="小插曲："><a href="#小插曲：" class="headerlink" title="小插曲："></a>小插曲：</h4><p>一开始把拉远程仓库的命令搞错了。</p>
+<p>既不是 git  pull,  也不是 git pull master 🙅 。</p>
+<p>正确的应该是 git pull origin master 🙆 ！</p>
+<p>希望大家不要和我一样犯这个傻傻的错误哦。</p>
+<p>![image-20201113023049984](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113023049984.png)</p>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "github_clientID",
+            clientSecret: "github_clientSecret",
+            repo: "you site homepage",
+            owner: "your username",
+            admin: "same as [owner]",
+            id: "git 疑难杂症大全 （更新中）",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/React%20%E6%95%99%E7%A8%8B/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">React 简易教程</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/Server%20%E7%AE%80%E4%BB%8B%20%20(node.js)/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">node.js</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    <script src="/hexo_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/hexo_blog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</html>
+        

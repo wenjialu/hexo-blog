@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>给自己的网站配置ssl证书</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.2.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        给自己的网站配置ssl证书
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            January 24, 2021 04:01 PM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                929 words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                3 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0-ssl-%E8%AF%81%E4%B9%A6"><span class="toc-text">添加 ssl 证书</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E7%82%B9%E8%BF%99%E9%87%8C%E8%B4%AD%E4%B9%B0%E5%85%8D%E8%B4%B9%E8%AF%81%E4%B9%A6"><span class="toc-text">1点这里购买免费证书</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91-%E7%AE%A1%E7%90%86%E6%8E%A7%E5%88%B6%E5%8F%B0%E2%80%94%E2%80%94%E4%BA%91%E7%9B%BE%E6%8E%A7%E5%88%B6%E5%8F%B0%E2%80%94%E2%80%94%E8%AF%81%E4%B9%A6%E6%9C%8D%E5%8A%A1"><span class="toc-text">2 到阿里云 管理控制台——云盾控制台——证书服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E9%AA%8C%E8%AF%81%E8%AF%81%E4%B9%A6"><span class="toc-text">3 验证证书</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9E%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91%E8%AF%81%E4%B9%A6%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0"><span class="toc-text">回到阿里云证书服务平台</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E7%AD%89%E5%BE%85%E8%AF%81%E4%B9%A6%E7%9A%84%E5%AE%A1%E6%A0%B8"><span class="toc-text">4 等待证书的审核</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A6"><span class="toc-text">5 安装证书</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="toc-text">6 验证是否安装成功</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <h2 id="添加-ssl-证书"><a href="#添加-ssl-证书" class="headerlink" title="添加 ssl 证书"></a>添加 ssl 证书</h2><p>首先在平台上挑选一个免费的证书。</p>
+<p>我尝试过 lets-encrypt， Zerossl， FreeSSL。</p>
+<p>不过这些都比较不好，一方面是只有90天免费，另一方面是操作比较繁琐。</p>
+<p>找来找去，最方便还好用的还是在阿里云上：有一个免费一年的证书叫 Symantec。</p>
+<p>以下是一目了然的申请流程：</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmzu7vy76jj30sx058wf7.jpg"></p>
+<h4 id="1点这里购买免费证书"><a href="#1点这里购买免费证书" class="headerlink" title="1点这里购买免费证书"></a>1点<a target="_blank" rel="noopener" href="https://market.aliyun.com/products/56824016/cmgj031379.html#sku=yuncode2537900001">这里</a>购买免费证书</h4><h4 id="2-到阿里云-管理控制台——云盾控制台——证书服务"><a href="#2-到阿里云-管理控制台——云盾控制台——证书服务" class="headerlink" title="2 到阿里云 管理控制台——云盾控制台——证书服务"></a>2 到阿里云 管理控制台——云盾控制台——<a target="_blank" rel="noopener" href="https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou">证书服务</a></h4><p>2.1 填写个人信息</p>
+<p>2.2 生成 以下记录，复制这些记录</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>主机记录:</th>
+<th>记录值:</th>
+<th>T TL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TXT</td>
+<td>_dnsauth</td>
+<td>xxxxxx</td>
+<td>300</td>
+</tr>
+</tbody></table>
+<p>2.3 去DNS解析记录:  hostinger - DNS</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmzu6o9ksyj307f069jrl.jpg"></p>
+<h4 id="3-验证证书"><a href="#3-验证证书" class="headerlink" title="3 验证证书"></a>3 验证证书</h4><h4 id="回到阿里云证书服务平台"><a href="#回到阿里云证书服务平台" class="headerlink" title="回到阿里云证书服务平台"></a>回到<a target="_blank" rel="noopener" href="https://yundunnext.console.aliyun.com/?spm=a2c4g.11186623.2.6.5c803c7erq432T&p=cas#/overview/cn-hangzhou">阿里云证书服务平台</a></h4><p> DNS 解析完后，证书就能验证成功啦</p>
+<h4 id="4-等待证书的审核"><a href="#4-等待证书的审核" class="headerlink" title="4 等待证书的审核"></a>4 等待证书的审核</h4><h4 id="5-安装证书"><a href="#5-安装证书" class="headerlink" title="5 安装证书"></a>5 安装证书</h4><p>点开下载栏，有很多选择</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmzvytjtkxj30gw0b3mxu.jpg"></p>
+<p>旁边有官方帮助，可根据介绍选择适合自己的版本</p>
+<p>我选择的是nginx版。</p>
+<p>安装有两种方式，</p>
+<p>方法一（推荐）：</p>
+<p>如果你的服务器已经安装好宝塔面板的非常推荐用这个方法。</p>
+<p>如果没有的话，可以看看我前面的<a href="https://wenjialu.github.io/hexo_blog/2021/01/23/Google-Cloud-%E9%83%A8%E7%BD%B2%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/">教程</a>，或者瞅一下方法二。</p>
+<p><strong>到宝塔面板 - 网站 ；选择证书 - 其他证书</strong></p>
+<p>复制前面我们所下载的证书文件中.key文件的内容粘贴到第一个文本框里，</p>
+<p>复制另一个和key文件同名的那个.pem文件内容粘贴到第二个文本框里并保存。</p>
+<p>就 ok 啦。</p>
+<p>方法二：</p>
+<p>按照官方的介绍下载。</p>
+<p>我这里再描述下niginx 版的安装方式。</p>
+<ol>
+<li><p>在谷歌云的宝塔面板上找到自己的Nginx服务器。</p>
+</li>
+<li><p>我的Nginx安装目录是（/www/server/nginx/conf）, 在安装目录下创建一个用于存放证书的目录（命名为cert）。</p>
+</li>
+<li><p>使用宝塔的上传功能，将本地证书文件和密钥文件上传到Nginx服务器的证书目录（如 /www/server/nginx/conf/cert）</p>
+</li>
+<li><p>修改 nginx.conf</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">server &#123;<br>    listen 443 ssl;<br>    #配置HTTPS的默认访问端口为443。<br>    #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。<br>    #如果您使用Nginx 1.15.0及以上版本，请使用listen 443 ssl代替listen 443和ssl on。<br>    server_name yourdomain.com; #需要将yourdomain.com替换成证书绑定的域名。<br>    root html;<br>    index index.html index.htm;<br>    ssl_certificate cert&#x2F;cert-file-name.pem;  #需要将cert-file-name.pem替换成已上传的证书文件的名称。<br>    ssl_certificate_key cert&#x2F;cert-file-name.key; #需要将cert-file-name.key替换成已上传的证书密钥文件的名称。<br>    ssl_session_timeout 5m;<br>    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;<br>    #表示使用的加密套件的类型。<br>    ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #表示使用的TLS协议的类型。<br>    ssl_prefer_server_ciphers on;<br>    location &#x2F; &#123;<br>        root html;  #站点目录。<br>        index index.html index.htm;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>http 自动跳转到 https</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">server &#123;<br>    listen 80;<br>    server_name yourdomain.com; #需要将yourdomain.com替换成证书绑定的域名。<br>    rewrite ^(.*)$ https:&#x2F;&#x2F;$host$1; #将所有HTTP请求通过rewrite指令重定向到HTTPS。<br>    location &#x2F; &#123;<br>        index index.html index.htm;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>重启 nginx</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">cd &#x2F;www&#x2F;server&#x2F;nginx&#x2F;sbin  #进入Nginx服务的可执行目录。<br>.&#x2F;nginx -s reload  #重新载入配置文件。<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="6-验证是否安装成功"><a href="#6-验证是否安装成功" class="headerlink" title="6 验证是否安装成功"></a>6 验证是否安装成功</h4><p>证书安装完成后，您可通过访问证书的绑定域名验证该证书是否安装成功。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">https:&#x2F;&#x2F;yourdomain.com   #需要将yourdomain.com替换成证书绑定的域名。<br></code></pre></td></tr></table></figure>
+
+<p>如果你像我一样在浏览器框能看到这个小锁标志:</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmzx498na9j306100t3yi.jpg" alt="image-20210125142020794"></p>
+<p>那就恭喜你啦 ～～～～</p>
+<p>我们已经成功配置好了ssl证书。</p>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "github_clientID",
+            clientSecret: "github_clientSecret",
+            repo: "you site homepage",
+            owner: "your username",
+            admin: "same as [owner]",
+            id: "给自己的网站配置ssl证书",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/02/03/50%20proojects%20-%20to%20do%20list/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">50 projects - to do list</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/23/Google-Cloud-%E9%83%A8%E7%BD%B2%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">Google Cloud 部署我的网站 (附宝塔面板安装教程)</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    <script src="/hexo_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/hexo_blog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</html>
+        
