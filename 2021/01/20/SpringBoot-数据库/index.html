@@ -15,7 +15,11 @@
     
     <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
 
+<<<<<<< HEAD
     <meta name="generator" content="Hexo 5.2.0"></head>
+=======
+    <meta name="generator" content="Hexo 5.4.0"></head>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
     <body>
         <header class="al_header al_pos_fixed">
     <div class="al_header_container dis_flex_jcenter">
@@ -117,18 +121,30 @@
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
+<<<<<<< HEAD
                             January 19, 2021 04:01 PM
+=======
+                            January 20, 2021 05:01 AM
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                         </div>
 
                         
                             <div class="al_page_content_info">
+<<<<<<< HEAD
                                 380 words
+=======
+                                2.1k words
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                             </div>
                         
 
                         
                             <div class="al_page_content_info">
+<<<<<<< HEAD
                                 1 minutes read
+=======
+                                8 minutes read
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                             </div>
                         
                         <span class="tags"></span>
@@ -137,12 +153,17 @@
 
                 
                     <div class="al_page_content_outline">
+<<<<<<< HEAD
                         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#SpringBoot-%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">SpringBoot 连接数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SpringMVC-%E6%9E%B6%E6%9E%84"><span class="toc-text">SpringMVC 架构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#what%EF%BC%9A"><span class="toc-text">what：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#how%EF%BC%9A"><span class="toc-text">how：</span></a></li></ol></li></ol>
+=======
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#SpringBoot-%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">SpringBoot 连接数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-text">原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tips"><span class="toc-text">Tips:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%EF%BC%9A"><span class="toc-text">测试：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E7%90%86-1"><span class="toc-text">原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7"><span class="toc-text">工具</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#postman"><span class="toc-text">postman</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%B9%E7%88%86-Swagger-%E8%B6%85%E5%A5%BD%E7%94%A8"><span class="toc-text">吹爆 Swagger 超好用</span></a></li></ol></li></ol></li></ol></li></ol>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                     </div>
                 
 
                 
                 <section id="post-body">
+<<<<<<< HEAD
                     <h2 id="SpringBoot-连接数据库"><a href="#SpringBoot-连接数据库" class="headerlink" title="SpringBoot 连接数据库"></a>SpringBoot 连接数据库</h2><p>Spring中，数据从数据库到前端的流程：</p>
 <p><strong>Jdbc配置（pom.xml，application.yml） –&gt;  model –&gt; service(interface -&gt; impl(继承接口+@Override方法)) –&gt; controller –&gt; 前端</strong></p>
 <p>​                 其中：   model</p>
@@ -152,11 +173,29 @@
 <ul>
 <li><p>本地远程连接数据库<br>注意: 使用远程连接时,使用的连接用户和该用户现在的ip地址应该是远程数据库中允许的用户和允许的ip,否则是不允许连接的.</p>
 <ul>
+=======
+                    <p>[toc]</p>
+<h2 id="SpringBoot-连接数据库"><a href="#SpringBoot-连接数据库" class="headerlink" title="SpringBoot 连接数据库"></a>SpringBoot 连接数据库</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>Spring中，数据从数据库到前端的流程：</p>
+<p><strong>Jdbc配置（pom.xml，application.yml，cofig工程中：cof-dev.yal: spring.datasource:url?useSSL=false  usrname password ） –&gt;   <del>model</del>  HandlerMapping  –&gt; service(interface -&gt; impl(继承接口+@Override方法 ： 调用RoundDictExample（增删改查，验证）)) –&gt; controller –&gt; @responsebodey (包装响应 ResultStatus设置响应) –&gt; [swagger(/v2/api-docs)] 怎么返回实体类？？？–&gt; 前端</strong></p>
+<p>ps. 我后期会画波脑图来更详细精确的分析。</p>
+<p>Controller –&gt; service –&gt; mapper</p>
+<p> 其中：  DispatcherServlet收到请求调用HandlerMapping处理器映射器。</p>
+<p> 处理器映射器找到具体的处理器(可以根据xml配置、注解进行查找)，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">model （HandlerMapping ）<br><br>			 -- domain: RoundDictExample (连接sql的增删改查，验证等功能,  里面的id统统要改成dict_id 或 dict_uuid); <br><br>        --persistence:  RoundDictMapper.xml,   RoundDictMapper (建立数据库与java代码的映射)<br><br></code></pre></td></tr></table></figure>
+
+
+
+<p>【可以对照着这张图来康】</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn0cadg3yjj30jn0a2gq6.jpg"></p>
+<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips:"></a>Tips:</h3><ul>
+<li>本地远程连接数据库<br>注意: 使用远程连接时,使用的连接用户和该用户现在的ip地址应该是远程数据库中允许的用户和允许的ip,否则是不允许连接的.<ul>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 <li><code>终端：mysql -Pxx -hxxx -uroot -p</code></li>
 <li>图形化界面：Navicat / SQLyog</li>
 </ul>
 </li>
 </ul>
+<<<<<<< HEAD
 <p>问题：</p>
 <p>访问获得404 </p>
 <p>可能是jar包的问题</p>
@@ -183,6 +222,56 @@
 <p>234 找请求url对应的类处理器</p>
 <p>5678 找并返回了数据库的数据。</p>
 <p>91011 拿到数据库数据，拼接url，去找对应的前端视图。</p>
+=======
+<h3 id="测试："><a href="#测试：" class="headerlink" title="测试："></a>测试：</h3><h4 id="原理-1"><a href="#原理-1" class="headerlink" title="原理"></a><strong>原理</strong></h4><p>理清楚从发送请求到数据被处理的流程：</p>
+<p>发送请求 –&gt; DispatcherServlet （–doDispatc）—–。。。controller –&gt; <strong>responseMessage类</strong> (各种方法)—&gt;</p>
+<p>  controller –&gt; coreController  (各种方法)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java">... 省略部分代码....<br><span class="hljs-comment">// Actually invoke the handler.</span><br>mv = ha.handle(processedRequest, response, mappedHandler.getHandler());<br>... 省略部分代码<br></code></pre></td></tr></table></figure>
+
+<p>Spring MVC会根据请求URL的不同，配置的RequestMapping的不同，为请求匹配不同的HandlerAdapter。</p>
+<p>比如对于请求地址：<a target="_blank" rel="noopener" href="http://127.0.0.1:8888/hello/test1?id=98%E5%8C%B9%E9%85%8D%E5%88%B0%E7%9A%84HandlerAdapter%E6%98%AFHttpRequestHandlerAdapter%E3%80%82">http://127.0.0.1:8888/hello/test1?id=98匹配到的HandlerAdapter是HttpRequestHandlerAdapter。</a></p>
+<p>我们直接进入到HttpRequestHandlerAdapter中看下这个类的handle方法。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java">Copy<span class="hljs-meta">@Override</span><br><span class="hljs-meta">@Nullable</span><br><span class="hljs-function"><span class="hljs-keyword">public</span> ModelAndView <span class="hljs-title">handle</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, Object handler)</span></span><br><span class="hljs-function">    <span class="hljs-keyword">throws</span> Exception </span>&#123;<br>    ((HttpRequestHandler) handler).handleRequest(request, response);<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><h5 id="postman"><a href="#postman" class="headerlink" title="postman"></a>postman</h5><h5 id="吹爆-Swagger-超好用"><a href="#吹爆-Swagger-超好用" class="headerlink" title="吹爆 Swagger 超好用"></a>吹爆 Swagger 超好用</h5><p>List： 返回的是分页的结果！！！！！！</p>
+<p>action可能在父类里面，娃娃它的父类。</p>
+<p>**getDocumentation()**方法，发现其实就是返回了一个Swagger对象（参数信息都存在Swagger对象的definitions属性里</p>
+<p> [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] </p>
+<ul>
+<li><p>Mapped “{[/m/add],methods=[POST]}” onto public com.jj.api.vo.ResponseMessage&lt;java.lang.Integer&gt; com.jj.red.packet.user.admin.controller.RoundDictController.add(com.jj.red.packet.user.mybatis.domain.RoundDict)</p>
+</li>
+<li><p>.定义统一返回数据格式</p>
+<ul>
+<li>```<br>public class ResponseFormat {<pre><code>private static Map&lt;Integer,String&gt; messageMap = Maps.newHashMap();
+//初始化状态码与文字说明
+static &#123;
+    /* 成功状态码 */
+    messageMap.put(200, &quot;成功&quot;);
+
+    /* 服务器错误 */
+    messageMap.put(1000,&quot;服务器错误&quot;);
+
+    /* 参数错误：10001-19999 */
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>​	![](https://tva1.sinaimg.cn/large/008eGmZEgy1gn1lh25fhlj30o10gbtb1.jpg)<br><br><br><br><br><br><br><br><br><br>####  问题：<br><br>##### 访问获得404 <br><br>* 根据原理可知：我调用的接口不存在/没找到，Spring直接将Response的errorStatus状态设置成1，将http响应码设置为500或者404。 -- 继承BasicErrorController 就可以覆盖原有的错误处理方式。<br><br>* 根据报错也可以验证：<br><br></code></pre></td></tr></table></figure>
+java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986<pre><code>  at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:479)
+  at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>  可能性：<br><br>1 TestCase测试Impl类的方法没有问题，但是Swgger和前端调用接口就会报404错误：<br><br>这是因为我之前把接口的注解@RestController 改成了@Controller。<br><br>改回来就好了。<br><br></code></pre></td></tr></table></figure>
+import org.springframework.web.bind.annotation.RestController;<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>**@RestController**  （相当于@Controller + @ResponseBody 后者是方法级的注解）<br><br>tips：1 如果使用@RestResultController，如果返回值是String类型就存在指向性问题，返回String类型，指向的地址是String字符串的地址，因此前端http访问我的接口会报404.<br><br>​          2 也可以尝试在接收参数里加上 HttpServletResponse response<br><br>2<br><br>可能是jar包的问题<br><br>Artificial -- lib<br><br>  新手在刚接触springboot的时候，可能会出现访问请求404的情况，代码怎么看都是对的，但就是404。<br><br>  在十分确定代码没问题的时候，可以看下自己的包是不是出问题了，什么意思么？<br><br>  答案：SpringBoot 注解 @SpringBootApplication 默认扫描当前类的同包以及子包下的类； 如：启动程序在包名  com.yang.test.ymkribbonconsumer下，则会查找所有 com.yang.test.ymkribbonconsumer下的文件以及 com.yang.test.ymkribbonconsumer 下的所有子包里面的文件。<br><br>* x<br><br>  * xxMapper.xml 里面应该写的表名而不是数据库名。<br><br>* ~~JDBC Connection XXX will not be managed by Spring~~和SqlSession was not registered for synchronization because synchronization is not active<br><br>  意思是相关操作没有被事务管理起来，虽不影响项目功能正常使用，可每次启动看到这堆警告，导致强迫证又犯了，有一种非除之而后快件的冲动，于是检查配置文件中事务配置的部分，又上网搜索，经过一番测试，终于消除这些警告，下面是解决的过程。<br><br>  可看 https://www.codenong.com/cs106354150/<br><br>在db.properties里配置的username和passowrd是以前的一个项目的账户，那个账户的权限只有一个sms数据库，而那个账户没有我当前测试的xzl数据库的权限。<br><br>## <br><br>新建了一个有当前测试库权限的数据库用户，或者直接用root来测试。<br>链接：https://www.jianshu.com/p/259ce2ec91d3<br><br>##### 发出请求：连接数据库，响应：连接成功啦，却返回null，而没有返回实体类。<br><br>## <br><br><br><br>* Error parsing HTTP request header<br><br></code></pre></td></tr></table></figure>
+o.apache.coyote.http11.Http11Processor:Error parsing HTTP request header</li>
+</ul>
+</li>
+</ul>
+<p>Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.</p>
+<p>java.lang.IllegalArgumentException: Invalid character found in the request target. </p>
+<p>The valid characters are defined in RFC 7230 and RFC 3986</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>目前，可以确定的是，该报错是由于url中有非法字符导致的，解决方法有<br><br>&gt; - 请求url中别有奇奇怪怪的字符，老老实实不好吗 使用了不安全字符，他们直接放在Url中的时候，可能会引起解析程序的歧义。如<br>&gt;<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>  { } | \ ^ [ ] ` ~ % # 等<br>  <figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>- 使用tomcat7.0.69以前的版本，这些版本不对请求头进行检验<br><br>- 不想降低tomcat版本？那就对特殊字符进行转义，嗯确实有点麻烦<br><br>- if you are not accidentally requesting with HTTPS protocol instead of HTTP protocol. If you don&#x27;t configure SSL on Tomcat and you send HTTPS request, it will result to this weird message..<br><br>## SpringMVC 架构<br><br>### what：<br><br>![](https://tva1.sinaimg.cn/large/008eGmZEgy1gn0b9z0016j30jm0d5n1u.jpg)<br><br><br><br>**M：model**<br><br>jojo 建数据库<br><br>dao (vo value object 拆的更细的的实体类)增删改查<br><br>servive<br><br>**V：view**<br><br>**C：controller**<br><br>接收用户请求，交给模型处理，把模型处理完的数据返回给视图。<br><br>一般来说是java类<br><br><br><br><br><br>后端项目结构主要是MC，即 Model + Controller。<br><br>举例：<br><br>&lt;img src=&quot;https://tva1.sinaimg.cn/large/008eGmZEgy1gmyudci33oj307b05dq3l.jpg&quot;  /&gt;<br><br>![](https://tva1.sinaimg.cn/large/008eGmZEgy1gn0am3mgujj306806mmxj.jpg)<br><br>admin文件夹: 管理员用户 - VO  + -Controller<br><br>整个文件夹：-( mybatis + service ) + -Controller<br><br><br><br><br><br><br><br>### how：<br><br>Spring的核心：servlet<br><br>![](https://tva1.sinaimg.cn/large/008eGmZEgy1gn0cadg3yjj30jn0a2gq6.jpg)<br><br>只有红框部分需要自己写，其他spring都帮忙做掉了。<br><br>234 找请求url对应的类处理器<br><br>5678 找并返回了数据库的数据。<br><br>91011 拿到数据库数据，拼接url，去找对应的前端视图。<br><br></code></pre></td></tr></table></figure><br>SpringMVC流程：<br>1、 用户发送请求至前端控制器 DispatcherServlet。<br>2、 DispatcherServlet收到请求调用HandlerMapping处理器映射器。<br>3、 处理器映射器找到具体的处理器(可以根据xml配置、注解进行查找)，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet。<br>4、 DispatcherServlet调用HandlerAdapter处理器适配器。<br>5、 HandlerAdapter经过适配调用具体的处理器(Controller，也叫后端控制器)。<br>6、 Controller执行完成返回ModelAndView。<br>7、 HandlerAdapter将controller执行结果ModelAndView返回给DispatcherServlet。<br>8、 DispatcherServlet将ModelAndView传给ViewReslover视图解析器。<br>9、 ViewReslover解析后返回具体View。<br>10、DispatcherServlet根据View进行渲染视图（即将模型数据填充至视图中）。<br>11、 DispatcherServlet响应用户。</p>
+</blockquote>
+<p>```</p>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 <p>====</p>
 <p>Selevlet</p>
 <p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn0be8se1mj30gd0e277r.jpg"></p>
@@ -193,8 +282,20 @@
 <p>实现 xxx（request, response)</p>
 <p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn0bk36cdoj30pd0bc44a.jpg"></p>
 <p>资源：</p>
+<<<<<<< HEAD
 <p>spring自动注解原理：<a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904009577267207">https://juejin.cn/post/6844904009577267207</a></p>
 <p>Spring后端到数据库操作：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000010208184">https://segmentfault.com/a/1190000010208184</a></p>
+=======
+<p>DispatcherServlet : <a target="_blank" rel="noopener" href="https://blog.csdn.net/xyx_hfut/article/details/104914200">https://blog.csdn.net/xyx_hfut/article/details/104914200</a> ⭐️</p>
+<p>Spring自动注解原理：<a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904009577267207">https://juejin.cn/post/6844904009577267207</a></p>
+<p>Spring后端到数据库操作：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000010208184">https://segmentfault.com/a/1190000010208184</a></p>
+<p>Springboot集成Mybatis全流程: <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42322648/article/details/105063601?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-2&amp;spm=1001.2101.3001.4242">https://blog.csdn.net/weixin_42322648/article/details/105063601?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-2&amp;spm=1001.2101.3001.4242</a></p>
+<p>从404讲起发送请求返回请求的过程：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/54chensongxia/p/14007696.html">https://www.cnblogs.com/54chensongxia/p/14007696.html</a> ⭐️</p>
+<p>404注解： <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_40160720/article/details/86601556">https://blog.csdn.net/weixin_40160720/article/details/86601556</a></p>
+<p>写不好就会引起 404 的注解们的剖析大全： <a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903893734785037">https://juejin.cn/post/6844903893734785037</a> ⭐️</p>
+<p>uuid 设为long会带来什么问题： <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d7d63696eb89">https://www.jianshu.com/p/d7d63696eb89</a></p>
+<p>Swagger: <a target="_blank" rel="noopener" href="https://www.codenong.com/cs107102063/">https://www.codenong.com/cs107102063/</a></p>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
                 </section>
 
@@ -204,11 +305,19 @@
     <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
     <script>
         var gitalk = new Gitalk({
+<<<<<<< HEAD
             clientID: "github_clientID",
             clientSecret: "github_clientSecret",
             repo: "you site homepage",
             owner: "your username",
             admin: "same as [owner]",
+=======
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
             id: "SpringBoot 数据库操作指南",
         });
         gitalk.render("al_gitalk_cnt")
@@ -224,7 +333,11 @@
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
                         </svg>
+<<<<<<< HEAD
                         <span class="al_text_ellipsis al_post_nav_desc">【教程】怎么启动第一个 SpringBoot项目</span>
+=======
+                        <span class="al_text_ellipsis al_post_nav_desc">【教程】Mac 怎么启动第一个 SpringBoot项目</span>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                     
                 </a>
                 <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/16/liunx%E6%9C%8D%E5%8A%A1%E5%99%A8%20%E4%B8%8A%E7%9A%84%E5%90%84%E7%A7%8D%E6%93%8D%E4%BD%9C/">
@@ -280,6 +393,10 @@
         src=extra_plugin_js_url
         async="async"
     ></script>
+<<<<<<< HEAD
     <script src="/hexo_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/hexo_blog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+=======
+    </body>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 </html>
         

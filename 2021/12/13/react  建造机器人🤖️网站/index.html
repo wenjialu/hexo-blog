@@ -15,7 +15,11 @@
     
     <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
 
+<<<<<<< HEAD
     <meta name="generator" content="Hexo 5.2.0"></head>
+=======
+    <meta name="generator" content="Hexo 5.4.0"></head>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
     <body>
         <header class="al_header al_pos_fixed">
     <div class="al_header_container dis_flex_jcenter">
@@ -117,12 +121,20 @@
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
+<<<<<<< HEAD
                             December 12, 2021 06:12 PM
+=======
+                            December 13, 2021 07:12 AM
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                         </div>
 
                         
                             <div class="al_page_content_info">
+<<<<<<< HEAD
                                 2.4k words
+=======
+                                2.3k words
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                             </div>
                         
 
@@ -174,12 +186,20 @@
 <p>在这个网站 url 中，输入任意字符，就能帮你随机生成一个小机器人，这个想法是不是超级可爱呢！！！</p>
 <p>好啦， 我们的网站就要利用到这个功能，来生成我们自己的机器人小卡片。</p>
 <p>首先，在 src 文件夹里新建 Card.js 文件, 把这个网站随机生成的图片 url 放到代码里。</p>
+<<<<<<< HEAD
 <figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Card</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> (<br>    &lt;div className=<span class="hljs-string">&quot;Card&quot;</span>&gt;<br>        &lt;p&gt;Hello, I am a Robot&lt;/p&gt;<br>        &lt;img src=<span class="hljs-string">&quot;https://robohash.org/irina&quot;</span> alt=<span class="hljs-string">&quot;robots&quot;</span> /&gt; <br>    &lt;/div&gt;<br>  );<br>&#125;<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Card;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Card</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> (<br>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;Card&quot;</span>&gt;</span></span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello, I am a Robot<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://robohash.org/irina&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;robots&quot;</span> /&gt;</span> </span><br><span class="xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>  );<br>&#125;<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Card;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>在 index.js 中，导入 Robot.js, 并且把  <App /> 替换为 <Card /></p>
+<<<<<<< HEAD
 <figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 新增以及替换的代码</span><br><span class="hljs-keyword">import</span> Card <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./Card&#x27;</span>;<br><br>ReactDOM.render(<br>  &lt;React.StrictMode&gt;<br>    &lt;Card /&gt;<br>  &lt;/React.StrictMode&gt;,<br>  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;root&#x27;</span>)<br>);<br><br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 新增以及替换的代码</span><br><span class="hljs-keyword">import</span> Card <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./Card&#x27;</span>;<br><br>ReactDOM.render(<br>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">React.StrictMode</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> /&gt;</span></span><br><span class="xml">  <span class="hljs-tag">&lt;/<span class="hljs-name">React.StrictMode</span>&gt;</span></span>,<br>  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;root&#x27;</span>)<br>);<br><br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>刷新下我们的本地页面，哈哈 机器人就出现和你打招呼啦🙋。</p>
 <p>测试成功～</p>
@@ -199,12 +219,20 @@
 <p>用一个常量 robot 来存所有的机器人的信息。</p>
 <p>![image-20201115022317648](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201115022317648.png)</p>
 <p>在 index.js 中依次取出他们的信息 当作参数。</p>
+<<<<<<< HEAD
 <figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> &#123;robots&#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./robots&#x27;</span>;<br>ReactDOM.render(<br>  &lt;React.StrictMode&gt;<br>    &#123;<span class="hljs-comment">/* &lt;App /&gt; */</span>&#125;<br>    &lt;Card id = &#123;robots[<span class="hljs-number">0</span>].id&#125; name=&#123;robots[<span class="hljs-number">0</span>].name&#125; email =&#123;robots[<span class="hljs-number">0</span>].email&#125;/&gt;<br>    &lt;Card id = &#123;robots[<span class="hljs-number">1</span>].id&#125; name=&#123;robots[<span class="hljs-number">1</span>].name&#125; email =&#123;robots[<span class="hljs-number">1</span>].email&#125;/&gt;<br>    &lt;Card id = &#123;robots[<span class="hljs-number">2</span>].id&#125; name=&#123;robots[<span class="hljs-number">2</span>].name&#125; email =&#123;robots[<span class="hljs-number">2</span>].email&#125;/&gt;<br>    &lt;Card id = &#123;robots[<span class="hljs-number">3</span>].id&#125; name=&#123;robots[<span class="hljs-number">3</span>].name&#125; email =&#123;robots[<span class="hljs-number">3</span>].email&#125;/&gt;<br>    &lt;Card id = &#123;robots[<span class="hljs-number">4</span>].id&#125; name=&#123;robots[<span class="hljs-number">4</span>].name&#125; email =&#123;robots[<span class="hljs-number">4</span>].email&#125;/&gt;<br>  &lt;/React.StrictMode&gt;,<br>  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;root&#x27;</span>)<br>);<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> &#123;robots&#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./robots&#x27;</span>;<br>ReactDOM.render(<br>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">React.StrictMode</span>&gt;</span></span><br><span class="xml">    &#123;/* <span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span> */&#125;</span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[0].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[0].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[0].email&#125;/</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[1].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[1].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[1].email&#125;/</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[2].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[2].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[2].email&#125;/</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[3].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[3].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[3].email&#125;/</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[4].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[4].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[4].email&#125;/</span>&gt;</span></span><br><span class="xml">  <span class="hljs-tag">&lt;/<span class="hljs-name">React.StrictMode</span>&gt;</span></span>,<br>  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;root&#x27;</span>)<br>);<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>在 Card.js 中传入指定好的参数</p>
+<<<<<<< HEAD
 <figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Card</span>(<span class="hljs-params">props</span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> (<br>    &lt;div className=<span class="hljs-string">&quot;bg-light-green&quot;</span>&gt;  <br>    &#123;<span class="hljs-comment">/* dib br3 pa3 na2 grow bw2 shadow-5*/</span>&#125;<br>        &lt;img src=<span class="hljs-string">&quot;https://robohash.org/irina?200*200&quot;</span> alt=<span class="hljs-string">&quot;robots&quot;</span> /&gt; <br>        &lt;div&gt;<br>          &lt;h2&gt;&#123;props.name&#125;&lt;/h2&gt;<br>          &lt;p&gt;&#123;props.email&#125;&lt;/p&gt;<br>        &lt;/div&gt;<br>    &lt;/div&gt;<br>  );<br>&#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Card</span>(<span class="hljs-params">props</span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> (<br>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;bg-light-green&quot;</span>&gt;</span>  </span><br><span class="xml">    &#123;/* dib br3 pa3 na2 grow bw2 shadow-5*/&#125;</span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://robohash.org/irina?200*200&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;robots&quot;</span> /&gt;</span> </span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span><br><span class="xml">          <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#123;props.name&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span><br><span class="xml">          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#123;props.email&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="xml">        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>  );<br>&#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>哈哈，别忘了把它们的样子也改一下。</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&lt;img src=&#123;<span class="hljs-string">`https://robohash.org/<span class="hljs-subst">$&#123;props.id&#125;</span>?200x200`</span>&#125; alt=<span class="hljs-string">&quot;robots&quot;</span> /&gt; <br></code></pre></td></tr></table></figure>
@@ -214,6 +242,7 @@
 <ul>
 <li><p>Js experssion</p>
 </li>
+<<<<<<< HEAD
 <li><pre><code class="javascript">const cardsArray = robots.map( 
         (uesr, i) =&gt; 
         &#123;return &lt;Card key=&#123;i&#125; id = &#123;robots[i].id&#125; name=&#123;robots[i].name&#125; email =&#123;robots[i].email&#125;/&gt;
@@ -267,16 +296,66 @@ render()&#123;
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"><br>继续改进这个传送机制，让父节点 app 传送刚刚接收到的信息到 cardList<br><br></code></pre></td></tr></table></figure>
 <p> render(){<br>    const { robots, searchfield } = this.state<br>    const filteredRobots = robots.filter( robots =&gt;{<br>      return robots.name.toLowerCase().includes(searchfield.toLowerCase())<br>   })<br>    return (<br>      <div className="tc"><br>      {/* textcenter <em>/}<br>      <h1>RoboFriends</h1><br>      &lt; SearchBox searchChange={this.onSearchChange}/&gt;<br>      {/</em> state 传到这变 props 作为{robots} 传到 CardList*/}<br>      <CardList robots={filteredRobots}/><br>      </div><br>    );<br>  }</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"><br><br><br>##### 新增功能：下拉的时候搜索框也悬浮在顶端<br><br>Index.js<br><br></code></pre></td></tr></table></figure>
+=======
+<li><p>```javascript<br>const cardsArray = robots.map( </p>
+<pre><code>    (uesr, i) =&gt; 
+    &#123;return &lt;Card key=&#123;i&#125; id = &#123;robots[i].id&#125; name=&#123;robots[i].name&#125; email =&#123;robots[i].email&#125;/&gt;
+&#125;)
+</code></pre>
+<p>// cardsArray, i 都是 Js experssion 要加大括号。<br>// 换句话说， 要想在 react 里面写 js 只要加上大括号就行了。    </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>  <br><br>  酱酱！完成后就是下面👇这个样子，是不是还蛮酷的内～<br><br>  至此，我们的机器人小网站的雏形就有啦。<br><br>  ![image-20201116001159587](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201116001159587.png)<br><br><br><br>#### 实现搜索功能<br><br>*动态可变的State  --&gt; props*<br><br>*模块长这样：*<br><br>*app*<br><br>*cardList.   searchBox*<br><br>*Card*<br><br><br><br>##### 思路：<br><br>要让 searchBox 和 cardList 能通过父节点互动。<br><br>可以通过 React 中的 State 来实现：<br><br>State 的动态可以被当作props 传送到 searchBox 和 cardList 中。<br><br>这里可以设置 2 个state，一个是搜索关键词，起名为searchfield， 一个是被搜到的 robots，起名为 robots 。<br><br>​	<br><br>##### 实现：<br><br>searchBox 传一个参数 searchChange<br><br></code></pre></td></tr></table></figure>
+<p>function SearchBox(searchChange) {<br>  return (</p>
+   <div className="pa2">
+   <input 
+   className = "pa3 ba b--green bg-lightest-blue"
+   type="search" placeholder="search robots"
+   onChange={searchChange}/>
+   </div>   
+  );
+}
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>父节点 app 是传送的枢纽，用 event 来监控输入 searchBox 的文字，<br><br></code></pre></td></tr></table></figure>
+class App extends Component {
+{/* constructor是一个mounting方法 */}
+constructor(){
+  super()
+  this.state = {
+    robots : robots,
+    searchfield: ""
+  }
+}
+
+<p>// 这里一定要用箭头函数，因为这个是在Searchbox被调用的，不这样写会找不到this<br>onSearchChange = (event ) =&gt; {<br>   this.setState({ searchfield: event.target.value)   })<br>}</p>
+<p>render(){<br>  const { robots, searchfield } = this.state<br>  return (</p>
+<pre><code>&lt;div className=&quot;tc&quot;&gt; 
+&#123;/* textcenter */&#125;
+&lt;h1&gt;RoboFriends&lt;/h1&gt;
+&lt; SearchBox searchChange=&#123;this.onSearchChange&#125;/&gt;
+&#123;/* state 传到这变 props 作为&#123;robots&#125; 传到 CardList*/&#125;
+&lt;CardList robots=&#123;robots&#125;/&gt;
+&lt;/div&gt;
+</code></pre>
+<p>  );<br>}<br>}</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>继续改进这个传送机制，让父节点 app 传送刚刚接收到的信息到 cardList<br><br></code></pre></td></tr></table></figure>
+<p> render(){<br>    const { robots, searchfield } = this.state<br>    const filteredRobots = robots.filter( robots =&gt;{<br>      return robots.name.toLowerCase().includes(searchfield.toLowerCase())<br>   })<br>    return (<br>      <div className="tc"><br>      {/* textcenter <em>/}<br>      <h1>RoboFriends</h1><br>      &lt; SearchBox searchChange={this.onSearchChange}/&gt;<br>      {/</em> state 传到这变 props 作为{robots} 传到 CardList*/}<br>      <CardList robots={filteredRobots}/><br>      </div><br>    );<br>  }</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>##### 新增功能：下拉的时候搜索框也悬浮在顶端<br><br>Index.js<br><br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 <scroll>
 
 <p> {*/ scroll 内部的内容就是它的chirldren */}<br> <CardList robots={filteredRobots}/></p>
 </scroll>
 
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"><br>Scroll.js<br><br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>Scroll.js<br><br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 <p>function Scroll( props ) {<br>    return (</p>
 <pre><code> &lt;div style =&#123; &#123;overflowY:&quot;scroll&quot;, border: &quot;1px solid black&quot;, height: &quot;500px&quot;&#125;   &#125;&gt;
     &#123;props.children&#125;
  &lt;/div&gt;
+<<<<<<< HEAD
 )</code></pre>
 <p>  };</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"><br><br><br>#### 最后再美化下整个网站<br><br>##### 网站背景<br><br>Index.css<br><br></code></pre></td></tr></table></figure>
@@ -285,6 +364,17 @@ render()&#123;
 <p>  // 1. 把robot.js 信息删掉， 导入文件的语句也要删掉<br>  // 2. state 中接受的robot 设为空<br>  // 3. 通过 fetch url 来得到数据<br>  constructor(){<br>    super()<br>    this.state = {<br>      robots : [],<br>      searchfield: “”<br>    }}</p>
 <p>  componentDidMount(){<br>    fetch(“<a target="_blank" rel="noopener" href="https://jsonplaceholder.typicode.com/users&quot;">https://jsonplaceholder.typicode.com/users&quot;</a>)<br>      .then(response =&gt;{ response.json()<br>      .then(users =&gt; this.setState({ robots:users}));<br>      })<br>  }</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"><br><br><br>在获取 url 数据的等待时间，页面什么也不返回。<br><br>如果数据量大，查找时间很长的话，会让用户很困惑。<br><br>所以在未获取数据的时候，可以提示正在加载 “Loading” 中。<br><br></code></pre></td></tr></table></figure>
+=======
+)
+</code></pre>
+<p>  };</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>#### 最后再美化下整个网站<br><br>##### 网站背景<br><br>Index.css<br><br></code></pre></td></tr></table></figure>
+<p>body {<br>  margin: 0;<br>  padding: 0;<br>  font-family: sans-serif;<br>  background: linear-gradient(to left, rgba(7, 27, 82, 1) 8%, rgba(8, 128, 128, 1) 100%);<br>}</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>##### 字体<br><br>Google 搜索自己想要的酷酷的字体。<br><br>下载它的 @font face (web) 版本，<br><br> 把他的css  复制到 app.css中，woff 文件则拖到我们的 src 文件夹中 。<br><br><br><br>![image-20201116165810190](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201116165810190.png)<br><br><br><br><br><br>### 动态请求<br><br>如果要在现实世界中运行我们的网站，这些机器人的信息不应该直接写在我们网站中的。<br><br>而是由真实的用户填写，浏览器发出请求而被我们所接收和响应。<br><br><br><br>现在我们可以用一个免费的API接口一个网站叫做 https://jsonplaceholder.typicode.com/<br><br>把我们的用户数据放在这个网站上，有我们来抓取模拟浏览器请求。<br><br><br><br></code></pre></td></tr></table></figure>
+<p>  // 1. 把robot.js 信息删掉， 导入文件的语句也要删掉<br>  // 2. state 中接受的robot 设为空<br>  // 3. 通过 fetch url 来得到数据<br>  constructor(){<br>    super()<br>    this.state = {<br>      robots : [],<br>      searchfield: “”<br>    }}</p>
+<p>  componentDidMount(){<br>    fetch(“<a target="_blank" rel="noopener" href="https://jsonplaceholder.typicode.com/users&quot;">https://jsonplaceholder.typicode.com/users&quot;</a>)<br>      .then(response =&gt;{ response.json()<br>      .then(users =&gt; this.setState({ robots:users}));<br>      })<br>  }</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>在获取 url 数据的等待时间，页面什么也不返回。<br><br>如果数据量大，查找时间很长的话，会让用户很困惑。<br><br>所以在未获取数据的时候，可以提示正在加载 “Loading” 中。<br><br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 <p>render(){<br>    const filteredRobots = this.state.robots.filter( robots =&gt;{<br>      return robots.name.toLowerCase().includes(this.state.searchfield.toLowerCase())<br>   })<br>   if (this.state.robots.length === 0){<br>     return <h1>Loading</h1><br>   } else{<br>    return (<br>      <div className="tc"><br>      {/* textcenter <em>/}<br>      <h1 className="f1">RoboFriends</h1><br>      &lt; SearchBox searchChange={this.onSearchChange}/&gt;<br>      {/</em> state 传到这变 props 作为{robots} 传到 CardList*/}<br>      <CardList robots={filteredRobots}/><br>      </div><br>    );<br>   }<br>  }</p>
 <pre><code>
 
@@ -340,11 +430,19 @@ step 2. 把他们放到 HTTP 服务器 或者 github 中。
     <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
     <script>
         var gitalk = new Gitalk({
+<<<<<<< HEAD
             clientID: "github_clientID",
             clientSecret: "github_clientSecret",
             repo: "you site homepage",
             owner: "your username",
             admin: "same as [owner]",
+=======
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
             id: "【手把手教学】用前端 react 来做一个机器人🤖️网站",
         });
         gitalk.render("al_gitalk_cnt")
@@ -363,9 +461,15 @@ step 2. 把他们放到 HTTP 服务器 或者 github 中。
                         <span class="al_text_ellipsis al_post_nav_desc">SmartBrain -  用 React 做一个人脸识别网站</span>
                     
                 </a>
+<<<<<<< HEAD
                 <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/02/03/50%20proojects%20-%20to%20do%20list/">
                     
                         <span class="al_text_ellipsis al_post_nav_desc">50 projects - to do list</span>
+=======
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/03/19/%E9%9B%86%E6%88%90%20Auzure%20ad%20%E7%9A%84%20msal%20%E5%BA%93%20%E6%9D%A5%E7%AE%A1%E7%90%86&%E4%BE%BF%E5%88%A9%E6%88%91%E7%9A%84%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">集成 Auzure ad 的 msal 库</span>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
                         </svg>
@@ -416,6 +520,10 @@ step 2. 把他们放到 HTTP 服务器 或者 github 中。
         src=extra_plugin_js_url
         async="async"
     ></script>
+<<<<<<< HEAD
     <script src="/hexo_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/hexo_blog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+=======
+    </body>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 </html>
         

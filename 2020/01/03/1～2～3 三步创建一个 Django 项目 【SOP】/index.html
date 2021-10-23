@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>1～2～3 三步创建一个 Django 项目 【SOP】</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.4.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        1～2～3 三步创建一个 Django 项目 【SOP】
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            January 03, 2020 05:01 AM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                228 words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                1 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BB%BA-Django-%E9%A1%B9%E7%9B%AE"><span class="toc-text">1 建 Django 项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%BB%BA%E5%AD%90%E5%BA%94%E7%94%A8"><span class="toc-text">2 建子应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE"><span class="toc-text">3 启动项目</span></a></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <p>进入到运行 Django 的虚拟环境。workon Django_web（虚拟环境篇）</p>
+<p>找一个自己喜欢的位置，比如桌面。</p>
+<h2 id="1-建-Django-项目"><a href="#1-建-Django-项目" class="headerlink" title="1 建 Django 项目"></a>1 建 Django 项目</h2><p>在系统终端 或者 VScode 终端：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">django-admin startproject 项目名<br></code></pre></td></tr></table></figure>
+
+<h2 id="2-建子应用"><a href="#2-建子应用" class="headerlink" title="2 建子应用"></a>2 建子应用</h2><p>2.1 创造</p>
+<p>进到这个目录中去，<code>cd 项目名。</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">django-admin startapp 应用名<br></code></pre></td></tr></table></figure>
+
+<p>2.2 注册</p>
+<p>进入到项目同名目录，里面有个 settings.py 文件。</p>
+<p>找到INSTALLED_APPS，把应用名添加到这里面。</p>
+<h2 id="3-启动项目"><a href="#3-启动项目" class="headerlink" title="3 启动项目"></a>3 启动项目</h2><p><code>python manage.py runserver</code></p>
+<p>完成～～<br><img src="https://tva1.sinaimg.cn/large/008eGmZEly1got35wx1jbj30u00j5405.jpg"></p>
+<p>导入介绍语（why need 后台管理）～～～～</p>
+<p><strong>后台管理：</strong></p>
+<p>首先创建一个管理员账号：</p>
+<p>python manage.py createsuperuser</p>
+<p>终端面板会提示你设置用户名和密码。</p>
+<p>然后打开admin.py，注册一下你的模型类：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">from yourapp.models import yourModel1, yourModel2<br><br>admin.site.register(yourModel)<br>admin.site.register(yourModel2)<br></code></pre></td></tr></table></figure>
+
+
+
+<p>通过 localhost:8000/admin 访问后台面板，就能看到自己注册的模型类的具体信息啦。</p>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+            id: "1～2～3 三步创建一个 Django 项目 【SOP】",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/02/19/%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E6%8B%85%E5%BF%83%E6%88%91%E6%90%9E%E4%B8%8D%E6%87%82%E9%AB%98%E5%B9%B6%E5%8F%91%E5%95%A6/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">再也不用担心我搞不懂高并发啦</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/">
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    </body>
+</html>
+        

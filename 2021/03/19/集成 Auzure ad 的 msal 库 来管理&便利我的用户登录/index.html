@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>集成 Auzure ad 的 msal 库</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.4.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        集成 Auzure ad 的 msal 库
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            March 19, 2021 04:03 AM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                296 words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                1 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+
+                
+                <section id="post-body">
+                    <p>之前我写了一个简单的 web app：<a href="https://wenjialu.github.io/hexo_blog/2021/12/22/smartBrain%20react%20-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%BD%91%E7%AB%99/">文章链接</a>🔗。</p>
+<p>但是登录注册功能比较简单，而且要自己建数据库存储用户的信息。</p>
+<p>正好最近有接触到微软的azure ad，它是企业级的授权验证方案，。。</p>
+<p>可以方便app开发者和用户。。</p>
+<p>所以我决定在我的应用中集成这个功能, 来管理&amp;便利我的用户登录 ～</p>
+<p>Azure portal –&gt; app registration —&gt; register–&gt; 填写我的应用名称 + 重定向 URI <a target="_blank" rel="noopener" href="https://wenjia-smart-brain.herokuapp.com/">https://wenjia-smart-brain.herokuapp.com/</a> –&gt; 在 <a target="_blank" rel="noopener" href="https://portal.azure.com/?l=en.en-us#blade/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/Quickstart/quickStartType//sourceType/Microsoft_AAD_IAM/appId/7db5d000-e566-4ab0-a385-358b807c54fc/objectId/71296739-6f12-41a1-9584-0515d8b13907/isMSAApp//defaultBlade/Overview/appSignInAudience/AzureADandPersonalMicrosoftAccount/servicePrincipalCreated/true">Quickstart</a> 中按照说明下载对应app的文件并修改配置【<a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/azure/active-directory/develop/quickstart-v2-nodejs-webapp-msal?WT.mc_id=Portal-Microsoft_AAD_RegisteredApps">比如我的应用是 node.js 写的， 我就参考的是 node.js  应用的授权教程</a>】（鹿鹿贴心提醒，除了官方提醒，还别忘了修改redirect uri。）</p>
+<ol>
+<li>Go to the <a target="_blank" rel="noopener" href="https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/applicationsListBlade/quickStartType/PythonQuickstartPage/sourceType/docs">Azure portal - App registrations</a> quickstart experience.</li>
+<li>Enter a name for your application and select <strong>Register</strong>.</li>
+<li>Follow the instructions to download and automatically configure your new application.</li>
+</ol>
+<p>成功后就可以访问 127.0.0.1:3000, 可以看到：</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gvp4s0l1iej60be0dwgm602.jpg"></p>
+<p>报错：（鹿鹿贴心提醒，除了官方提醒，还别忘了修改redirect uri。不然会有以下报错。）</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gvp4mbgcmfj60hn0i6my902.jpg"></p>
+<p>如果遇到问题，可以通过 <a target="_blank" rel="noopener" href="https://github.com/wenjialu">https://github.com/wenjialu</a> 给我留言～</p>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+            id: "集成 Auzure ad 的 msal 库",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/12/13/react%20%20%E5%BB%BA%E9%80%A0%E6%9C%BA%E5%99%A8%E4%BA%BA%F0%9F%A4%96%EF%B8%8F%E7%BD%91%E7%AB%99/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">【手把手教学】用前端 react 来做一个机器人🤖️网站</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/02/07/%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%A9%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99%E5%8F%98%E5%BE%97%E5%9B%BD%E9%99%85%E5%8C%96%E7%9A%84/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">我是怎么让我的网站变得国际化的</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    </body>
+</html>
+        

@@ -15,7 +15,11 @@
     
     <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
 
+<<<<<<< HEAD
     <meta name="generator" content="Hexo 5.2.0"></head>
+=======
+    <meta name="generator" content="Hexo 5.4.0"></head>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
     <body>
         <header class="al_header al_pos_fixed">
     <div class="al_header_container dis_flex_jcenter">
@@ -117,18 +121,30 @@
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
+<<<<<<< HEAD
                             December 21, 2021 06:12 PM
+=======
+                            December 22, 2021 07:12 AM
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                         </div>
 
                         
                             <div class="al_page_content_info">
+<<<<<<< HEAD
                                 6.7k words
+=======
+                                6.4k words
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                             </div>
                         
 
                         
                             <div class="al_page_content_info">
+<<<<<<< HEAD
                                 33 minutes read
+=======
+                                31 minutes read
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                             </div>
                         
                         <span class="tags"></span>
@@ -176,7 +192,11 @@
 <p>可以拆分成4 个模块。除去导航栏，还有logo、搜索框、面部识别功能区。</p>
 <p>设计component，并放在app.js中 。</p>
 <p>tips：app.js中的多个 components 要放在 <div></div> 里面哦。</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"><br>function App() &#123;<br>  return (<br>    &lt;div&gt;<br>       &lt;Navigation &#x2F;&gt;<br>       &lt;Logo &#x2F;&gt; <br>        &lt;ImageLinkForm&#x2F;&gt;<br>        &lt;FaceRecognition &#x2F;&gt;<br><br>    &lt;&#x2F;div&gt;<br><br>  );<br>&#125;<br><br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>function App() &#123;<br>  return (<br>    &lt;div&gt;<br>       &lt;Navigation /&gt;<br>       &lt;Logo /&gt; <br>        &lt;ImageLinkForm/&gt;<br>        &lt;FaceRecognition /&gt;<br><br>    &lt;/div&gt;<br><br>  );<br>&#125;<br><br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -186,24 +206,39 @@
 
 <h3 id="注册-登录功能"><a href="#注册-登录功能" class="headerlink" title="注册, 登录功能"></a>注册, 登录功能</h3><h4 id="css"><a href="#css" class="headerlink" title="css"></a>css</h4><p>Google 搜索 tachyons + forms,  tachyons + card 加个边框</p>
 <p>页面预览和代码都有啦～～</p>
+<<<<<<< HEAD
 <figure class="highlight jsx"><table><tr><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">const</span> Signin = <span class="hljs-function">() =&gt;</span> &#123;<br>    <span class="hljs-keyword">return</span>(<br>        <span class="hljs-comment">// 这里放html代码, </span><br>       <span class="hljs-comment">//不过记得把input 像这样 /&gt; close 掉. for 要改成htmlFor, class 改成 className</span><br>      &lt;article <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">&quot;center br3 ba b--black-10 mv4 w-100 w-50-m w-25-l shadow-5 mw6 center&quot;</span>&gt;<br>        ...<br>      &lt;article /&gt;  <br>    )<br>&#125;<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Signin;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight jsx"><table><tr><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">const</span> Signin = <span class="hljs-function">() =&gt;</span> &#123;<br>    <span class="hljs-keyword">return</span>(<br>        <span class="hljs-comment">// 这里放html代码, </span><br>       <span class="hljs-comment">//不过记得把input 像这样 /&gt; close 掉. for 要改成htmlFor, class 改成 className</span><br>      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;center br3 ba b--black-10 mv4 w-100 w-50-m w-25-l shadow-5 mw6 center&quot;</span>&gt;</span></span><br><span class="xml">        ...</span><br><span class="xml">      <span class="hljs-tag">&lt;<span class="hljs-name">article</span> /&gt;</span>  </span><br><span class="xml">    )</span><br><span class="xml">&#125;</span><br><span class="xml"></span><br><span class="xml">export default Signin;</span><br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>自行删删改改</p>
 <h4 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h4><p>App.js</p>
 <p>功能： 没 signin 之前是signin 页面， signin 之后是rank+上传image 页面。</p>
 <p>实现： constructor()</p>
 <p>tips:  jsx语法： html 里加了{  } 就可以写 js 了。</p>
+<<<<<<< HEAD
 <figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">constructor</span>()&#123;<br>    <span class="hljs-built_in">super</span>()<br>    <span class="hljs-built_in">this</span>.state = &#123;<br>      input: <span class="hljs-string">&quot;&quot;</span>,<br>      route: <span class="hljs-string">&quot;signin&quot;</span><br>    &#125;<br>  &#125;<br><br><br>render() &#123;<br>    <span class="hljs-keyword">return</span> (<br>      &lt;div className=<span class="hljs-string">&quot;App&quot;</span>&gt;<br>         &lt;Navigation /&gt;<br>         &#123; <span class="hljs-built_in">this</span>.state.route === <span class="hljs-string">&quot;signin&quot;</span><br>          ?  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt; <span class="hljs-attr">Signin</span> /&gt;</span></span>&lt;/div&gt;<br>          :  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> </span><br><span class="xml">            <span class="hljs-tag">&lt;<span class="hljs-name">Logo</span> /&gt;</span> </span><br><span class="xml">            <span class="hljs-tag">&lt;<span class="hljs-name">Rank</span> /&gt;</span></span><br><span class="xml">            <span class="hljs-tag">&lt;<span class="hljs-name">ImageLinkForm</span> <span class="hljs-attr">onInputChange</span>=<span class="hljs-string">&#123;this.onInputChange&#125;</span> <span class="hljs-attr">onButtonSubmit</span>=<span class="hljs-string">&#123;this.onButtonSubmit&#125;/</span>&gt;</span></span><br><span class="xml">            <span class="hljs-tag">&lt;<span class="hljs-name">FaceRecognition</span> /&gt;</span></span><br>            &lt;Particles className=&quot;particles&quot;<br>                  params=&#123;particleOptions&#125;<br><span class="xml">                /&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>         &#125;   <br>      &lt;/div&gt;<br>  <br>    );<br>    &#125;<br>  &#125;<br>   <br><br></code></pre></td></tr></table></figure>
 
 <p>同理，新建 register 页面。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&#x2F;&#x2F; 新增代码<br> &lt;div className&#x3D;&quot;mt3&quot;&gt;<br>                &lt;label className&#x3D;&quot;db fw6 lh-copy f6&quot; htmlFor&#x3D;&quot;name&quot;&gt;Name&lt;&#x2F;label&gt;<br>                &lt;input<br>                  className&#x3D;&quot;pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100&quot;<br>                  type&#x3D;&quot;text&quot;<br>                  name&#x3D;&quot;name&quot;<br>                  id&#x3D;&quot;name&quot;<br>                  onChange&#x3D;&#123;this.onNameChange&#125;<br>                &#x2F;&gt;<br>              &lt;&#x2F;div&gt;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-built_in">super</span>()<br>    <span class="hljs-built_in">this</span>.state = &#123;<br>      <span class="hljs-attr">input</span>: <span class="hljs-string">&quot;&quot;</span>,<br>      <span class="hljs-attr">route</span>: <span class="hljs-string">&quot;signin&quot;</span><br>    &#125;<br>  &#125;<br><br><br><span class="hljs-function"><span class="hljs-title">render</span>(<span class="hljs-params"></span>)</span> &#123;<br>    <span class="hljs-keyword">return</span> (<br>      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;App&quot;</span>&gt;</span></span><br><span class="xml">         <span class="hljs-tag">&lt;<span class="hljs-name">Navigation</span> /&gt;</span></span><br><span class="xml">         &#123; this.state.route === &quot;signin&quot;</span><br><span class="xml">          ?  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>&lt; Signin /&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>          :  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> </span><br><span class="xml">            <span class="hljs-tag">&lt;<span class="hljs-name">Logo</span> /&gt;</span> </span><br><span class="xml">            <span class="hljs-tag">&lt;<span class="hljs-name">Rank</span> /&gt;</span></span><br><span class="xml">            <span class="hljs-tag">&lt;<span class="hljs-name">ImageLinkForm</span> <span class="hljs-attr">onInputChange</span>=<span class="hljs-string">&#123;this.onInputChange&#125;</span> <span class="hljs-attr">onButtonSubmit</span>=<span class="hljs-string">&#123;this.onButtonSubmit&#125;/</span>&gt;</span></span><br><span class="xml">            <span class="hljs-tag">&lt;<span class="hljs-name">FaceRecognition</span> /&gt;</span></span><br><span class="xml">            <span class="hljs-tag">&lt;<span class="hljs-name">Particles</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;particles&quot;</span></span></span><br><span class="hljs-tag"><span class="xml">                  <span class="hljs-attr">params</span>=<span class="hljs-string">&#123;particleOptions&#125;</span></span></span><br><span class="hljs-tag"><span class="xml">                /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>         &#125;   <br>      &lt;/div&gt;<br>  <br>    );<br>    &#125;<br>  &#125;<br>   <br><br></code></pre></td></tr></table></figure>
+
+<p>同理，新建 register 页面。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">// 新增代码<br> &lt;div className=&quot;mt3&quot;&gt;<br>                &lt;label className=&quot;db fw6 lh-copy f6&quot; htmlFor=&quot;name&quot;&gt;Name&lt;/label&gt;<br>                &lt;input<br>                  className=&quot;pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100&quot;<br>                  type=&quot;text&quot;<br>                  name=&quot;name&quot;<br>                  id=&quot;name&quot;<br>                  onChange=&#123;this.onNameChange&#125;<br>                /&gt;<br>              &lt;/div&gt;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 
 
 <h4 id="页面跳转"><a href="#页面跳转" class="headerlink" title="页面跳转"></a>页面跳转</h4><p>设置</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">constructor()&#123;<br>    super()<br>    this.state &#x3D; &#123;<br>      input: &quot;&quot;,<br>      route: route<br>      &#x2F;&#x2F; route: &quot;signin&quot;<br>    &#125;<br>  &#125;<br>  <br>  <br>  onRouteChange &#x3D; (route) &#x3D;&gt; &#123;<br>    this.setState(&#123;route: route&#125;);<br>  &#125;<br><br>render() &#123;<br>    return (<br>      &lt;div className&#x3D;&quot;App&quot;&gt;<br>         &lt;Navigation onRouteChange &#x3D; &#123;this.onRouteChange&#125;&#x2F;&gt;<br>         &#123; this.state.route &#x3D;&#x3D;&#x3D; &quot;signin&quot;<br>          ?  &lt;div&gt;<br>              &lt;Signin &#x2F;&gt;<br>              &lt;Particles className&#x3D;&quot;particles&quot;<br>                    params&#x3D;&#123;particleOptions&#125; &#x2F;&gt;<br>              &lt;&#x2F;div&gt;<br>          :  &lt;div&gt; <br>              &lt;Logo &#x2F;&gt; <br>              &lt;Rank &#x2F;&gt;<br>              &lt;ImageLinkForm onInputChange&#x3D;&#123;this.onInputChange&#125; onButtonSubmit&#x3D;&#123;this.onButtonSubmit&#125;&#x2F;&gt;<br>              &lt;FaceRecognition &#x2F;&gt;<br>              &lt;Particles className&#x3D;&quot;particles&quot;<br>                    params&#x3D;&#123;particleOptions&#125;<br>                &#x2F;&gt;&lt;&#x2F;div&gt;<br>         &#125;   <br>      &lt;&#x2F;div&gt;<br>  <br>    );<br>    &#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">constructor()&#123;<br>    super()<br>    this.state = &#123;<br>      input: &quot;&quot;,<br>      route: route<br>      // route: &quot;signin&quot;<br>    &#125;<br>  &#125;<br>  <br>  <br>  onRouteChange = (route) =&gt; &#123;<br>    this.setState(&#123;route: route&#125;);<br>  &#125;<br><br>render() &#123;<br>    return (<br>      &lt;div className=&quot;App&quot;&gt;<br>         &lt;Navigation onRouteChange = &#123;this.onRouteChange&#125;/&gt;<br>         &#123; this.state.route === &quot;signin&quot;<br>          ?  &lt;div&gt;<br>              &lt;Signin /&gt;<br>              &lt;Particles className=&quot;particles&quot;<br>                    params=&#123;particleOptions&#125; /&gt;<br>              &lt;/div&gt;<br>          :  &lt;div&gt; <br>              &lt;Logo /&gt; <br>              &lt;Rank /&gt;<br>              &lt;ImageLinkForm onInputChange=&#123;this.onInputChange&#125; onButtonSubmit=&#123;this.onButtonSubmit&#125;/&gt;<br>              &lt;FaceRecognition /&gt;<br>              &lt;Particles className=&quot;particles&quot;<br>                    params=&#123;particleOptions&#125;<br>                /&gt;&lt;/div&gt;<br>         &#125;   <br>      &lt;/div&gt;<br>  <br>    );<br>    &#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -214,17 +249,29 @@
 <p>添加：思路；需要跳转到什么页面， onRouteChange(param)}， param就写什么参数。</p>
 <p>tips： 千万别忘了在函数头传参{onRouteChange} ！！！！！</p>
 <p>Navigation.js  (signout button)</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">onClick&#x3D;&#123;(&#123;onRouteChange&#125;) &#x3D;&gt; onRouteChange(&quot;signin&quot;)&#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">onClick=&#123;(&#123;onRouteChange&#125;) =&gt; onRouteChange(&quot;signin&quot;)&#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>Signin.js </p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&#x2F;&#x2F; 千万别忘了传参&#123;onRouteChange&#125; ！！！！！<br>&#x2F;&#x2F; 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>&#x2F;&#x2F;            onClick &#x3D; &#123;() &#x3D;&gt; onRouteChange(&quot;rankpage&quot;)&#125;<br>            <br>     &lt;div class&#x3D;&quot;&quot;&gt;<br>            &lt;input <br>            &#x2F;&#x2F; 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>            onClick &#x3D; &#123;() &#x3D;&gt; onRouteChange(&quot;rankpage&quot;)&#125;<br>            className&#x3D;&quot;b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib&quot; <br>            type&#x3D;&quot;submit&quot; <br>            value&#x3D;&quot;Sign in&quot; &#x2F;&gt;<br>            &lt;&#x2F;div&gt;<br>            &lt;div class&#x3D;&quot;lh-copy mt3&quot;&gt;<br>            &lt;a onClick &#x3D; &#123;() &#x3D;&gt; onRouteChange(&quot;register&quot;)&#125; href&#x3D;&quot;#0&quot; className&#x3D;&quot;f6 link dim black db&quot;&gt;Register&lt;&#x2F;a&gt;<br>                        &lt;&#x2F;div&gt;       <br>            <br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">// 千万别忘了传参&#123;onRouteChange&#125; ！！！！！<br>// 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>//            onClick = &#123;() =&gt; onRouteChange(&quot;rankpage&quot;)&#125;<br>            <br>     &lt;div class=&quot;&quot;&gt;<br>            &lt;input <br>            // 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>            onClick = &#123;() =&gt; onRouteChange(&quot;rankpage&quot;)&#125;<br>            className=&quot;b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib&quot; <br>            type=&quot;submit&quot; <br>            value=&quot;Sign in&quot; /&gt;<br>            &lt;/div&gt;<br>            &lt;div class=&quot;lh-copy mt3&quot;&gt;<br>            &lt;a onClick = &#123;() =&gt; onRouteChange(&quot;register&quot;)&#125; href=&quot;#0&quot; className=&quot;f6 link dim black db&quot;&gt;Register&lt;/a&gt;<br>                        &lt;/div&gt;       <br>            <br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>Register</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&lt;input <br>  &#x2F;&#x2F; 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>  onClick &#x3D; &#123;() &#x3D;&gt; onRouteChange(&quot;signin&quot;)&#125;<br>  className&#x3D;&quot;b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib&quot; <br>  type&#x3D;&quot;submit&quot; <br>  value&#x3D;&quot;Register&quot; &#x2F;&gt;<br>  &lt;&#x2F;div&gt;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;input <br>  // 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>  onClick = &#123;() =&gt; onRouteChange(&quot;signin&quot;)&#125;<br>  className=&quot;b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib&quot; <br>  type=&quot;submit&quot; <br>  value=&quot;Register&quot; /&gt;<br>  &lt;/div&gt;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="上传照片并识别"><a href="#上传照片并识别" class="headerlink" title="上传照片并识别"></a>上传照片并识别</h3><ol>
 <li><p>识别输入框的内容（url）： 设置state：input</p>
@@ -239,7 +286,11 @@
 </li>
 </ol>
 <h4 id="Step-1-输入框，按钮框对于输入的识别"><a href="#Step-1-输入框，按钮框对于输入的识别" class="headerlink" title="Step 1. 输入框，按钮框对于输入的识别"></a>Step 1. 输入框，按钮框对于输入的识别</h4><p>App.js 设置 state,并渲染</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">constructor()&#123;<br>    super()<br>    this.state &#x3D; &#123;<br>      input: &quot;&quot;<br>    &#125;<br>  &#125;<br><br>  onInputChange &#x3D; (event) &#x3D;&gt; &#123;<br>    console.log(event.target.value);<br>  &#125;<br><br>  onButtonSubmit &#x3D; () &#x3D;&gt; &#123;<br>    console.log(&quot;click&quot;);<br>  &#125;<br>  <br>render() &#123;<br>    return (<br>      &lt;div className&#x3D;&quot;App&quot;&gt;<br>  <br>          &lt;ImageLinkForm onInputChange&#x3D;&#123;this.onInputChange&#125; onButtonSubmit&#x3D;&#123;this.onButtonSubmit&#125;&#x2F;&gt;<br>         <br>      &lt;&#x2F;div&gt;<br>  <br>    );<br>    &#125;  <br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">constructor()&#123;<br>    super()<br>    this.state = &#123;<br>      input: &quot;&quot;<br>    &#125;<br>  &#125;<br><br>  onInputChange = (event) =&gt; &#123;<br>    console.log(event.target.value);<br>  &#125;<br><br>  onButtonSubmit = () =&gt; &#123;<br>    console.log(&quot;click&quot;);<br>  &#125;<br>  <br>render() &#123;<br>    return (<br>      &lt;div className=&quot;App&quot;&gt;<br>  <br>          &lt;ImageLinkForm onInputChange=&#123;this.onInputChange&#125; onButtonSubmit=&#123;this.onButtonSubmit&#125;/&gt;<br>         <br>      &lt;/div&gt;<br>  <br>    );<br>    &#125;  <br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -247,40 +298,66 @@
 
 <p>ImageLinkForm.js</p>
 <p>传参，用参</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&lt;input className&#x3D;&quot;f4 pa2 w-70 center&quot; type&#x3D;&quot;text&quot; onChange&#x3D;&#123;onInputChange&#125;&#x2F;&gt;<br> &lt;button className&#x3D;&quot;w-30 grow f4 link ph3 pv2 dib white bg-light-purple&quot; <br>                   onClick &#x3D; &#123;onButtonSubmit&#125;&gt;Detect&lt;&#x2F;button&gt;<br>           <br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;input className=&quot;f4 pa2 w-70 center&quot; type=&quot;text&quot; onChange=&#123;onInputChange&#125;/&gt;<br> &lt;button className=&quot;w-30 grow f4 link ph3 pv2 dib white bg-light-purple&quot; <br>                   onClick = &#123;onButtonSubmit&#125;&gt;Detect&lt;/button&gt;<br>           <br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <h4 id="step-2-能上传图片"><a href="#step-2-能上传图片" class="headerlink" title="step 2. 能上传图片"></a>step 2. 能上传图片</h4><p>调用人家已经做好的api</p>
 <p>clarifai （<a target="_blank" rel="noopener" href="https://www.clarifai.com/%EF%BC%89">https://www.clarifai.com/）</a></p>
 <p>注册一个账户就能免费用了</p>
+<<<<<<< HEAD
 <h4 id="step-3-展示图片"><a href="#step-3-展示图片" class="headerlink" title="step 3. 展示图片"></a>step 3. 展示图片</h4><figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">const FaceRecognition &#x3D; (&#123; imageUrl, box &#125;) &#x3D;&gt; &#123;<br>    return (<br>      &lt;div className&#x3D;&#39;center ma&#39;&gt;<br>  <br>      &lt;div className&#x3D;&#39;absolute mt2&#39;&gt;<br>        &#123;&#x2F;* 下面这行是关键的代码，通过src展示url对应的图片 *&#x2F;&#125; &#123;&#x2F;* width， height固定图片大小 *&#x2F;&#125;<br>        &lt;img id&#x3D;&#39;inputimage&#39; alt&#x3D;&#39;&#39; src&#x3D;&#123;imageUrl&#125; width&#x3D;&#39;500px&#39; heigh&#x3D;&#39;auto&#39;&#x2F;&gt;<br>        &#123;&#x2F;* 标示人脸 *&#x2F;&#125;<br>        &lt;div className&#x3D;&#39;bounding-box&#39; style&#x3D;&#123;&#123;top: box.topRow, right: box.rightCol, bottom: box.bottomRow, left: box.leftCol&#125;&#125;&gt;&lt;&#x2F;div&gt;<br>      &lt;&#x2F;div&gt;<br>    &lt;&#x2F;div&gt;<br>    );<br>  &#125;<br></code></pre></td></tr></table></figure>
+=======
+<h4 id="step-3-展示图片"><a href="#step-3-展示图片" class="headerlink" title="step 3. 展示图片"></a>step 3. 展示图片</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">const FaceRecognition = (&#123; imageUrl, box &#125;) =&gt; &#123;<br>    return (<br>      &lt;div className=&#x27;center ma&#x27;&gt;<br>  <br>      &lt;div className=&#x27;absolute mt2&#x27;&gt;<br>        &#123;/* 下面这行是关键的代码，通过src展示url对应的图片 */&#125; &#123;/* width， height固定图片大小 */&#125;<br>        &lt;img id=&#x27;inputimage&#x27; alt=&#x27;&#x27; src=&#123;imageUrl&#125; width=&#x27;500px&#x27; heigh=&#x27;auto&#x27;/&gt;<br>        &#123;/* 标示人脸 */&#125;<br>        &lt;div className=&#x27;bounding-box&#x27; style=&#123;&#123;top: box.topRow, right: box.rightCol, bottom: box.bottomRow, left: box.leftCol&#125;&#125;&gt;&lt;/div&gt;<br>      &lt;/div&gt;<br>    &lt;/div&gt;<br>    );<br>  &#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <h4 id="step4能识别图片"><a href="#step4能识别图片" class="headerlink" title="step4能识别图片"></a>step4能识别图片</h4><p>调用人家已经做好的api, 注册一个账户就能免费用了</p>
 <h5 id="查看文档"><a href="#查看文档" class="headerlink" title="查看文档"></a>查看文档</h5><p>clarifai （<a target="_blank" rel="noopener" href="https://www.clarifai.com/%EF%BC%89">https://www.clarifai.com/）</a></p>
 <p>Model-&gt;face dectection = <a target="_blank" rel="noopener" href="https://www.clarifai.com/models/face-detection">https://www.clarifai.com/models/face-detection</a></p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">https:&#x2F;&#x2F;clarifai.com&#x2F;developer&#x2F;<br>docs.clarifai.com&#x2F;api-guide&#x2F;predict&#x2F;images<br></code></pre></td></tr></table></figure>
 
 <p>Google：npm clarifai -&gt; GitHub 源码 -&gt; 里面有所有的模型</p>
 <h5 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h5><p>npm install clarifai</p>
 <h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">const Clarifai &#x3D; require(&#39;clarifai&#39;);<br><br>&#x2F;&#x2F;You must add your own API key here from Clarifai. <br><br>const app &#x3D; new Clarifai.App(&#123;<br><br> apiKey: &#39;注册后就有了&#39;<br><br>&#125;);<br><br>...除了人脸识别，还可以使用clarifai上不同的模型做不同的事情（识别色彩，理解图片，识别视频。。。）<br><br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">https://clarifai.com/developer/<br>docs.clarifai.com/api-guide/predict/images<br></code></pre></td></tr></table></figure>
+
+<p>Google：npm clarifai -&gt; GitHub 源码 -&gt; 里面有所有的模型</p>
+<h5 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h5><p>npm install clarifai</p>
+<h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">const Clarifai = require(&#x27;clarifai&#x27;);<br><br>//You must add your own API key here from Clarifai. <br><br>const app = new Clarifai.App(&#123;<br><br> apiKey: &#x27;注册后就有了&#x27;<br><br>&#125;);<br><br>...除了人脸识别，还可以使用clarifai上不同的模型做不同的事情（识别色彩，理解图片，识别视频。。。）<br><br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><h3 id="css-部分"><a href="#css-部分" class="headerlink" title="css 部分"></a>css 部分</h3><p>因为要花好多时间调试好看的样式，而样式会根据项目的不同而进行很大的调整。</p>
 <p>所以这里具体样式就直接给大家了，就不用花太多时间纠结样式了。</p>
+<<<<<<< HEAD
 <h4 id="Magic-1-tachyons"><a href="#Magic-1-tachyons" class="headerlink" title="Magic 1. tachyons"></a>Magic 1. tachyons</h4><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">npm install tachyons<br>npm tachyons<br><br></code></pre></td></tr></table></figure>
 
 <h5 id="Index-js-导入"><a href="#Index-js-导入" class="headerlink" title="Index.js 导入"></a>Index.js 导入</h5><figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">import &quot;tachyons&quot;;<br></code></pre></td></tr></table></figure>
+=======
+<h4 id="Magic-1-tachyons"><a href="#Magic-1-tachyons" class="headerlink" title="Magic 1. tachyons"></a>Magic 1. tachyons</h4><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">npm install tachyons<br>npm tachyons<br><br></code></pre></td></tr></table></figure>
+
+<h5 id="Index-js-导入"><a href="#Index-js-导入" class="headerlink" title="Index.js 导入"></a>Index.js 导入</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">import &quot;tachyons&quot;;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <h5 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h5><h6 id="Naviation-js"><a href="#Naviation-js" class="headerlink" title="Naviation.js"></a>Naviation.js</h6><p>Q: 是怎么知道里面的样式呢。</p>
 <p>A:</p>
 <ol>
 <li><a target="_blank" rel="noopener" href="https://tachyons.io/#style">https://tachyons.io/#style</a> style guide</li>
 </ol>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&lt;nav style &#x3D; &#123;&#123;display: &quot;flex&quot;, justifyContent: &quot;flex-end&quot;&#125;&#125;&gt;<br>     &lt;p className&#x3D;&quot;f3 link dim black underline pa3 pointer&quot;&gt;Sign Out&lt;&#x2F;p&gt;<br>   &lt;&#x2F;nav&gt;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;nav style = &#123;&#123;display: &quot;flex&quot;, justifyContent: &quot;flex-end&quot;&#125;&#125;&gt;<br>     &lt;p className=&quot;f3 link dim black underline pa3 pointer&quot;&gt;Sign Out&lt;/p&gt;<br>   &lt;/nav&gt;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>长这样：</p>
 <p>![image-20201120171507674](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201120171507674.png)</p>
@@ -304,6 +381,7 @@
 
 <h4 id="Magic-2-React-tilt-（for-Logo）"><a href="#Magic-2-React-tilt-（for-Logo）" class="headerlink" title="Magic 2. React-tilt （for Logo）"></a>Magic 2. React-tilt （for Logo）</h4><p>React-tilt library 可以有炫酷的交互。</p>
 <p>去它的网站上看安装和使用方式，直接复制就能用了</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">npm install --save react-tilt<br></code></pre></td></tr></table></figure>
 
 <p>好可爱，喜欢</p>
@@ -312,17 +390,32 @@
 <p>可以加一些css样式</p>
 <p>然后把👽换成自己的logo （没有的话去Google一个免费的）</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">import brain from &quot;.&#x2F;xx.png&quot;;<br><br>&lt;img alt&#x3D;&quot;logo&quot; src&#x3D;&#123;brain&#125; &#x2F;&gt;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">npm install --save react-tilt<br></code></pre></td></tr></table></figure>
+
+<p>好可爱，喜欢</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">import Tilt from &#x27;react-tilt&#x27;<br> <br>&lt;Tilt className=&quot;Tilt&quot; options=&#123;&#123; max : 25 &#125;&#125; style=&#123;&#123; height: 250, width: 250 &#125;&#125; &gt;<br> &lt;div className=&quot;Tilt-inner&quot;&gt; 👽 &lt;/div&gt;<br>&lt;/Tilt&gt;<br></code></pre></td></tr></table></figure>
+
+<p>可以加一些css样式</p>
+<p>然后把👽换成自己的logo （没有的话去Google一个免费的）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">import brain from &quot;./xx.png&quot;;<br><br>&lt;img alt=&quot;logo&quot; src=&#123;brain&#125; /&gt;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <h4 id="Magic-3-linear-gradient-for-background"><a href="#Magic-3-linear-gradient-for-background" class="headerlink" title="Magic 3. linear-gradient (for background)"></a>Magic 3. linear-gradient (for background)</h4><p>自己去Google一个好看的linear-gradient。</p>
 <p>Index.css (index的样式会影响整个项目)</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">body &#123;<br>  margin: 0;<br>  padding: 0;<br>  font-family: sans-serif;<br>  background: linear-gradient(89deg, #e66465 0% , #9198e5 100%);<br>&#125;<br>&#x2F;* linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%); *&#x2F;<br><br>&#x2F;* 手指 *&#x2F;<br>button&#123;<br>  cursor: pointer;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">body &#123;<br>  margin: 0;<br>  padding: 0;<br>  font-family: sans-serif;<br>  background: linear-gradient(89deg, #e66465 0% , #9198e5 100%);<br>&#125;<br>/* linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%); */<br><br>/* 手指 */<br>button&#123;<br>  cursor: pointer;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <h4 id="Magic-4-Particles-js-for-background"><a href="#Magic-4-Particles-js-for-background" class="headerlink" title="Magic 4. Particles.js  (for background)"></a>Magic 4. Particles.js  (for background)</h4><p>超炫酷！！！！动态背景</p>
 <p>react 版本： 搜索  react Particles npm</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">npm install react-particles-js<br></code></pre></td></tr></table></figure>
 
 <p>app.css </p>
@@ -330,6 +423,15 @@
 
 <p>app.js </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">const particleOptions &#x3D; &#123;<br>  particles: &#123;<br>    number:&#123;<br>      value: 200,<br>      density: &#123;<br>        enable: true,<br>        value_are: 800<br>      &#125;<br>    &#125;<br>    &#x2F;&#x2F; ,<br>      &#x2F;&#x2F; shape: &#123;<br>      &#x2F;&#x2F;     type: &#39;images&#39;,<br>      &#x2F;&#x2F;     image: [<br>      &#x2F;&#x2F;         &#123;src: &#39;path&#x2F;to&#x2F;first&#x2F;image.svg&#39;, height: 20, width: 20&#125;,<br>      &#x2F;&#x2F;         &#123;src: &#39;path&#x2F;to&#x2F;second&#x2F;image.jpg&#39;, height: 20, width: 20&#125;,<br>      &#x2F;&#x2F;     ]<br>      &#x2F;&#x2F; &#125;<br>  &#125;<br>&#125;<br><br><br>在render里面第一个使用这个模块。<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">npm install react-particles-js<br></code></pre></td></tr></table></figure>
+
+<p>app.css </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>.particles&#123;<br>  position: fixed; <br>  top: 0;<br>  right: 0;<br>  bottom: 0;<br>  left: 0;<br>  /* 这样就能不覆盖其他层了 */<br>  z-index: -1;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>app.js </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">const particleOptions = &#123;<br>  particles: &#123;<br>    number:&#123;<br>      value: 200,<br>      density: &#123;<br>        enable: true,<br>        value_are: 800<br>      &#125;<br>    &#125;<br>    // ,<br>      // shape: &#123;<br>      //     type: &#x27;images&#x27;,<br>      //     image: [<br>      //         &#123;src: &#x27;path/to/first/image.svg&#x27;, height: 20, width: 20&#125;,<br>      //         &#123;src: &#x27;path/to/second/image.jpg&#x27;, height: 20, width: 20&#125;,<br>      //     ]<br>      // &#125;<br>  &#125;<br>&#125;<br><br><br>在render里面第一个使用这个模块。<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -350,19 +452,31 @@
 <p>App.js</p>
 <p>1 设置 constructor: 创建state, 初始值可以随便设不影响（因为目的是创建出state，初始值不是很重要），比如设置空“”</p>
 <p>tips：js里面布尔值false才是F， 字符串“false”是T。所以不能加引号哦。</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"># 需要时要传 props <br>constructor()&#123;<br>    super()<br>    this.state &#x3D; &#123;<br>      input: &quot;&quot;,<br>      route: &quot;swf&quot;,<br>      isSignedIn:false<br>    &#125;<br>  &#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"># 需要时要传 props <br>constructor()&#123;<br>    super()<br>    this.state = &#123;<br>      input: &quot;&quot;,<br>      route: &quot;swf&quot;,<br>      isSignedIn:false<br>    &#125;<br>  &#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>2 设置事件函数：</p>
 <p>函数功能：setState</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">onRouteChange &#x3D; (route) &#x3D;&gt; &#123;<br>   if (route &#x3D;&#x3D;&#x3D; &#39;signout&#39;) &#123;<br>     this.setState(&#123;isSignedIn: false&#125;)<br>   &#125; else if (route &#x3D;&#x3D;&#x3D; &#39;rankpage&#39;) &#123;<br>     this.setState(&#123;isSignedIn: true&#125;)<br>   &#125;<br><br>   this.setState(&#123;route: route&#125;);<br> &#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">onRouteChange = (route) =&gt; &#123;<br>   if (route === &#x27;signout&#x27;) &#123;<br>     this.setState(&#123;isSignedIn: false&#125;)<br>   &#125; else if (route === &#x27;rankpage&#x27;) &#123;<br>     this.setState(&#123;isSignedIn: true&#125;)<br>   &#125;<br><br>   this.setState(&#123;route: route&#125;);<br> &#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>函数功能：联系后端</p>
 <p>ps. This.props 表示全局都能用啦～</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"><br>&#x2F;&#x2F; 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>onSubmitSignIn &#x3D; () &#x3D;&gt; &#123;<br>    fetch(&quot;http:&#x2F;&#x2F;localhost:3000&#x2F;signin&quot;,<br>    &#123;<br>        method:&quot;post&quot;,<br>        headers:&#123;&quot;Content-Type&quot;:&quot;application&#x2F;json&quot;&#125;,<br>        body:JSON.stringify(&#123;<br>            name: this.state.name,<br>            email: this.state.email,<br>            password: this.state.password<br>        &#125;)<br>            .then(response &#x3D;&gt; response.json())<br>            &#x2F;&#x2F; 传参，传user<br>            .then(user &#x3D;&gt;&#123;<br>                if (user.id)&#123;<br>                    this.props.loadUser(user)<br>                    this.props.onRouteChange(&quot;rankpage&quot;)<br>                &#125;<br>            &#125;)<br>    &#125;)<br>    console.log(this.state);<br>&#125;<br><br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>// 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>onSubmitSignIn = () =&gt; &#123;<br>    fetch(&quot;http://localhost:3000/signin&quot;,<br>    &#123;<br>        method:&quot;post&quot;,<br>        headers:&#123;&quot;Content-Type&quot;:&quot;application/json&quot;&#125;,<br>        body:JSON.stringify(&#123;<br>            name: this.state.name,<br>            email: this.state.email,<br>            password: this.state.password<br>        &#125;)<br>            .then(response =&gt; response.json())<br>            // 传参，传user<br>            .then(user =&gt;&#123;<br>                if (user.id)&#123;<br>                    this.props.loadUser(user)<br>                    this.props.onRouteChange(&quot;rankpage&quot;)<br>                &#125;<br>            &#125;)<br>    &#125;)<br>    console.log(this.state);<br>&#125;<br><br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -373,13 +487,21 @@
 <p>3 渲染 </p>
 <p>Tips: onRouteChange 是函数，调用的时候要this.onRouteChange</p>
 <p>isSignedIn 是状态，调用的时候要this.state.isSignedIn</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&lt;Navigation isSignedIn &#x3D; &#123;this.state.isSignedIn&#125; onRouteChange &#x3D; &#123;this.onRouteChange&#125;&#x2F;&gt;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;Navigation isSignedIn = &#123;this.state.isSignedIn&#125; onRouteChange = &#123;this.onRouteChange&#125;/&gt;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>Component </p>
 <p>根据具体情况调用函数传参，以供渲染</p>
+<<<<<<< HEAD
 <figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Navigation</span>(<span class="hljs-params">&#123;onRouteChange, isSignedIn&#125;</span>) </span>&#123;<br>      <span class="hljs-keyword">if</span> (isSignedIn)&#123;<br>        <span class="hljs-keyword">return</span> (<br>          &lt;nav style = &#123;&#123;<span class="hljs-attr">display</span>: <span class="hljs-string">&quot;flex&quot;</span>, <span class="hljs-attr">justifyContent</span>: <span class="hljs-string">&quot;flex-end&quot;</span>&#125;&#125;&gt;<br>          &lt;p onClick=&#123;<span class="hljs-function">() =&gt;</span> onRouteChange(<span class="hljs-string">&quot;signout&quot;</span>)&#125; className=<span class="hljs-string">&quot;f3 link dim black underline pa3 pointer&quot;</span>&gt;Sign Out&lt;/p&gt;<br>          &lt;/nav&gt;)<br>      &#125; <span class="hljs-keyword">else</span> &#123;<br>        <span class="hljs-keyword">return</span> (<br>            &lt;nav style = &#123;&#123;<span class="hljs-attr">display</span>: <span class="hljs-string">&quot;flex&quot;</span>, <span class="hljs-attr">justifyContent</span>: <span class="hljs-string">&quot;flex-end&quot;</span>&#125;&#125;&gt;<br>              &lt;p onClick=&#123;<span class="hljs-function">() =&gt;</span> onRouteChange(<span class="hljs-string">&quot;signin&quot;</span>)&#125; className=<span class="hljs-string">&quot;f3 link dim black underline pa3 pointer&quot;</span>&gt;Sign <span class="hljs-keyword">in</span>&lt;/p&gt;  <br>              &lt;p onClick=&#123;<span class="hljs-function">() =&gt;</span> onRouteChange(<span class="hljs-string">&quot;register&quot;</span>)&#125; className=<span class="hljs-string">&quot;f3 link dim black underline pa3 pointer&quot;</span>&gt;Register&lt;/p&gt;<br>           <br>          &lt;/nav&gt;);         <br>      &#125;<br>  &#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Navigation</span>(<span class="hljs-params">&#123;onRouteChange, isSignedIn&#125;</span>) </span>&#123;<br>      <span class="hljs-keyword">if</span> (isSignedIn)&#123;<br>        <span class="hljs-keyword">return</span> (<br>          <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">style</span> = <span class="hljs-string">&#123;&#123;display:</span> &quot;<span class="hljs-attr">flex</span>&quot;, <span class="hljs-attr">justifyContent:</span> &quot;<span class="hljs-attr">flex-end</span>&quot;&#125;&#125;&gt;</span></span><br><span class="xml">          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">&#123;()</span> =&gt;</span> onRouteChange(&quot;signout&quot;)&#125; className=&quot;f3 link dim black underline pa3 pointer&quot;&gt;Sign Out<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="xml">          <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></span>)<br>      &#125; <span class="hljs-keyword">else</span> &#123;<br>        <span class="hljs-keyword">return</span> (<br>            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">style</span> = <span class="hljs-string">&#123;&#123;display:</span> &quot;<span class="hljs-attr">flex</span>&quot;, <span class="hljs-attr">justifyContent:</span> &quot;<span class="hljs-attr">flex-end</span>&quot;&#125;&#125;&gt;</span></span><br><span class="xml">              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">&#123;()</span> =&gt;</span> onRouteChange(&quot;signin&quot;)&#125; className=&quot;f3 link dim black underline pa3 pointer&quot;&gt;Sign in<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>  </span><br><span class="xml">              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">&#123;()</span> =&gt;</span> onRouteChange(&quot;register&quot;)&#125; className=&quot;f3 link dim black underline pa3 pointer&quot;&gt;Register<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="xml">           </span><br><span class="xml">          <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></span>);         <br>      &#125;<br>  &#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -399,7 +521,11 @@
 
 
 <p>   在脚本里面设置每次 npm start 自动启动server.js</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&quot;scripts&quot;: &#123;<br>  &quot;start&quot;: &quot;nodemon server.js&quot;<br>&#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&quot;scripts&quot;: &#123;<br>  &quot;start&quot;: &quot;nodemon server.js&quot;<br>&#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 <p>服务器就搭好了。</p>
@@ -410,7 +536,11 @@
 <p>// profile userId –&gt; GET res: user </p>
 <p>// image –&gt; PUT (更新) res: user count </p>
 <h3 id="实现-api-元素"><a href="#实现-api-元素" class="headerlink" title="实现 api 元素"></a>实现 api 元素</h3><p>既然已经确定了前端页面元素，现在不用管前端了。用postman来模拟前端request ，并接受后端response</p>
+<<<<<<< HEAD
 <h5 id="register"><a href="#register" class="headerlink" title="register"></a>register</h5><figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js">app.post(<span class="hljs-string">&quot;/register&quot;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> &#123;<br>    <span class="hljs-keyword">const</span> &#123;email, name, password&#125; = req.body<br>    database.users.push(&#123;<br>        id: <span class="hljs-string">&quot;125&quot;</span>,<br>        name: name,<br>        email: email,<br>        password: password,<br>        entries: <span class="hljs-number">0</span>,<br>        joined: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()<br>    &#125;)<br>    res.json(database.users[database.users.length - <span class="hljs-number">1</span>])<br>    <br>&#125;)<br></code></pre></td></tr></table></figure>
+=======
+<h5 id="register"><a href="#register" class="headerlink" title="register"></a>register</h5><figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js">app.post(<span class="hljs-string">&quot;/register&quot;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> &#123;<br>    <span class="hljs-keyword">const</span> &#123;email, name, password&#125; = req.body<br>    database.users.push(&#123;<br>        <span class="hljs-attr">id</span>: <span class="hljs-string">&quot;125&quot;</span>,<br>        <span class="hljs-attr">name</span>: name,<br>        <span class="hljs-attr">email</span>: email,<br>        <span class="hljs-attr">password</span>: password,<br>        <span class="hljs-attr">entries</span>: <span class="hljs-number">0</span>,<br>        <span class="hljs-attr">joined</span>: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()<br>    &#125;)<br>    res.json(database.users[database.users.length - <span class="hljs-number">1</span>])<br>    <br>&#125;)<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>![image-20201202165908426](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201202165908426.png)</p>
 <h5 id="signin"><a href="#signin" class="headerlink" title="signin"></a>signin</h5><figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// 如果用户psot的在数据库里面，就返回</span><br>app.post(<span class="hljs-string">&quot;/signin&quot;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> &#123;<br>    <span class="hljs-keyword">if</span> (req.body.email === database.users[<span class="hljs-number">1</span>].email &amp;&amp;<br>        req.password === database.users[<span class="hljs-number">1</span>].password)&#123;<br>            res.json(<span class="hljs-string">&quot;success&quot;</span>)<br>        &#125; <span class="hljs-keyword">else</span>&#123; <br>            res.status(<span class="hljs-number">400</span>).json(<span class="hljs-string">&quot;fail&quot;</span>)<br>        &#125;<br>&#125;)<br></code></pre></td></tr></table></figure>
@@ -438,7 +568,11 @@
 
 <h3 id="用户密码安全🔐"><a href="#用户密码安全🔐" class="headerlink" title="用户密码安全🔐"></a>用户密码安全🔐</h3><p>这个项目里用 bcrypt-nodejs    实际用bcrypt.js 或者 bcrypt</p>
 <p>通过hash 对用户密码加密</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">We prefer bcrypt for three reasons:  1. bcrypt is 15 years old and has been vetted by the crypto community. Although argon2 won last year’s password hashing competition, it is still fairly new and we would like to see it have a longer lifespan in the crypto community.  2. scrypt is 7 years old and also a good choice, but bcrypt is a bit easier to implement in a node.js server with simpler documentation as you will see below in the example.  3. The bcrypt npm package is better over other bcrypt implementations available on npm since it is native, highly popular, and vetted by the community without trying to reinvent the wheel.<br><br>Now you might be asking yourself, why not just use a hashing function like SHA256, add a salt (randomly generated bytes to place in front of the password) for each user, and store those in a database? The problem with computing power increasing is that attackers can now use GPUs to try out passwords at over 100 million per second and see if they get a hit. That’s why you want to use hash functions that were specifically designed to be slow. Although it is fast enough so the user won’t notice (about 100ms), it is long enough to make it infeasible for an attacker to try out a long list of passwords. bcrypt allows you to add a saltRound (10 is the recommended value) which iterates 2^10, or 1024 times over the password in a process called key stretching. Finally, bcrypt implementation is also safe from timing attacks. <br><br>---- udemy<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">We prefer bcrypt for three reasons:  1. bcrypt is 15 years old and has been vetted by the crypto community. Although argon2 won last year’s password hashing competition, it is still fairly new and we would like to see it have a longer lifespan in the crypto community.  2. scrypt is 7 years old and also a good choice, but bcrypt is a bit easier to implement in a node.js server with simpler documentation as you will see below in the example.  3. The bcrypt npm package is better over other bcrypt implementations available on npm since it is native, highly popular, and vetted by the community without trying to reinvent the wheel.<br><br>Now you might be asking yourself, why not just use a hashing function like SHA256, add a salt (randomly generated bytes to place in front of the password) for each user, and store those in a database? The problem with computing power increasing is that attackers can now use GPUs to try out passwords at over 100 million per second and see if they get a hit. That’s why you want to use hash functions that were specifically designed to be slow. Although it is fast enough so the user won’t notice (about 100ms), it is long enough to make it infeasible for an attacker to try out a long list of passwords. bcrypt allows you to add a saltRound (10 is the recommended value) which iterates 2^10, or 1024 times over the password in a process called key stretching. Finally, bcrypt implementation is also safe from timing attacks. <br><br>---- udemy<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -453,12 +587,20 @@
 <h4 id="前端代码改写"><a href="#前端代码改写" class="headerlink" title="前端代码改写"></a>前端代码改写</h4><p>Signin.js</p>
 <p>Const 改为 class， 目的是能够加上监听输入框状态的方法。</p>
 <p>因为这些是只和 signin 有关的智能状态，可以写在 component-signin.js 里面。不用写在 app.js 里面让他变得好臃肿。</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">#变为class的操作<br>1. class Signin extends React.Component &#123;<br> render()&#123;<br> 	return()<br> &#125;<br>2. const &#123;onRouteChange&#125; &#x3D; this.props;<br><br># 状态<br>1 constructor(props)&#123;<br>       super(props);<br>       this.state &#x3D;  &#123;<br>           signInEmail:&quot;&quot;,<br>           signInPassword:&quot;&quot; <br>       &#125;<br>    &#125;<br><br> 2   onEmailChange &#x3D; (event) &#x3D;&gt; &#123;<br>        this.setState(&#123;signInEmail: event.target.value &#125;)<br>    &#125;<br><br>    onPasswordChange &#x3D; (event) &#x3D;&gt; &#123;<br>        this.setState(&#123;signInPassword: event.target.value &#125;)<br>    &#125;<br><br>    &#x2F;&#x2F; 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>    onSubmitSignIn &#x3D; () &#x3D;&gt; &#123;<br>        console.log(this.state);<br>        this.props.onRouteChange(&quot;rankpage&quot;)<br>    &#125;<br>3 onChange&#x3D;&#123;this.onEmailChange&#125;<br> onClick &#x3D; &#123;this.onSubmitSignIn&#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">#变为class的操作<br>1. class Signin extends React.Component &#123;<br> render()&#123;<br> 	return()<br> &#125;<br>2. const &#123;onRouteChange&#125; = this.props;<br><br># 状态<br>1 constructor(props)&#123;<br>       super(props);<br>       this.state =  &#123;<br>           signInEmail:&quot;&quot;,<br>           signInPassword:&quot;&quot; <br>       &#125;<br>    &#125;<br><br> 2   onEmailChange = (event) =&gt; &#123;<br>        this.setState(&#123;signInEmail: event.target.value &#125;)<br>    &#125;<br><br>    onPasswordChange = (event) =&gt; &#123;<br>        this.setState(&#123;signInPassword: event.target.value &#125;)<br>    &#125;<br><br>    // 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>    onSubmitSignIn = () =&gt; &#123;<br>        console.log(this.state);<br>        this.props.onRouteChange(&quot;rankpage&quot;)<br>    &#125;<br>3 onChange=&#123;this.onEmailChange&#125;<br> onClick = &#123;this.onSubmitSignIn&#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>Q:  onSubmitSignIn doesn’t work.</p>
 <h4 id="传送数据到服务器"><a href="#传送数据到服务器" class="headerlink" title="传送数据到服务器"></a>传送数据到服务器</h4><p>由前端向服务器发送请求</p>
 <p>signin.js</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&#x2F;&#x2F; 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>    onSubmitSignIn &#x3D; () &#x3D;&gt; &#123;<br>        fetch(&quot;http:&#x2F;&#x2F;localhost:3000&#x2F;signin&quot;,<br>        &#123;<br>            method:&quot;post&quot;,<br>            headers:&#123;&quot;Content-Type&quot;:&quot;application&#x2F;json&quot;&#125;,<br>            body:JSON.stringify(&#123;<br>                email: this.state.signInEmail,<br>                password: this.state.signInPassword<br>            &#125;)<br><br>        &#125;)<br>        console.log(this.state);<br>        this.props.onRouteChange(&quot;rankpage&quot;)<br>    &#125;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">// 箭头函数：render的时候不调用这个函数，只有当onClick的时候才调用<br>    onSubmitSignIn = () =&gt; &#123;<br>        fetch(&quot;http://localhost:3000/signin&quot;,<br>        &#123;<br>            method:&quot;post&quot;,<br>            headers:&#123;&quot;Content-Type&quot;:&quot;application/json&quot;&#125;,<br>            body:JSON.stringify(&#123;<br>                email: this.state.signInEmail,<br>                password: this.state.signInPassword<br>            &#125;)<br><br>        &#125;)<br>        console.log(this.state);<br>        this.props.onRouteChange(&quot;rankpage&quot;)<br>    &#125;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>Fetch 失败，返回404 not found</p>
 <p>检查网络： 发现我明明写的方法是post，为啥变成了get</p>
@@ -475,7 +617,11 @@
 <p>就可能是响应头没有允许同源， 即发送请求的地址 和 响应请求的地址 不一样时，fetch 就会失败。</p>
 <p>问题原因：The issue could be with the response you are receiving from back-end. If it was working fine on the server then the problem could be with the response headers. Check the <em>Access-Control-Allow-Origin</em> (ACAO) in the response headers. Usually react’s fetch API will throw fail to fetch even after receiving response when the response headers’ ACAO and the origin of request won’t match. </p>
 <p>解决方案：  If the API is using <code>express</code> for node you can use the simple <code>cors</code> package. If you want to make your site properly secure, consider using a whitelist for the <code>Access-Control-Allow-Origin</code> header.</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&#x2F;&#x2F; express 版本<br><br>&#x2F;&#x2F;设置跨域访问<br>app.all(&#39;*&#39;, function(req, res, next) &#123;<br>    res.header(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);<br>    res.header(&quot;Access-Control-Allow-Headers&quot;, &quot;X-Requested-With&quot;);<br>    res.header(&quot;Access-Control-Allow-Methods&quot;,&quot;PUT,POST,GET,DELETE,OPTIONS&quot;);<br>    res.header(&quot;X-Powered-By&quot;,&#39; 3.2.1&#39;)<br>    res.header(&quot;Content-Type&quot;, &quot;application&#x2F;json;charset&#x3D;utf-8&quot;);<br>    next();<br>&#125;);<br><br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">// express 版本<br><br>//设置跨域访问<br>app.all(&#x27;*&#x27;, function(req, res, next) &#123;<br>    res.header(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);<br>    res.header(&quot;Access-Control-Allow-Headers&quot;, &quot;X-Requested-With&quot;);<br>    res.header(&quot;Access-Control-Allow-Methods&quot;,&quot;PUT,POST,GET,DELETE,OPTIONS&quot;);<br>    res.header(&quot;X-Powered-By&quot;,&#x27; 3.2.1&#x27;)<br>    res.header(&quot;Content-Type&quot;, &quot;application/json;charset=utf-8&quot;);<br>    next();<br>&#125;);<br><br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -506,7 +652,11 @@
 <p>安装成功之后，安装路径为：</p>
 <p>/usr/local/var/postgres</p>
 <p>可以 pull 最新版</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">brew postgresql-upgrade-database<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">brew postgresql-upgrade-database<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -516,18 +666,30 @@
 <h4 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h4><p>下载可视化图形操作界面 Psequel。</p>
 <p>用 Psequel 连接数据库。</p>
 <p>如果在连接本地的时候出问题，按以下步骤操作。</p>
+<<<<<<< HEAD
 <figure class="highlight text"><table><tr><td class="code"><pre><code class="hljs text"># 1 找到它的地址<br>sudo find / -name &quot;postgresql.conf&quot;<br>/usr/local/var/postgres/postgresql.conf<br># 2<br>vim postgresql.conf<br>把<br>listen_addresses = &#x27;localhost&#x27;<br>替换成<br>listen_addresses = &#x27;*&#x27;<br># 3<br>重启服务器<br>brew services restart postgresql<br># 查看<br>netstat -nlt<br>“Local Address” for port 5432 变成了 0.0.0.0.<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs text"># 1 找到它的地址<br>sudo find / -name &quot;postgresql.conf&quot;<br>/usr/local/var/postgres/postgresql.conf<br># 2<br>vim postgresql.conf<br>把<br>listen_addresses = &#x27;localhost&#x27;<br>替换成<br>listen_addresses = &#x27;*&#x27;<br># 3<br>重启服务器<br>brew services restart postgresql<br># 查看<br>netstat -nlt<br>“Local Address” for port 5432 变成了 0.0.0.0.<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>创建表</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">CREATE TABLE users(<br>    id serial PRIMARY KEY,<br>    name VARCHAR(100),<br>    email text UNIQUE NOT NULL,<br>    entries BIGINT DEFAULT 0,<br>    joined TIMESTAMP NOT NULL<br>);<br><br>CREATE TABLE login(<br>    id serial PRIMARY KEY,<br>    hash VARCHAR(100),<br>    email text UNIQUE NOT NULL<br>    );<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">CREATE TABLE users(<br>    id serial PRIMARY KEY,<br>    name VARCHAR(100),<br>    email text UNIQUE NOT NULL,<br>    entries BIGINT DEFAULT 0,<br>    joined TIMESTAMP NOT NULL<br>);<br><br>CREATE TABLE login(<br>    id serial PRIMARY KEY,<br>    hash VARCHAR(100),<br>    email text UNIQUE NOT NULL<br>    );<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>这有详细的 postpresql 语法教程 <a target="_blank" rel="noopener" href="https://www.postgresqltutorial.com/">https://www.postgresqltutorial.com/</a></p>
 <h4 id="knex"><a href="#knex" class="headerlink" title="knex"></a>knex</h4><p>Js 操作数据库</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">Knex.js (pronounced &#x2F;kəˈnɛks&#x2F;) is a &quot;batteries included&quot; SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use. It features both traditional node style callbacks as well as a promise interface for cleaner async flow control, a stream interface, full featured query and schema builders, transaction support (with savepoints), connection pooling and standardized responses between different query clients and dialects.<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">Knex.js (pronounced /kəˈnɛks/) is a &quot;batteries included&quot; SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use. It features both traditional node style callbacks as well as a promise interface for cleaner async flow control, a stream interface, full featured query and schema builders, transaction support (with savepoints), connection pooling and standardized responses between different query clients and dialects.<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -540,22 +702,37 @@
 <p>heroku 部分如果有啥不懂的，直接看官方文档 <a target="_blank" rel="noopener" href="https://devcenter.heroku.com/articles/git">https://devcenter.heroku.com/articles/git</a></p>
 <p><a target="_blank" rel="noopener" href="https://devcenter.heroku.com/articles/heroku-cli">https://devcenter.heroku.com/articles/heroku-cli</a></p>
 <p>【心得: heroku 官网写的还不错的， 能看一手的资料，就不要看 二三手经过加工的资料💾。】</p>
+<<<<<<< HEAD
 <h3 id="部署后端"><a href="#部署后端" class="headerlink" title="部署后端"></a>部署后端</h3><h4 id="heroku-创建app"><a href="#heroku-创建app" class="headerlink" title="heroku 创建app"></a>heroku 创建app</h4><figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs term">brew tap heroku&#x2F;brew &amp;&amp; brew install heroku<br></code></pre></td></tr></table></figure>
+=======
+<h3 id="部署后端"><a href="#部署后端" class="headerlink" title="部署后端"></a>部署后端</h3><h4 id="heroku-创建app"><a href="#heroku-创建app" class="headerlink" title="heroku 创建app"></a>heroku 创建app</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs term">brew tap heroku/brew &amp;&amp; brew install heroku<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>Heroku login -i</p>
 <p>到我的后端文件夹（smart-brain-api) </p>
 <p>Heroku create</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">Creating app... done, ⬢ damp-eyrie-02199<br>https:&#x2F;&#x2F;damp-eyrie-02199.herokuapp.com&#x2F; | https:&#x2F;&#x2F;git.heroku.com&#x2F;damp-eyrie-02199.git<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">Creating app... done, ⬢ damp-eyrie-02199<br>https://damp-eyrie-02199.herokuapp.com/ | https://git.heroku.com/damp-eyrie-02199.git<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>![image-20201205164210960](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201205164210960.png)</p>
 <p>Tips:</p>
 <p>建议新建好就改成自己想要的名字。</p>
 <p>不然的话，建立好的连接又要删掉重新建立。也不是不行，就是怕好不容易搞起来的连接，万一又出什么幺蛾子连不上了。</p>
 <p>改名方法1:</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">1.打开终端，登录heroku，切换到要修该的app下<br>2.执行heroku apps:rename xxx (xxx是你的app的新名称）<br>3.更新remote，<br>执行git remote rm heroku<br>执行heroku git:remote -a xxx<br></code></pre></td></tr></table></figure>
 
 <p>改名方法2:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">1.打开heroku的网址，并登录<br>2.找到你要修改的app的名字，点击进入<br>3.点击setting<br>4.修改名字（只支持小写字母、数字和破折号）<br>5.更新remote<br>（1）打开终端iterm<br>（2）输入heroku login, 输入email和password进行登录<br>（3）执行git remote rm heroku<br>git remote -v<br>git remote add heroku https:&#x2F;&#x2F;git.heroku.com&#x2F;XXXXX.git（XXXXX请换成修改后的heroku名字）<br>git push heroku 你的最新分支:master<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">1.打开终端，登录heroku，切换到要修该的app下<br>2.执行heroku apps:rename xxx (xxx是你的app的新名称）<br>3.更新remote，<br>执行git remote rm heroku<br>执行heroku git:remote -a xxx<br></code></pre></td></tr></table></figure>
+
+<p>改名方法2:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">1.打开heroku的网址，并登录<br>2.找到你要修改的app的名字，点击进入<br>3.点击setting<br>4.修改名字（只支持小写字母、数字和破折号）<br>5.更新remote<br>（1）打开终端iterm<br>（2）输入heroku login, 输入email和password进行登录<br>（3）执行git remote rm heroku<br>git remote -v<br>git remote add heroku https://git.heroku.com/XXXXX.git（XXXXX请换成修改后的heroku名字）<br>git push heroku 你的最新分支:master<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -568,20 +745,32 @@
 <p>成功打开～</p>
 <h4 id="与-GitHub-建立连接"><a href="#与-GitHub-建立连接" class="headerlink" title="与 GitHub 建立连接"></a>与 GitHub 建立连接</h4><p>在github 新建一个仓库 smart-brain</p>
 <p>还是在我的后端文件夹（smart-brain-api) </p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">git init<br>git add .<br>git commit -m &quot;smart&quot;<br><br>git remote add origin https:&#x2F;&#x2F;github.com&#x2F;wenjialu&#x2F;smart-brain.git<br>git push --set-upstream origin master<br></code></pre></td></tr></table></figure>
 
 <p>GitHub 联系上heroku？</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">heroku git:remote -a 刚刚创的app名字，如damp-eyrie-02199<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">git init<br>git add .<br>git commit -m &quot;smart&quot;<br><br>git remote add origin https://github.com/wenjialu/smart-brain.git<br>git push --set-upstream origin master<br></code></pre></td></tr></table></figure>
+
+<p>GitHub 联系上heroku？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">heroku git:remote -a 刚刚创的app名字，如damp-eyrie-02199<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <h5 id="连接成功～"><a href="#连接成功～" class="headerlink" title="连接成功～"></a>连接成功～</h5><p>git remote -v 查看下，如果heroku 和 github 的仓库都对了就是成功啦～</p>
 <p>![image-20201205174240762](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201205174240762.png)</p>
 <p>我之前用过heroku了，现在要重命名</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs term">heroku git:remote -a infinite-hamlet-23870<br>git remote rename heroku heroku-staging<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs term">heroku git:remote -a infinite-hamlet-23870<br>git remote rename heroku heroku-staging<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <h4 id="上传到heroku"><a href="#上传到heroku" class="headerlink" title="上传到heroku"></a>上传到heroku</h4><p>上传到heroku 啦，见下：</p>
 <h5 id="Deploying-code"><a href="#Deploying-code" class="headerlink" title="Deploying code"></a><a target="_blank" rel="noopener" href="https://devcenter.heroku.com/articles/git#deploying-code">Deploying code</a></h5><p>To deploy your app to Heroku, you typically use the <code>git push</code> command to push the code from your local repository’s <a target="_blank" rel="noopener" href="https://devcenter.heroku.com/articles/git-branches">master or main branch</a> to your <code>heroku</code> remote, like so:</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs term"># mastet 或者 main 要根据实际情况<br>$ git push heroku master<br>Initializing repository, done.<br>updating &#39;refs&#x2F;heads&#x2F;master&#39;<br>...<br></code></pre></td></tr></table></figure>
 
 
@@ -590,13 +779,27 @@
 
 <p>检查出错原因</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">heroku logs --tail<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs term"># mastet 或者 main 要根据实际情况<br>$ git push heroku master<br>Initializing repository, done.<br>updating &#x27;refs/heads/master&#x27;<br>...<br></code></pre></td></tr></table></figure>
+
+
+
+<h4 id="查看成功了没"><a href="#查看成功了没" class="headerlink" title="查看成功了没"></a>查看成功了没</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs term">heroku open<br></code></pre></td></tr></table></figure>
+
+<p>检查出错原因</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">heroku logs --tail<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>通过日志我发现 heroku会为我的app设置动态端口（Heroku dynamically assigns your app a port），我要把写死的3000 端口改掉。</p>
 <p>Heroku adds the port to the env, so you can pull it from there. Switch my listen to this:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js">.listen(process.env.PORT || <span class="hljs-number">3000</span>)<br></code></pre></td></tr></table></figure>
 
 <p>在后端文件夹路径下，终端输入</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">PORT&#x3D;5000 node server.js<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">PORT=5000 node server.js<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>可以看到返回5000 啦</p>
 <p>修改完了别忘记上传到git 和 heroku</p>
@@ -606,10 +809,17 @@
 <p>![image-20201205192330279](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201205192330279.png)</p>
 <p><strong>修复bug</strong></p>
 <p>提示1: node 和npm version 需要指定</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">node --version<br>v12.13.1<br>npm -v<br></code></pre></td></tr></table></figure>
 
 <p>在 package.json里面添加</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&quot;engines&quot;: &#123;<br>    &quot;node&quot;: &quot;12.13.1&quot;,<br>    &quot;npm&quot;: &quot;6.14.8&quot;<br>  &#125;,<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">node --version<br>v12.13.1<br>npm -v<br></code></pre></td></tr></table></figure>
+
+<p>在 package.json里面添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&quot;engines&quot;: &#123;<br>    &quot;node&quot;: &quot;12.13.1&quot;,<br>    &quot;npm&quot;: &quot;6.14.8&quot;<br>  &#125;,<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -618,25 +828,38 @@
 <p>打开它给出的官方网址，找到了解决方案</p>
 <p><a target="_blank" rel="noopener" href="https://devcenter.heroku.com/articles/troubleshooting-node-deploys">https://devcenter.heroku.com/articles/troubleshooting-node-deploys</a></p>
 <p><a target="_blank" rel="noopener" href="https://help.heroku.com/n/13/general-platform-features/builds">https://help.heroku.com/n/13/general-platform-features/builds</a></p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"># 重要！！<br>In order create a smaller slug size for apps, the buildpack will prune out the devDependencies from the package.json at the end of the build, so that the slug will only include the dependencies that are listed at runtime. If there is a dependency that is in the devDependencies that is needed after the prune occurs, <br><br>move the dependency to dependencies, so it is not removed.<br>or <br>heroku config:set NPM_CONFIG_PRODUCTION&#x3D;false<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"># 重要！！<br>In order create a smaller slug size for apps, the buildpack will prune out the devDependencies from the package.json at the end of the build, so that the slug will only include the dependencies that are listed at runtime. If there is a dependency that is in the devDependencies that is needed after the prune occurs, <br><br>move the dependency to dependencies, so it is not removed.<br>or <br>heroku config:set NPM_CONFIG_PRODUCTION=false<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>不知道为啥 Tachyon 模块不见了。</p>
 <p>⚠️ 我打开本地 package.json 好多模块竟然都显示没有安装，非常奇怪。</p>
 <p>只能全部重新安装</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">npm install tachyon <br><br>npm shrinkwrap<br>产生了一个新的lockfile, 然后再提交。 (亲测了两个项目都不用lock反而成功了，所以把这个 lockfile 删光光，重新提交git，就成功啦)<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">npm install tachyon <br><br>npm shrinkwrap<br>产生了一个新的lockfile, 然后再提交。 (亲测了两个项目都不用lock反而成功了，所以把这个 lockfile 删光光，重新提交git，就成功啦)<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>装好后在dependencies 里面可以看到它又出现啦。</p>
 <p>![image-20201206001834886](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201206001834886.png)</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">npm install package-lock.json<br><br>heroku buildpacks:set heroku&#x2F;nodejs<br><br>npm shrinkwrap<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">npm install package-lock.json<br><br>heroku buildpacks:set heroku/nodejs<br><br>npm shrinkwrap<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 <p>​    </p>
 <p>修复 npm 和 yarn 的冲突。</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">git rm yarn.lock<br>git commit -m &quot;Remove yarn lock file&quot;<br>git push --set-upstream origin master<br></code></pre></td></tr></table></figure>
 
 <p>如果 git 分支出了问题，见我 git 篇更新部分 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/290333697">https://zhuanlan.zhihu.com/p/290333697</a></p>
@@ -645,6 +868,16 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">remote:  ! We have detected that you have triggered a build from source code with version ed530c8d0de5c0f450d117595c65a054dfc9cbe8<br>remote:  ! at least twice. One common cause of this behavior is attempting to deploy code from a different branch.<br>remote:  !<br>remote:  ! If you are developing on a branch and deploying via git you must run:<br>remote:  !<br>remote:  !     git push heroku &lt;branchname&gt;:main<br>remote:  !<br>remote:  ! This article goes into details on the behavior:<br>remote:  !   https:&#x2F;&#x2F;devcenter.heroku.com&#x2F;articles&#x2F;duplicate-build-version<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">git push heroku main:main<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">git rm yarn.lock<br>git commit -m &quot;Remove yarn lock file&quot;<br>git push --set-upstream origin master<br></code></pre></td></tr></table></figure>
+
+<p>如果 git 分支出了问题，见我 git 篇更新部分 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/290333697">https://zhuanlan.zhihu.com/p/290333697</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"># 注意！ 根据项目的实际情况选择 main，master<br>git push heroku main<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">remote:  ! We have detected that you have triggered a build from source code with version ed530c8d0de5c0f450d117595c65a054dfc9cbe8<br>remote:  ! at least twice. One common cause of this behavior is attempting to deploy code from a different branch.<br>remote:  !<br>remote:  ! If you are developing on a branch and deploying via git you must run:<br>remote:  !<br>remote:  !     git push heroku &lt;branchname&gt;:main<br>remote:  !<br>remote:  ! This article goes into details on the behavior:<br>remote:  !   https://devcenter.heroku.com/articles/duplicate-build-version<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">git push heroku main:main<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -659,11 +892,19 @@
     <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
     <script>
         var gitalk = new Gitalk({
+<<<<<<< HEAD
             clientID: "github_clientID",
             clientSecret: "github_clientSecret",
             repo: "you site homepage",
             owner: "your username",
             admin: "same as [owner]",
+=======
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
             id: "SmartBrain -  用 React 做一个人脸识别网站",
         });
         gitalk.render("al_gitalk_cnt")
@@ -730,6 +971,10 @@
         src=extra_plugin_js_url
         async="async"
     ></script>
+<<<<<<< HEAD
     <script src="/hexo_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/hexo_blog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+=======
+    </body>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 </html>
         

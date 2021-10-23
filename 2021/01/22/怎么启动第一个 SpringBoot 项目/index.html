@@ -2,7 +2,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
+<<<<<<< HEAD
         <title>【教程】怎么启动第一个 SpringBoot项目</title>
+=======
+        <title>【教程】Mac 怎么启动第一个 SpringBoot项目</title>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 <link rel="stylesheet", href="/hexo_blog/./css/style.css">
@@ -15,7 +19,11 @@
     
     <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
 
+<<<<<<< HEAD
     <meta name="generator" content="Hexo 5.2.0"></head>
+=======
+    <meta name="generator" content="Hexo 5.4.0"></head>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
     <body>
         <header class="al_header al_pos_fixed">
     <div class="al_header_container dis_flex_jcenter">
@@ -113,22 +121,38 @@
             <article class="al_article">
                 <header>
                     <h1 class="al_page_title">
+<<<<<<< HEAD
                         【教程】怎么启动第一个 SpringBoot项目
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
                             January 21, 2021 06:01 PM
+=======
+                        【教程】Mac 怎么启动第一个 SpringBoot项目
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            January 22, 2021 07:01 AM
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                         </div>
 
                         
                             <div class="al_page_content_info">
+<<<<<<< HEAD
                                 1.2k words
+=======
+                                1.9k words
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                             </div>
                         
 
                         
                             <div class="al_page_content_info">
+<<<<<<< HEAD
                                 5 minutes read
+=======
+                                8 minutes read
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                             </div>
                         
                         <span class="tags"></span>
@@ -161,9 +185,19 @@
 <h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><p>IDEA – spring initializr</p>
 <h3 id="三种启动方法"><a href="#三种启动方法" class="headerlink" title="三种启动方法"></a>三种启动方法</h3><p><strong>在这三种启动方法前，如果你同时导入的是多个项目，并且maven没有出现的话。需找到每个项目的pom.xml，右键，add as a maven project.</strong></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34296641/article/details/94171666?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control">https://blog.csdn.net/weixin_34296641/article/details/94171666?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control</a><br>前两种方法供本地运行，第三种是线上部署使用<br><strong>方法1: 直接点绿色箭头运行</strong></p>
+<<<<<<< HEAD
 <p><strong>方法2</strong>: 应用的根目录下运行<strong>mvn spring-boot:run</strong><br>(没有自动创建也可以用这个手动创建)</p>
 <p><strong>方法3: 使用mvn install 生成jar后运行</strong><br>先到项目根目录</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">mvn compile<br>mvn package<br>java -jar target&#x2F;xxx.jar<br>https:&#x2F;&#x2F;spring.io&#x2F;guides&#x2F;gs&#x2F;maven&#x2F;#initial<br></code></pre></td></tr></table></figure>
+=======
+<p>最关键就是要先 mvn package， 再点运行</p>
+<p><strong>方法2</strong>: 应用的根目录下运行</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java">mvn -U clean spring-boot:run<br></code></pre></td></tr></table></figure>
+
+<p>(没有自动创建也可以用这个手动创建)</p>
+<p><strong>方法3: 使用mvn install 生成jar后运行</strong><br>先到项目根目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">mvn compile<br>mvn package<br>java -jar target/xxx.jar<br>https://spring.io/guides/gs/maven/#initial<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
@@ -171,11 +205,22 @@
 <p>Maven projects are defined with an XML file named <em>pom.xml</em>. Among other things, this file gives the project’s name, version, and dependencies that it has on external libraries.</p>
 <p><strong>2 cd target</strong><br><strong>3 java -jar   xxxx.jar</strong><br>tips: 使用maven工具打包（jar包），打包时要注意，由于模块与模块之间的依赖关系，所以打包是要有顺序的，需要先打被依赖的模块；你也可以在父类模块上打一个包。</p>
 <p>其他配置 (可选)<br>perference – maven -importing -勾选 自动下载 sources</p>
+<<<<<<< HEAD
 <h3 id="启动别人的项目"><a href="#启动别人的项目" class="headerlink" title="启动别人的项目"></a>启动别人的项目</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/gao_xiao_qi/article/details/99707592">https://blog.csdn.net/gao_xiao_qi/article/details/99707592</a><br><a target="_blank" rel="noopener" href="https://www.pianshen.com/article/16541114992/">https://www.pianshen.com/article/16541114992/</a><br>要import 而不是 open：<br>file-new-from existing project-maven</p>
 <p><strong>贴心避坑指南总结：</strong></p>
 <p>1.找不到classpath下的resources ：</p>
 <p>首先，需要把 java 文件夹右键 - 标成蓝色，resources - 标成绿色。 （或者在 file – project structure 改动）</p>
 <p>其次，每个pom.xml 都要右键 - <strong>add as a maven project.</strong></p>
+=======
+<h3 id="启动别人的项目"><a href="#启动别人的项目" class="headerlink" title="启动别人的项目"></a>启动别人的项目</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/gao_xiao_qi/article/details/99707592">https://blog.csdn.net/gao_xiao_qi/article/details/99707592</a><br><a target="_blank" rel="noopener" href="https://www.pianshen.com/article/16541114992/">https://www.pianshen.com/article/16541114992/</a><br>要<strong>import</strong> 而不是 open：<br>file-new-from existing project-maven</p>
+<p><strong>配置：</strong><br><strong>Crtl+Alt+s 快捷键打开idea设置，并搜索maven。</strong></p>
+<p><strong>里面的setting 还有仓库要改成自己的位置啊！</strong></p>
+<p><strong>贴心避坑指南总结：</strong></p>
+<p>1.找不到classpath下的resources ：</p>
+<p>首先，需要把 java 文件夹右键 - 标成蓝色，resources - 标成绿色。 （或者在 file – project structure 改动）</p>
+<p>其次，每个pom.xml 都要右键 - <strong>add as a maven project.</strong> 不过要是右键没有的话也不用担心，这说明已经是maven项目了。</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn2eza21efj30ad0gzq4v.jpg"></p>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 <p>2  启动顺序很重要 ！！！！！</p>
 <p>如果一个项目中，有多个子项目，那么要注意启动顺序。</p>
 <p>因为有的项目的依赖需要在其他项目编译完之后才能拥有。</p>
@@ -189,7 +234,11 @@
 <p>注意：仔细看下pom中，包的地址是相对路径！！！！</p>
 <p>不懂 relativePath 指的是哪个仓库的话，在idea中点击进去看源码。</p>
 <p>可知：它的默认值是…/pom/xml</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&lt;parent&gt;<br>   &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;<br>   &lt;artifactId&gt;spring-boot-starter-parent&lt;&#x2F;artifactId&gt;<br>   &lt;version&gt;2.0.4.RELEASE&lt;&#x2F;version&gt;<br>   &lt;relativePath&#x2F;&gt; &lt;!-- lookup parent from repository --&gt;<br>&lt;&#x2F;parent&gt;<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;parent&gt;<br>   &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;<br>   &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;<br>   &lt;version&gt;2.0.4.RELEASE&lt;/version&gt;<br>   &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;<br>&lt;/parent&gt;<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>在resources下面新建lib文件夹，并把jar包文件放到这个目录下 .${project.basedir}只是一个系统自己的常量</p>
 <p><systemPath>${project.basedir}/src/main/resources/lib/alicom-mns-receive-sdk-1.0.0.jar</systemPath>  </p>
@@ -197,6 +246,7 @@
 <p>有了maven后 导包快捷键： alt+回车，</p>
 <p>如果本地仓库没有的话，去maven repository 上搜索，然后在pom.xml中引用。</p>
 <p><a target="_blank" rel="noopener" href="https://wangao.info/2020/04/13/spring-boot-00/">https://wangao.info/2020/04/13/spring-boot-00/</a></p>
+<<<<<<< HEAD
 <p>5 找不到主类</p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/thinking-better/p/7827368.html">https://www.cnblogs.com/thinking-better/p/7827368.html</a></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&lt;!--自动生成主清单属性--&gt;<br>    &lt;build&gt;<br>    &lt;plugins&gt;<br>    &lt;plugin&gt;<br>    &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;<br>    &lt;artifactId&gt;spring-boot-maven-plugin&lt;&#x2F;artifactId&gt;<br>        &lt;configuration&gt;<br>            &lt;mainClass&gt;com.jj.api.rest.common.MapToolUtil&lt;&#x2F;mainClass&gt;<br>        &lt;&#x2F;configuration&gt;<br>    &lt;&#x2F;plugin&gt;<br>    &lt;&#x2F;plugins&gt;<br>    &lt;&#x2F;build&gt;<br></code></pre></td></tr></table></figure>
@@ -207,6 +257,69 @@
 
 <p>参考资料：</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sunnyzyq/article/details/86711708">https://blog.csdn.net/sunnyzyq/article/details/86711708</a> ⭐️</p>
+=======
+<p>5 <strong>找不到主类</strong>/没有主清单属性</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/thinking-better/p/7827368.html">https://www.cnblogs.com/thinking-better/p/7827368.html</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;!--自动生成主清单属性--&gt;<br>    &lt;build&gt;<br>    &lt;plugins&gt;<br>    &lt;plugin&gt;<br>    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;<br>    &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;<br>        &lt;configuration&gt;<br>           &lt;!--设置自己想要的主类--&gt;<br>            &lt;mainClass&gt;com.jj.api.rest.common.MapToolUtil&lt;/mainClass&gt;<br>        &lt;/configuration&gt;<br>    &lt;/plugin&gt;<br>    &lt;/plugins&gt;<br>    &lt;/build&gt;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>6 user子程序启动问题</p>
+<p><strong>Could not locate PropertySource: I/O error on GET request</strong></p>
+<p>在usr -dev -   .xml中 关闭 spring.cloud.config 的配置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">spring.cloud.config= false<br></code></pre></td></tr></table></figure>
+
+
+
+<p>7 找不到符号</p>
+<p>把.idea删除，再重新打开ide</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;plugin&gt;<br>    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;<br>    &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;<br>&lt;/plugin&gt;<br><br>所以我就把他注释了再编译，结果就没问题了，所以我觉得应该是这个插件导致<br></code></pre></td></tr></table></figure>
+
+
+
+<p>8 plugins 报红色波浪线</p>
+<ul>
+<li>到本地仓库下找到未下载成功的插件及对应版本</li>
+<li>删掉后缀为<code>lastUpdated</code>的文件</li>
+<li>再到idea上 maven刷新按钮重新下载即可成功</li>
+</ul>
+<p>9 程序包不存在-导入maven项目时程序包不存在</p>
+<p>出错原因：project structure – Libraries – 第三栏 sources, javaDocs 包 没找到或者安装错误。</p>
+<p>去仓库找到相对应版本的包安装位置，<strong>如果文件是以 .lastUpdated 结尾的，那这就是下载失败的jar，当这个下载失败的文件存在的时候，reimport 我们的pom.xml文件，它是不会重新下载这个失败的jar的。</strong></p>
+<p>解决方案： </p>
+<p>Step 1: 重新导入前的准备。</p>
+<p>首先尝试了以下几种方式，但是没能解决问题（注意是无效的）：**</p>
+<ul>
+<li>修改maven的 <code>settings.xml</code> 增加或修改<code>mirror</code>或其他配置（并非中央仓库问题）；</li>
+<li>删除<code>.lastUpdated</code>文件 (删除后会复活);</li>
+</ul>
+<ul>
+<li><p>通过<strong>在项目路径下使用<code>mvn -U compile</code>命令！</strong></p>
+</li>
+<li><p>在maven 的settings里面加入：</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;profiles&gt;<br>&lt;profile&gt;<br>    &lt;id&gt;downloadSources&lt;/id&gt;<br>    &lt;properties&gt;<br>        &lt;downloadSources&gt;true&lt;/downloadSources&gt;<br>        &lt;downloadJavadocs&gt;true&lt;/downloadJavadocs&gt;           <br>    &lt;/properties&gt;<br>&lt;/profile&gt;<br>&lt;/profiles&gt;<br><br>&lt;activeProfiles&gt;<br>  &lt;activeProfile&gt;downloadSources&lt;/activeProfile&gt;<br>&lt;/activeProfiles&gt;<br></code></pre></td></tr></table></figure>
+
+<p>Step 2: 重新导入</p>
+<p>Step 3: 点第三列左上角+号，选择并添加正确的lib文件路径。</p>
+<ul>
+<li>/Users/lujiawen/Desktop/工作台/my_packs_env_dont_change_name_position/apache-maven-3.6.3/repository/antlr/antlr/2.7.7/antlr-2.7.7-sources.jar</li>
+</ul>
+<p>未解决</p>
+<p>10 java.lang.IllegalStateException: Service id not legal hostname (${feign.serviceId.user})</p>
+<p>user 中 resources 文件夹下 取名为 application.yml 的配置文件， 最好不要随便改名。</p>
+<p>11 Could not autowire. No beans of ‘xxxx’ type found</p>
+<p>（这个错误提示并不会产生影响。控制台也不报错，可以正常运行。）</p>
+<p>。如果有强迫症的童鞋可以尝试：</p>
+<p>1降低Autowired检测的级别，将Severity的级别由之前的error改成warning或其它可以忽略的级别。</p>
+<p>2确认导包是否正确：import org.springframework.stereotype.Service;</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEly1gnpv14blw2j31010o50xl.jpg"></p>
+<p>参考资料：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sunnyzyq/article/details/86711708">https://blog.csdn.net/sunnyzyq/article/details/86711708</a> ⭐️</p>
+<p>自己创建：<a target="_blank" rel="noopener" href="https://blog.csdn.net/typa01_kk/article/details/76696618">https://blog.csdn.net/typa01_kk/article/details/76696618</a></p>
+<p>配置gitlab： <a target="_blank" rel="noopener" href="https://blog.csdn.net/u010454030/article/details/80653660">https://blog.csdn.net/u010454030/article/details/80653660</a></p>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
                 </section>
 
@@ -216,12 +329,21 @@
     <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
     <script>
         var gitalk = new Gitalk({
+<<<<<<< HEAD
             clientID: "github_clientID",
             clientSecret: "github_clientSecret",
             repo: "you site homepage",
             owner: "your username",
             admin: "same as [owner]",
             id: "【教程】怎么启动第一个 SpringBoot项目",
+=======
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+            id: "【教程】Mac 怎么启动第一个 SpringBoot项目",
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
         });
         gitalk.render("al_gitalk_cnt")
     </script>
@@ -292,6 +414,10 @@
         src=extra_plugin_js_url
         async="async"
     ></script>
+<<<<<<< HEAD
     <script src="/hexo_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/hexo_blog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+=======
+    </body>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 </html>
         

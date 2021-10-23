@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>数据库的那些事儿</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.4.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        数据库的那些事儿
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            January 28, 2021 04:01 PM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                1.1k words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                5 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+
+                
+                <section id="post-body">
+                    <p>pojo 实体类</p>
+<p>mapper。xml有问题: <result column="dictdetail" jdbcType="VARCHAR" property="dictDetail" /> </p>
+<p>Q：Dict_id 自动顺序增长，而不是自己设的值。</p>
+<p>A：</p>
+<p>为啥发出请求加东西，实际却没有加到数据库呢？因为我adddic 函数还没写昂。</p>
+<p>接下来，做<strong>删除功能。</strong></p>
+<p>遇到过的错误 Q &amp; A：</p>
+<p>There is no getter for property named ‘dict_uuid’ in ‘class com.jj.red.packet.user.mybatis.domain.RoundDict’</p>
+<p> There is no getter for property named ‘dict_key’ in ‘class com.jj.red.packet.user.mybatis.domain.RoundDict’</p>
+<p> DEBUG [com.jj.red.packet.user.mybatis.persistence.RoundDictMapper.insertSelective] - ==&gt;  Preparing: insert into t_round_dict ( dictUuid, dictKey, dictDetail ) values ( ?, ?, ? ) </p>
+<p>Q:<strong>增和删，mapper都返回1，能改吗？</strong></p>
+<p> <strong>[com.jj.red.packet.user.mybatis.persistence.RoundDictMapper.insert] - &lt;==    Updates: 1</strong></p>
+<p>A: resultType：适合使用返回值的数据类型是非自定义的，即jdk的提供的类型 –&gt;</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;select id=&quot;selectPersonCount&quot; resultType=&quot;java.lang.Integer&quot;&gt;<br></code></pre></td></tr></table></figure>
+
+<p>Q: list 为啥没有返回items；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;select id=&quot;selectAll&quot; parameterType=&quot;com.jj.red.packet.user.mybatis.domain.RoundDictExample&quot; resultMap=&quot;BaseResultMap&quot;&gt;<br> <br> RoundDictExample example<br></code></pre></td></tr></table></figure>
+
+
+
+<p>验证dict_id不能为null，不然抛出异常</p>
+<p>java.lang.RuntimeException: Value for dict_id cannot be null<br>        at com.jj.red.packet.user.mybatis.domain.RoundDictExample$GeneratedCriteria.addCriterion(RoundDictExample.java:95)<br>        at com.jj.red.packet.user.mybatis.domain.RoundDictExample$GeneratedCriteria.andDictIdEqualTo(RoundDictExample.java:118)<br>        at com.jj.red.packet.user.mybatis.domain.RoundDictExample$Criteria.andDictIdEqualTo(RoundDictExample.java:763)<br>        at com.jj.red.packet.user.service.impl.RoundDictServiceImpl.getDicts(RoundDictServiceImpl.java:55)</p>
+<p>Q：Unknown column ‘xxx’ in ‘field list’</p>
+<p>A：数据表中字段与实体类中声明的字段对象没有用注解连接。</p>
+<p>或者 将两个名字改成一致的</p>
+<p>Q：不知道哪个是对应数据库的键，哪个对应实体类的键</p>
+<p><em>A： <!-- 普通的列  -column 是数据库中字段， property是实体类中字段--></em>      </p>
+  <result column="token" property="token" jdbcType="VARCHAR" />
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;!--  ADD --&gt;<br>  &lt;insert id=&quot;insertSelective&quot; parameterType=&quot;com.jj.red.packet.user.mybatis.domain.RoundDict&quot;&gt;<br>    &lt;selectKey keyProperty=&quot;id&quot; order=&quot;AFTER&quot; resultType=&quot;java.lang.Integer&quot;&gt;<br>      SELECT LAST_INSERT_ID()<br>    &lt;/selectKey&gt;<br>    insert into t_round_dict<br>    &lt;trim prefix=&quot;(&quot; suffix=&quot;)&quot; suffixOverrides=&quot;,&quot;&gt;<br>      &lt;if test=&quot;dictId != null&quot;&gt;<br>        dictId,<br>      &lt;/if&gt;<br>    &lt;/trim&gt;<br>    &lt;trim prefix=&quot;values (&quot; suffix=&quot;)&quot; suffixOverrides=&quot;,&quot;&gt;<br>      &lt;if test=&quot;dictId != null&quot;&gt;<br>        #&#123;dictId,jdbcType=VARCHAR&#125;,    <br> &lt;!--  取值方式1：#&#123;value jdbcType = valuetype&#125;：jdbcType 表示该属性的数据类型在数据库中对应的类型，如 #&#123;user jdbcType=varchar&#125; 等价于 String username；--&gt;<br>      &lt;/if&gt;<br>    &lt;/trim&gt;<br>  &lt;/insert&gt;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>tips；UUID ： VARCHAR(36)<em>类型</em></p>
+<p>终端打印出来的顺序；</p>
+<p>ApplicationContext  –&gt; ContextLoader –&gt; ServletREgistrationBean –&gt; dispatcherServlet –&gt; RequestMappingHandlerMapping –&gt; Mapped (/m/add method=[POST]) to. ResponseMessage –&gt; xxController.add ; url path [/v2/api] to SwaggerController.getDocument –&gt; … —&gt; tomcat started on port xxx</p>
+<p>LIST</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">Controller:<br>Page&lt;RoundDict&gt; roundDicts = roundDictService.getDicts(roundDictRequest.getDictId(),roundDictRequest.getDictUuid());<br></code></pre></td></tr></table></figure>
+
+<p>Controller:  roundDictService .getDicts –&gt; roundDictServiceImpl .getDicts( roundDictMapper.selectByExample(example)  ) –&gt; mappler. selectByexample–&gt; mapper.xml id = selectByexample</p>
+<p>快看原来返回的是什么模型就已经告诉我了</p>
+<p>list :</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn3vmitdelj307p08h756.jpg"></p>
+<p>==list</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">Page&lt;RoundDict&gt; roundDicts = roundDictService.getDicts(roundDictRequest.getDictId(),roundDictRequest.getDictUuid());<br><br>return this.setSysData(roundDicts);<br></code></pre></td></tr></table></figure>
+
+
+
+<p> roundDictService.getDicts( ) –&gt; </p>
+<p>Page<RoundDict> roundDicts  –&gt;  Page<RoundDict>?? –&gt; setSysData -&gt;  coreController.setSysData.setItem. –&gt; page data.getResult –&gt; PageData.setItems –&gt; ResponseMessage.setPageDate</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">setSysData(Page data形参） == setSysData(Page&lt;RoundDict&gt; roundDicts实参)<br> page.getResult return this<br>PageData.setItems( page data.getResult)  ==  PageData.setItems( Page&lt;RoundDict&gt; roundDicts.getResult )<br> <br></code></pre></td></tr></table></figure>
+
+
+
+<p>page类 ：setStart </p>
+<p><strong>SysPageBean : setItems</strong></p>
+<p><strong>pageBean: setItems</strong></p>
+<p>Corecontroller: roundDicts 需要有一个 getItems()方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">protected</span> ResponseMessage&lt;SysPageBean&gt; <span class="hljs-title">setSysData</span><span class="hljs-params">(PageBean **data**)</span> </span>&#123;<br>    ResponseMessage&lt;SysPageBean&gt; responseMessage = <span class="hljs-keyword">new</span> ResponseMessage&lt;&gt;();<br>    SysPageBean pageData= <span class="hljs-keyword">new</span> SysPageBean();<br>    pageData.setTotal(Long.parseLong(data.getTotalNum() + <span class="hljs-string">&quot;&quot;</span>));<br>    <br>    pageData.setItems(**data**.getItems());<br>  <br>    responseMessage.setData(pageData);<br>    <span class="hljs-keyword">return</span> responseMessage;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>注解 for swagger</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">@RequestMapping(value = AdminRestUrl.ADD , method = RequestMethod.POST)<br>// 返回被@ApiModel标注的类对象。 啊哈哈这个会显示到swagger页面的这个接口最顶上。<br>@ApiOperation(value = &quot;实体类响应&quot;,notes = &quot;返回数据为实体类的接口&quot;)<br>//这个可能只对map生效哦，不过不确定<br>@ApiImplicitParam(name = &quot;user&quot;, value = &quot;用户详细信息User&quot;, required = true,dataType = &quot;User&quot;)<br>public ResponseMessage&lt;Integer&gt; add(@RequestBody RoundDict roundDict) &#123;<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn3vq481onj306m01njri.jpg"></p>
+<p>常用注解：<a target="_blank" rel="noopener" href="https://github.com/Mshuyan/swagger">https://github.com/Mshuyan/swagger</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44906271/article/details/105792809">https://blog.csdn.net/weixin_44906271/article/details/105792809</a></p>
+<p>=====add</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">为什么insert、delete、update语句的返回值类型是int？<br></code></pre></td></tr></table></figure>
+
+<p>有JDBC操作经验的朋友可能会有印象，增删改操作实际上返回的是操作的条数。而Mybatis框架本身是基于JDBC的，所以此处也沿袭这种返回值类型。</p>
+<p>返回模型：<strong>ResponseMessage«Map» {</strong></p>
+<p>resultStatus (code:1000,message:成功) ：getStatus,getcode/Message</p>
+<p><strong>自定义（getDictId）</strong></p>
+<p> return map(code,message)</p>
+<p>–&gt;</p>
+<p> ResponseMessage(    )   :ResponseMessage( resultStatus.<strong>自定义（getDictId）</strong> )  getData()</p>
+<p> return map( code,message, dictId, dictum ….)</p>
+<p>——》</p>
+<p>Controller ()</p>
+<p>Return ResponseMessage</p>
+<p>responsebody?</p>
+<p>\</p>
+<p>发现我 “roomId”: 0,  “userId”: 0 已经成功删掉了，唯有action还很坚挺，可能在父类里面定义了。</p>
+<p>资料：</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jackson0714/p/spring-boot-07-mybatis.html#_label0">MyBatis</a></p>
+<p>mapper.xml中常用的标签详解：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_29233973/article/details/51433924">https://blog.csdn.net/qq_29233973/article/details/51433924</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/aichiboluo/p/8962529.html">https://www.cnblogs.com/aichiboluo/p/8962529.html</a></p>
+<p>深入解析mapper.xml： <a target="_blank" rel="noopener" href="https://lanlan2017.github.io/JavaReadingNotes/f097c266/">https://lanlan2017.github.io/JavaReadingNotes/f097c266/</a></p>
+<p>Mapper.xml 中的sql写法：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43925626/article/details/84940475?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control">https://blog.csdn.net/weixin_43925626/article/details/84940475?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control</a></p>
+<p>Mapper.xml 中的sql写法：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_30892037/article/details/97550213?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control">https://blog.csdn.net/weixin_30892037/article/details/97550213?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control</a></p>
+<p>sql 返回数据：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ysySelf/p/11223971.html">https://www.cnblogs.com/ysySelf/p/11223971.html</a></p>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+            id: "数据库的那些事儿",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/02/03/50%20proojects%20-%20to%20do%20list/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">50 projects - to do list</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/28/Mac%E9%A1%BA%E6%BB%91%E5%90%AF%E5%8A%A8Node.js%E9%A1%B9%E7%9B%AE%E6%8C%87%E5%8D%97/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">Mac顺滑启动Node.js项目指南</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    </body>
+</html>
+        

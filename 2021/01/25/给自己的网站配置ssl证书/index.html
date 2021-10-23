@@ -15,7 +15,11 @@
     
     <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
 
+<<<<<<< HEAD
     <meta name="generator" content="Hexo 5.2.0"></head>
+=======
+    <meta name="generator" content="Hexo 5.4.0"></head>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
     <body>
         <header class="al_header al_pos_fixed">
     <div class="al_header_container dis_flex_jcenter">
@@ -117,12 +121,20 @@
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
+<<<<<<< HEAD
                             January 24, 2021 04:01 PM
+=======
+                            January 25, 2021 05:01 AM
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                         </div>
 
                         
                             <div class="al_page_content_info">
+<<<<<<< HEAD
                                 929 words
+=======
+                                916 words
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                             </div>
                         
 
@@ -193,6 +205,7 @@
 <li><p>使用宝塔的上传功能，将本地证书文件和密钥文件上传到Nginx服务器的证书目录（如 /www/server/nginx/conf/cert）</p>
 </li>
 <li><p>修改 nginx.conf</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">server &#123;<br>    listen 443 ssl;<br>    #配置HTTPS的默认访问端口为443。<br>    #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。<br>    #如果您使用Nginx 1.15.0及以上版本，请使用listen 443 ssl代替listen 443和ssl on。<br>    server_name yourdomain.com; #需要将yourdomain.com替换成证书绑定的域名。<br>    root html;<br>    index index.html index.htm;<br>    ssl_certificate cert&#x2F;cert-file-name.pem;  #需要将cert-file-name.pem替换成已上传的证书文件的名称。<br>    ssl_certificate_key cert&#x2F;cert-file-name.key; #需要将cert-file-name.key替换成已上传的证书密钥文件的名称。<br>    ssl_session_timeout 5m;<br>    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;<br>    #表示使用的加密套件的类型。<br>    ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #表示使用的TLS协议的类型。<br>    ssl_prefer_server_ciphers on;<br>    location &#x2F; &#123;<br>        root html;  #站点目录。<br>        index index.html index.htm;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p>http 自动跳转到 https</p>
@@ -202,13 +215,27 @@
 </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">cd &#x2F;www&#x2F;server&#x2F;nginx&#x2F;sbin  #进入Nginx服务的可执行目录。<br>.&#x2F;nginx -s reload  #重新载入配置文件。<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">server &#123;<br>    listen 443 ssl;<br>    #配置HTTPS的默认访问端口为443。<br>    #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。<br>    #如果您使用Nginx 1.15.0及以上版本，请使用listen 443 ssl代替listen 443和ssl on。<br>    server_name yourdomain.com; #需要将yourdomain.com替换成证书绑定的域名。<br>    root html;<br>    index index.html index.htm;<br>    ssl_certificate cert/cert-file-name.pem;  #需要将cert-file-name.pem替换成已上传的证书文件的名称。<br>    ssl_certificate_key cert/cert-file-name.key; #需要将cert-file-name.key替换成已上传的证书密钥文件的名称。<br>    ssl_session_timeout 5m;<br>    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;<br>    #表示使用的加密套件的类型。<br>    ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #表示使用的TLS协议的类型。<br>    ssl_prefer_server_ciphers on;<br>    location / &#123;<br>        root html;  #站点目录。<br>        index index.html index.htm;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>http 自动跳转到 https</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">server &#123;<br>    listen 80;<br>    server_name yourdomain.com; #需要将yourdomain.com替换成证书绑定的域名。<br>    rewrite ^(.*)$ https://$host$1; #将所有HTTP请求通过rewrite指令重定向到HTTPS。<br>    location / &#123;<br>        index index.html index.htm;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li>
+<li><p>重启 nginx</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">cd /www/server/nginx/sbin  #进入Nginx服务的可执行目录。<br>./nginx -s reload  #重新载入配置文件。<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 
 
 
 
 <h4 id="6-验证是否安装成功"><a href="#6-验证是否安装成功" class="headerlink" title="6 验证是否安装成功"></a>6 验证是否安装成功</h4><p>证书安装完成后，您可通过访问证书的绑定域名验证该证书是否安装成功。</p>
+<<<<<<< HEAD
 <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">https:&#x2F;&#x2F;yourdomain.com   #需要将yourdomain.com替换成证书绑定的域名。<br></code></pre></td></tr></table></figure>
+=======
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">https://yourdomain.com   #需要将yourdomain.com替换成证书绑定的域名。<br></code></pre></td></tr></table></figure>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 
 <p>如果你像我一样在浏览器框能看到这个小锁标志:</p>
 <p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmzx498na9j306100t3yi.jpg" alt="image-20210125142020794"></p>
@@ -223,11 +250,19 @@
     <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
     <script>
         var gitalk = new Gitalk({
+<<<<<<< HEAD
             clientID: "github_clientID",
             clientSecret: "github_clientSecret",
             repo: "you site homepage",
             owner: "your username",
             admin: "same as [owner]",
+=======
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
             id: "给自己的网站配置ssl证书",
         });
         gitalk.render("al_gitalk_cnt")
@@ -238,12 +273,20 @@
 
             
             <nav class="dis_flex al_post_nav">
+<<<<<<< HEAD
                 <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/02/03/50%20proojects%20-%20to%20do%20list/">
+=======
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/28/Mac%E9%A1%BA%E6%BB%91%E5%90%AF%E5%8A%A8Node.js%E9%A1%B9%E7%9B%AE%E6%8C%87%E5%8D%97/">
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                     
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
                         </svg>
+<<<<<<< HEAD
                         <span class="al_text_ellipsis al_post_nav_desc">50 projects - to do list</span>
+=======
+                        <span class="al_text_ellipsis al_post_nav_desc">Mac顺滑启动Node.js项目指南</span>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
                     
                 </a>
                 <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/23/Google-Cloud-%E9%83%A8%E7%BD%B2%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/">
@@ -299,6 +342,10 @@
         src=extra_plugin_js_url
         async="async"
     ></script>
+<<<<<<< HEAD
     <script src="/hexo_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/hexo_blog/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+=======
+    </body>
+>>>>>>> 7ca9a01c779554b852341410f49c9243034c28d1
 </html>
         
