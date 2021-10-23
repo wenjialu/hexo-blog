@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>【教程】Mac 怎么启动第一个 SpringBoot项目</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.4.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        【教程】Mac 怎么启动第一个 SpringBoot项目
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            January 22, 2021 07:01 AM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                1.9k words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                8 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AF%86%EF%BC%9A"><span class="toc-text">背景知识：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring-Maven-SpringBoot"><span class="toc-text">Spring -Maven - SpringBoot</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Maven"><span class="toc-text">Maven</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Spring"><span class="toc-text">Spring</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="toc-text">新建项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95"><span class="toc-text">三种启动方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E5%88%AB%E4%BA%BA%E7%9A%84%E9%A1%B9%E7%9B%AE"><span class="toc-text">启动别人的项目</span></a></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <h3 id="背景知识："><a href="#背景知识：" class="headerlink" title="背景知识："></a>背景知识：</h3><h3 id="Spring-Maven-SpringBoot"><a href="#Spring-Maven-SpringBoot" class="headerlink" title="Spring -Maven - SpringBoot"></a>Spring -Maven - SpringBoot</h3><p>一句话简单讲述三者关系： “ The quickest way to create a Spring application is to use a <a target="_blank" rel="noopener" href="https://spring.io/projects/spring-boot">Spring Boot</a> Maven project.”</p>
+<p>— 官方教程指路： <a target="_blank" rel="noopener" href="https://www.jetbrains.com/help/idea/2020.3/your-first-spring-application.html">https://www.jetbrains.com/help/idea/2020.3/your-first-spring-application.html</a></p>
+<h4 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h4><p>What：包管理器</p>
+<p><strong>tips: maven 配置里面有个奇天大坑</strong>，不是为了下载依赖快一点改成国内的镜像了吗，结果老是出错也不知道是为啥。</p>
+<p>折腾好几天才想起来，我一直是翻着墙的。。。 干啥子要用国外的站点下国内的资源嘛！ 要么改回原来镜像，要么关掉梯子。</p>
+<p>果然，</p>
+<p>变得又快又好了。</p>
+<p>【第一次打开一个项目的时候，要下很多依赖会有点慢。但是之后打开就很快了。】</p>
+<h4 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h4><p>What: 万能框架</p>
+<p>官方文档（<a target="_blank" rel="noopener" href="https://spring.io/projects/spring-boot%EF%BC%89">https://spring.io/projects/spring-boot）</a></p>
+<p><strong>原则：约定大于配置</strong></p>
+<p>比如：</p>
+<p>文件摆放位置；</p>
+<p>application.yaml (必须是这个名字) 配置可以放在一下位置，<br>执行优先级依次是：<br>项目路径./ config文件夹/application.yaml<br>项目路径./application.yaml<br>classpath :/config文件夹/application.yaml<br>classpath :/application.yaml</p>
+<p>场外提示： classpath =类路径=src-main-java/resource 下面都算</p>
+<h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><p>IDEA – spring initializr</p>
+<h3 id="三种启动方法"><a href="#三种启动方法" class="headerlink" title="三种启动方法"></a>三种启动方法</h3><p><strong>在这三种启动方法前，如果你同时导入的是多个项目，并且maven没有出现的话。需找到每个项目的pom.xml，右键，add as a maven project.</strong></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34296641/article/details/94171666?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control">https://blog.csdn.net/weixin_34296641/article/details/94171666?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control</a><br>前两种方法供本地运行，第三种是线上部署使用<br><strong>方法1: 直接点绿色箭头运行</strong></p>
+<p>最关键就是要先 mvn package， 再点运行</p>
+<p><strong>方法2</strong>: 应用的根目录下运行</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java">mvn -U clean spring-boot:run<br></code></pre></td></tr></table></figure>
+
+<p>(没有自动创建也可以用这个手动创建)</p>
+<p><strong>方法3: 使用mvn install 生成jar后运行</strong><br>先到项目根目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">mvn compile<br>mvn package<br>java -jar target/xxx.jar<br>https://spring.io/guides/gs/maven/#initial<br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>1 mvn  clean install</strong><br>在有的pom路径下<br>mvn  clean install<br>（This will clean whatever created from the previous build, then build your project and add the jars to your local maven repository ）<br>就会帮忙安装pom里的依赖</p>
+<p>Maven projects are defined with an XML file named <em>pom.xml</em>. Among other things, this file gives the project’s name, version, and dependencies that it has on external libraries.</p>
+<p><strong>2 cd target</strong><br><strong>3 java -jar   xxxx.jar</strong><br>tips: 使用maven工具打包（jar包），打包时要注意，由于模块与模块之间的依赖关系，所以打包是要有顺序的，需要先打被依赖的模块；你也可以在父类模块上打一个包。</p>
+<p>其他配置 (可选)<br>perference – maven -importing -勾选 自动下载 sources</p>
+<h3 id="启动别人的项目"><a href="#启动别人的项目" class="headerlink" title="启动别人的项目"></a>启动别人的项目</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/gao_xiao_qi/article/details/99707592">https://blog.csdn.net/gao_xiao_qi/article/details/99707592</a><br><a target="_blank" rel="noopener" href="https://www.pianshen.com/article/16541114992/">https://www.pianshen.com/article/16541114992/</a><br>要<strong>import</strong> 而不是 open：<br>file-new-from existing project-maven</p>
+<p><strong>配置：</strong><br><strong>Crtl+Alt+s 快捷键打开idea设置，并搜索maven。</strong></p>
+<p><strong>里面的setting 还有仓库要改成自己的位置啊！</strong></p>
+<p><strong>贴心避坑指南总结：</strong></p>
+<p>1.找不到classpath下的resources ：</p>
+<p>首先，需要把 java 文件夹右键 - 标成蓝色，resources - 标成绿色。 （或者在 file – project structure 改动）</p>
+<p>其次，每个pom.xml 都要右键 - <strong>add as a maven project.</strong> 不过要是右键没有的话也不用担心，这说明已经是maven项目了。</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn2eza21efj30ad0gzq4v.jpg"></p>
+<p>2  启动顺序很重要 ！！！！！</p>
+<p>如果一个项目中，有多个子项目，那么要注意启动顺序。</p>
+<p>因为有的项目的依赖需要在其他项目编译完之后才能拥有。</p>
+<p>一般启动顺序如下：</p>
+<p>1注册中心eureka  2网关 gateway</p>
+<p>3配置中心config   4 api  5服务中心 user</p>
+<p>依次启动 round-table-eureka-server 、round-table-config-server、round-table-user-server</p>
+<p>![image-20210119235350856](/Users/lujiawen/Library/Application Support/typora-user-images/image-20210119235350856.png)</p>
+<p>3 现在和大家提醒一个很大的坑。我这次所有的子项目都有一个父项目spring-boot-starter-parent。</p>
+<p>明明pom中导入了依赖，本地也有这个包，但是为什么会提示找不到呢。</p>
+<p>注意：仔细看下pom中，包的地址是相对路径！！！！</p>
+<p>不懂 relativePath 指的是哪个仓库的话，在idea中点击进去看源码。</p>
+<p>可知：它的默认值是…/pom/xml</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;parent&gt;<br>   &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;<br>   &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;<br>   &lt;version&gt;2.0.4.RELEASE&lt;/version&gt;<br>   &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;<br>&lt;/parent&gt;<br></code></pre></td></tr></table></figure>
+
+<p>在resources下面新建lib文件夹，并把jar包文件放到这个目录下 .${project.basedir}只是一个系统自己的常量</p>
+<p><systemPath>${project.basedir}/src/main/resources/lib/alicom-mns-receive-sdk-1.0.0.jar</systemPath>  </p>
+<p><strong>4 导包失败：</strong></p>
+<p>有了maven后 导包快捷键： alt+回车，</p>
+<p>如果本地仓库没有的话，去maven repository 上搜索，然后在pom.xml中引用。</p>
+<p><a target="_blank" rel="noopener" href="https://wangao.info/2020/04/13/spring-boot-00/">https://wangao.info/2020/04/13/spring-boot-00/</a></p>
+<p>5 <strong>找不到主类</strong>/没有主清单属性</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/thinking-better/p/7827368.html">https://www.cnblogs.com/thinking-better/p/7827368.html</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;!--自动生成主清单属性--&gt;<br>    &lt;build&gt;<br>    &lt;plugins&gt;<br>    &lt;plugin&gt;<br>    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;<br>    &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;<br>        &lt;configuration&gt;<br>           &lt;!--设置自己想要的主类--&gt;<br>            &lt;mainClass&gt;com.jj.api.rest.common.MapToolUtil&lt;/mainClass&gt;<br>        &lt;/configuration&gt;<br>    &lt;/plugin&gt;<br>    &lt;/plugins&gt;<br>    &lt;/build&gt;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>6 user子程序启动问题</p>
+<p><strong>Could not locate PropertySource: I/O error on GET request</strong></p>
+<p>在usr -dev -   .xml中 关闭 spring.cloud.config 的配置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><code class="hljs shell">spring.cloud.config= false<br></code></pre></td></tr></table></figure>
+
+
+
+<p>7 找不到符号</p>
+<p>把.idea删除，再重新打开ide</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;plugin&gt;<br>    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;<br>    &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;<br>&lt;/plugin&gt;<br><br>所以我就把他注释了再编译，结果就没问题了，所以我觉得应该是这个插件导致<br></code></pre></td></tr></table></figure>
+
+
+
+<p>8 plugins 报红色波浪线</p>
+<ul>
+<li>到本地仓库下找到未下载成功的插件及对应版本</li>
+<li>删掉后缀为<code>lastUpdated</code>的文件</li>
+<li>再到idea上 maven刷新按钮重新下载即可成功</li>
+</ul>
+<p>9 程序包不存在-导入maven项目时程序包不存在</p>
+<p>出错原因：project structure – Libraries – 第三栏 sources, javaDocs 包 没找到或者安装错误。</p>
+<p>去仓库找到相对应版本的包安装位置，<strong>如果文件是以 .lastUpdated 结尾的，那这就是下载失败的jar，当这个下载失败的文件存在的时候，reimport 我们的pom.xml文件，它是不会重新下载这个失败的jar的。</strong></p>
+<p>解决方案： </p>
+<p>Step 1: 重新导入前的准备。</p>
+<p>首先尝试了以下几种方式，但是没能解决问题（注意是无效的）：**</p>
+<ul>
+<li>修改maven的 <code>settings.xml</code> 增加或修改<code>mirror</code>或其他配置（并非中央仓库问题）；</li>
+<li>删除<code>.lastUpdated</code>文件 (删除后会复活);</li>
+</ul>
+<ul>
+<li><p>通过<strong>在项目路径下使用<code>mvn -U compile</code>命令！</strong></p>
+</li>
+<li><p>在maven 的settings里面加入：</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">&lt;profiles&gt;<br>&lt;profile&gt;<br>    &lt;id&gt;downloadSources&lt;/id&gt;<br>    &lt;properties&gt;<br>        &lt;downloadSources&gt;true&lt;/downloadSources&gt;<br>        &lt;downloadJavadocs&gt;true&lt;/downloadJavadocs&gt;           <br>    &lt;/properties&gt;<br>&lt;/profile&gt;<br>&lt;/profiles&gt;<br><br>&lt;activeProfiles&gt;<br>  &lt;activeProfile&gt;downloadSources&lt;/activeProfile&gt;<br>&lt;/activeProfiles&gt;<br></code></pre></td></tr></table></figure>
+
+<p>Step 2: 重新导入</p>
+<p>Step 3: 点第三列左上角+号，选择并添加正确的lib文件路径。</p>
+<ul>
+<li>/Users/lujiawen/Desktop/工作台/my_packs_env_dont_change_name_position/apache-maven-3.6.3/repository/antlr/antlr/2.7.7/antlr-2.7.7-sources.jar</li>
+</ul>
+<p>未解决</p>
+<p>10 java.lang.IllegalStateException: Service id not legal hostname (${feign.serviceId.user})</p>
+<p>user 中 resources 文件夹下 取名为 application.yml 的配置文件， 最好不要随便改名。</p>
+<p>11 Could not autowire. No beans of ‘xxxx’ type found</p>
+<p>（这个错误提示并不会产生影响。控制台也不报错，可以正常运行。）</p>
+<p>。如果有强迫症的童鞋可以尝试：</p>
+<p>1降低Autowired检测的级别，将Severity的级别由之前的error改成warning或其它可以忽略的级别。</p>
+<p>2确认导包是否正确：import org.springframework.stereotype.Service;</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEly1gnpv14blw2j31010o50xl.jpg"></p>
+<p>参考资料：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sunnyzyq/article/details/86711708">https://blog.csdn.net/sunnyzyq/article/details/86711708</a> ⭐️</p>
+<p>自己创建：<a target="_blank" rel="noopener" href="https://blog.csdn.net/typa01_kk/article/details/76696618">https://blog.csdn.net/typa01_kk/article/details/76696618</a></p>
+<p>配置gitlab： <a target="_blank" rel="noopener" href="https://blog.csdn.net/u010454030/article/details/80653660">https://blog.csdn.net/u010454030/article/details/80653660</a></p>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+            id: "【教程】Mac 怎么启动第一个 SpringBoot项目",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/23/Google-Cloud-%E9%83%A8%E7%BD%B2%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">Google Cloud 部署我的网站 (附宝塔面板安装教程)</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/01/20/SpringBoot-%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">SpringBoot 数据库操作指南</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    </body>
+</html>
+        

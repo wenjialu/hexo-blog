@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>【手把手教学】用前端 react 来做一个机器人🤖️网站</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.4.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        【手把手教学】用前端 react 来做一个机器人🤖️网站
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            December 13, 2021 07:12 AM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                2.3k words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                10 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%90%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E5%AD%A6%E3%80%91%E7%94%A8%E5%89%8D%E7%AB%AF-react-%E6%9D%A5%E5%81%9A%E4%B8%80%E4%B8%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%F0%9F%A4%96%EF%B8%8F%E7%BD%91%E7%AB%99"><span class="toc-text">【手把手教学】用前端 react 来做一个机器人🤖️网站</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%88%E6%9D%A5%E7%9C%8B%E4%B8%8B%E6%9C%80%E5%90%8E%E7%9A%84%E6%88%90%E6%9E%9C%EF%BD%9E%EF%BD%9E"><span class="toc-text">先来看下最后的成果～～</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#image-20201114143926433-Users-lujiawen-Library-Application-Support-typora-user-images-image-20201114143926433-png"><span class="toc-text">![image-20201114143926433](&#x2F;Users&#x2F;lujiawen&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20201114143926433.png)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A3%85%E5%A5%BD%E4%BA%86%E4%B9%8B%E5%90%8E%E7%9A%84%E7%95%8C%E9%9D%A2%E6%98%AF%E8%BF%99%E6%A0%B7%E7%9A%84-Happy-hacking"><span class="toc-text">装好了之后的界面是这样的 Happy hacking~</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E7%BB%88%E7%AB%AF%EF%BC%9A%E8%BF%9B%E5%85%A5%E5%88%B0%E5%88%9A%E5%88%9A%E8%A3%85%E5%A5%BD%E7%9A%84-robofriend-%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E7%9B%B8%E5%85%B3%E4%BE%9D%E8%B5%96%E9%83%BD%E8%A3%85%E5%A5%BD%E5%95%A6%EF%BD%9E%EF%BD%9E"><span class="toc-text">在终端：进入到刚刚装好的 robofriend 文件夹，可以看到相关依赖都装好啦～～</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8"><span class="toc-text">启动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E5%88%9D%E6%8E%A2"><span class="toc-text">项目结构初探</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E6%A8%A1%E5%9D%97"><span class="toc-text">写模块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Demo-%E2%80%93-%E5%85%88%E5%81%9A%E4%B8%AA%E5%B0%8F%E6%B5%8B%E8%AF%95-%EF%BD%9E"><span class="toc-text">Demo – 先做个小测试 ～</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%A1%E7%89%87%E5%88%B6%E4%BD%9C"><span class="toc-text">机器人卡片制作</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">RoboFriends</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">Loading</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">RoboFriends</span></a></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <h1 id="【手把手教学】用前端-react-来做一个机器人🤖️网站"><a href="#【手把手教学】用前端-react-来做一个机器人🤖️网站" class="headerlink" title="【手把手教学】用前端 react 来做一个机器人🤖️网站"></a>【手把手教学】用前端 react 来做一个机器人🤖️网站</h1><h2 id="先来看下最后的成果～～"><a href="#先来看下最后的成果～～" class="headerlink" title="先来看下最后的成果～～"></a>先来看下最后的成果～～</h2><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li><p>先用 npm 安装 create-react-app </p>
+<p>（ps. npm 是个很好用的前端包管理器。没有安装 npm 的小伙伴可以通过这个链接 <a target="_blank" rel="noopener" href="https://www.npmjs.com/get-npm">https://www.npmjs.com/get-npm</a> 下载）</p>
+</li>
+<li><p>用 create-react-app 创建我们的机器人小项目，起名为 robofriends 。</p>
+<p>（这一步react会帮我们装很多东西，比如依赖包啊什么的，可能要花点时间, 请耐心等待⌛️）</p>
+</li>
+</ol>
+<h1 id="image-20201114143926433-Users-lujiawen-Library-Application-Support-typora-user-images-image-20201114143926433-png"><a href="#image-20201114143926433-Users-lujiawen-Library-Application-Support-typora-user-images-image-20201114143926433-png" class="headerlink" title="![image-20201114143926433](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201114143926433.png)"></a>![image-20201114143926433](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201114143926433.png)</h1><h3 id="装好了之后的界面是这样的-Happy-hacking"><a href="#装好了之后的界面是这样的-Happy-hacking" class="headerlink" title="装好了之后的界面是这样的 Happy hacking~"></a>装好了之后的界面是这样的 Happy hacking~</h3><p>![image-20201114144237710](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201114144237710.png)</p>
+<h3 id="在终端：进入到刚刚装好的-robofriend-文件夹，可以看到相关依赖都装好啦～～"><a href="#在终端：进入到刚刚装好的-robofriend-文件夹，可以看到相关依赖都装好啦～～" class="headerlink" title="在终端：进入到刚刚装好的 robofriend 文件夹，可以看到相关依赖都装好啦～～"></a>在终端：进入到刚刚装好的 robofriend 文件夹，可以看到相关依赖都装好啦～～</h3><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p>桌面上用你喜欢的idea打开整个文件夹，我用的是vscode（打开vscode直接拖动文件夹进去就好了）。</p>
+<p>打开pakeage.json ， </p>
+<p>看到 ”start“ 对应的就是“ react-scripts start” 启动脚本。</p>
+<p>所以 ， 在终端运行 npm start 就能启动整个项目啦。</p>
+<p>![image-20201114144822871](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201114144822871.png)</p>
+<p>如果自动跳转到 localhost:3000 （见下图）</p>
+<p>就是启动成功啦～</p>
+<p>![image-20201114165308860](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201114165308860.png)</p>
+<h2 id="项目结构初探"><a href="#项目结构初探" class="headerlink" title="项目结构初探"></a>项目结构初探</h2><p>来继续通过idea来看这个最初始的项目文件夹，</p>
+<p>node_modules是自动帮我们下好的包，先不用去关心它。</p>
+<p>public 里面有index.html，</p>
+<p>src （source）文件夹就是一切 “魔法” 发生的地方啦，</p>
+<p>我们会把最重要的js 还有 css 文件等放在这个文件夹里。</p>
+<p><em>打开里面的 index.js。</em></p>
+<p><em>ReactDom 这行代码 渲染了组件或者任何你写的东东到你指定的Dom上。</em></p>
+<p><em>在这里我们渲染的是id为root的dom，可以去index.html里看，这是我们主体部分唯一的dom节点。</em></p>
+<p><em>![image-20201114170054769](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201114170054769.png)</em></p>
+<h2 id="写模块"><a href="#写模块" class="headerlink" title="写模块"></a>写模块</h2><h4 id="Demo-–-先做个小测试-～"><a href="#Demo-–-先做个小测试-～" class="headerlink" title="Demo – 先做个小测试 ～"></a>Demo – 先做个小测试 ～</h4><p><strong>这里先介绍个好玩的机器人api</strong></p>
+<p>Robohash <a target="_blank" rel="noopener" href="https://robohash.org/">https://robohash.org/</a></p>
+<p>在这个网站 url 中，输入任意字符，就能帮你随机生成一个小机器人，这个想法是不是超级可爱呢！！！</p>
+<p>好啦， 我们的网站就要利用到这个功能，来生成我们自己的机器人小卡片。</p>
+<p>首先，在 src 文件夹里新建 Card.js 文件, 把这个网站随机生成的图片 url 放到代码里。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Card</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> (<br>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;Card&quot;</span>&gt;</span></span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello, I am a Robot<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://robohash.org/irina&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;robots&quot;</span> /&gt;</span> </span><br><span class="xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>  );<br>&#125;<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Card;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>在 index.js 中，导入 Robot.js, 并且把  <App /> 替换为 <Card /></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 新增以及替换的代码</span><br><span class="hljs-keyword">import</span> Card <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./Card&#x27;</span>;<br><br>ReactDOM.render(<br>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">React.StrictMode</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> /&gt;</span></span><br><span class="xml">  <span class="hljs-tag">&lt;/<span class="hljs-name">React.StrictMode</span>&gt;</span></span>,<br>  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;root&#x27;</span>)<br>);<br><br></code></pre></td></tr></table></figure>
+
+<p>刷新下我们的本地页面，哈哈 机器人就出现和你打招呼啦🙋。</p>
+<p>测试成功～</p>
+<p>![image-20201114222806928](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201114222806928.png)</p>
+<h4 id="机器人卡片制作"><a href="#机器人卡片制作" class="headerlink" title="机器人卡片制作"></a>机器人卡片制作</h4><p>1 首先，可以在 Card.js 中美化下卡片的 css 样式。 </p>
+<p>先安装一个 依赖包</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">npm install tachyons<br></code></pre></td></tr></table></figure>
+
+<p>在 Card.js 中通过 className 调用它的样式～ </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;tachyons&quot;</span><br>&lt;div className=<span class="hljs-string">&quot;bg-light-green dib br3 pa3 na2 grow bw2 shadow-5&quot;</span>&gt;  <br></code></pre></td></tr></table></figure>
+
+<p>2 然后做很多卡片：</p>
+<p>因为  <Card /> 就是一个 component 了， 所以可以不断复用它。</p>
+<p>直接复制就好了。</p>
+<p>3 但是所有卡片里面的机器人名字和图像都是一模一样的， 我想让里面的信息是不一样的。</p>
+<p>于是制作机器人对象：</p>
+<p>用一个常量 robot 来存所有的机器人的信息。</p>
+<p>![image-20201115022317648](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201115022317648.png)</p>
+<p>在 index.js 中依次取出他们的信息 当作参数。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> &#123;robots&#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./robots&#x27;</span>;<br>ReactDOM.render(<br>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">React.StrictMode</span>&gt;</span></span><br><span class="xml">    &#123;/* <span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span> */&#125;</span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[0].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[0].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[0].email&#125;/</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[1].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[1].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[1].email&#125;/</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[2].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[2].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[2].email&#125;/</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[3].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[3].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[3].email&#125;/</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&#123;robots[4].id&#125;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#123;robots[4].name&#125;</span> <span class="hljs-attr">email</span> =<span class="hljs-string">&#123;robots[4].email&#125;/</span>&gt;</span></span><br><span class="xml">  <span class="hljs-tag">&lt;/<span class="hljs-name">React.StrictMode</span>&gt;</span></span>,<br>  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;root&#x27;</span>)<br>);<br></code></pre></td></tr></table></figure>
+
+
+
+<p>在 Card.js 中传入指定好的参数</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Card</span>(<span class="hljs-params">props</span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> (<br>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;bg-light-green&quot;</span>&gt;</span>  </span><br><span class="xml">    &#123;/* dib br3 pa3 na2 grow bw2 shadow-5*/&#125;</span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://robohash.org/irina?200*200&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;robots&quot;</span> /&gt;</span> </span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span><br><span class="xml">          <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#123;props.name&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span><br><span class="xml">          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#123;props.email&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="xml">        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>  );<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>哈哈，别忘了把它们的样子也改一下。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&lt;img src=&#123;<span class="hljs-string">`https://robohash.org/<span class="hljs-subst">$&#123;props.id&#125;</span>?200x200`</span>&#125; alt=<span class="hljs-string">&quot;robots&quot;</span> /&gt; <br></code></pre></td></tr></table></figure>
+
+<p>tips: 1. ⚠️注意这里要把引号改为 ` 哦！！！</p>
+<p>​         2. 所有的 js expression， 比如 props.name， 都要加大括号。</p>
+<ul>
+<li><p>Js experssion</p>
+</li>
+<li><p>```javascript<br>const cardsArray = robots.map( </p>
+<pre><code>    (uesr, i) =&gt; 
+    &#123;return &lt;Card key=&#123;i&#125; id = &#123;robots[i].id&#125; name=&#123;robots[i].name&#125; email =&#123;robots[i].email&#125;/&gt;
+&#125;)
+</code></pre>
+<p>// cardsArray, i 都是 Js experssion 要加大括号。<br>// 换句话说， 要想在 react 里面写 js 只要加上大括号就行了。    </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>  <br><br>  酱酱！完成后就是下面👇这个样子，是不是还蛮酷的内～<br><br>  至此，我们的机器人小网站的雏形就有啦。<br><br>  ![image-20201116001159587](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201116001159587.png)<br><br><br><br>#### 实现搜索功能<br><br>*动态可变的State  --&gt; props*<br><br>*模块长这样：*<br><br>*app*<br><br>*cardList.   searchBox*<br><br>*Card*<br><br><br><br>##### 思路：<br><br>要让 searchBox 和 cardList 能通过父节点互动。<br><br>可以通过 React 中的 State 来实现：<br><br>State 的动态可以被当作props 传送到 searchBox 和 cardList 中。<br><br>这里可以设置 2 个state，一个是搜索关键词，起名为searchfield， 一个是被搜到的 robots，起名为 robots 。<br><br>​	<br><br>##### 实现：<br><br>searchBox 传一个参数 searchChange<br><br></code></pre></td></tr></table></figure>
+<p>function SearchBox(searchChange) {<br>  return (</p>
+   <div className="pa2">
+   <input 
+   className = "pa3 ba b--green bg-lightest-blue"
+   type="search" placeholder="search robots"
+   onChange={searchChange}/>
+   </div>   
+  );
+}
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>父节点 app 是传送的枢纽，用 event 来监控输入 searchBox 的文字，<br><br></code></pre></td></tr></table></figure>
+class App extends Component {
+{/* constructor是一个mounting方法 */}
+constructor(){
+  super()
+  this.state = {
+    robots : robots,
+    searchfield: ""
+  }
+}
+
+<p>// 这里一定要用箭头函数，因为这个是在Searchbox被调用的，不这样写会找不到this<br>onSearchChange = (event ) =&gt; {<br>   this.setState({ searchfield: event.target.value)   })<br>}</p>
+<p>render(){<br>  const { robots, searchfield } = this.state<br>  return (</p>
+<pre><code>&lt;div className=&quot;tc&quot;&gt; 
+&#123;/* textcenter */&#125;
+&lt;h1&gt;RoboFriends&lt;/h1&gt;
+&lt; SearchBox searchChange=&#123;this.onSearchChange&#125;/&gt;
+&#123;/* state 传到这变 props 作为&#123;robots&#125; 传到 CardList*/&#125;
+&lt;CardList robots=&#123;robots&#125;/&gt;
+&lt;/div&gt;
+</code></pre>
+<p>  );<br>}<br>}</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>继续改进这个传送机制，让父节点 app 传送刚刚接收到的信息到 cardList<br><br></code></pre></td></tr></table></figure>
+<p> render(){<br>    const { robots, searchfield } = this.state<br>    const filteredRobots = robots.filter( robots =&gt;{<br>      return robots.name.toLowerCase().includes(searchfield.toLowerCase())<br>   })<br>    return (<br>      <div className="tc"><br>      {/* textcenter <em>/}<br>      <h1>RoboFriends</h1><br>      &lt; SearchBox searchChange={this.onSearchChange}/&gt;<br>      {/</em> state 传到这变 props 作为{robots} 传到 CardList*/}<br>      <CardList robots={filteredRobots}/><br>      </div><br>    );<br>  }</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>##### 新增功能：下拉的时候搜索框也悬浮在顶端<br><br>Index.js<br><br></code></pre></td></tr></table></figure>
+<scroll>
+
+<p> {*/ scroll 内部的内容就是它的chirldren */}<br> <CardList robots={filteredRobots}/></p>
+</scroll>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>Scroll.js<br><br></code></pre></td></tr></table></figure>
+<p>function Scroll( props ) {<br>    return (</p>
+<pre><code> &lt;div style =&#123; &#123;overflowY:&quot;scroll&quot;, border: &quot;1px solid black&quot;, height: &quot;500px&quot;&#125;   &#125;&gt;
+    &#123;props.children&#125;
+ &lt;/div&gt;
+)
+</code></pre>
+<p>  };</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>#### 最后再美化下整个网站<br><br>##### 网站背景<br><br>Index.css<br><br></code></pre></td></tr></table></figure>
+<p>body {<br>  margin: 0;<br>  padding: 0;<br>  font-family: sans-serif;<br>  background: linear-gradient(to left, rgba(7, 27, 82, 1) 8%, rgba(8, 128, 128, 1) 100%);<br>}</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>##### 字体<br><br>Google 搜索自己想要的酷酷的字体。<br><br>下载它的 @font face (web) 版本，<br><br> 把他的css  复制到 app.css中，woff 文件则拖到我们的 src 文件夹中 。<br><br><br><br>![image-20201116165810190](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201116165810190.png)<br><br><br><br><br><br>### 动态请求<br><br>如果要在现实世界中运行我们的网站，这些机器人的信息不应该直接写在我们网站中的。<br><br>而是由真实的用户填写，浏览器发出请求而被我们所接收和响应。<br><br><br><br>现在我们可以用一个免费的API接口一个网站叫做 https://jsonplaceholder.typicode.com/<br><br>把我们的用户数据放在这个网站上，有我们来抓取模拟浏览器请求。<br><br><br><br></code></pre></td></tr></table></figure>
+<p>  // 1. 把robot.js 信息删掉， 导入文件的语句也要删掉<br>  // 2. state 中接受的robot 设为空<br>  // 3. 通过 fetch url 来得到数据<br>  constructor(){<br>    super()<br>    this.state = {<br>      robots : [],<br>      searchfield: “”<br>    }}</p>
+<p>  componentDidMount(){<br>    fetch(“<a target="_blank" rel="noopener" href="https://jsonplaceholder.typicode.com/users&quot;">https://jsonplaceholder.typicode.com/users&quot;</a>)<br>      .then(response =&gt;{ response.json()<br>      .then(users =&gt; this.setState({ robots:users}));<br>      })<br>  }</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br><br><br>在获取 url 数据的等待时间，页面什么也不返回。<br><br>如果数据量大，查找时间很长的话，会让用户很困惑。<br><br>所以在未获取数据的时候，可以提示正在加载 “Loading” 中。<br><br></code></pre></td></tr></table></figure>
+<p>render(){<br>    const filteredRobots = this.state.robots.filter( robots =&gt;{<br>      return robots.name.toLowerCase().includes(this.state.searchfield.toLowerCase())<br>   })<br>   if (this.state.robots.length === 0){<br>     return <h1>Loading</h1><br>   } else{<br>    return (<br>      <div className="tc"><br>      {/* textcenter <em>/}<br>      <h1 className="f1">RoboFriends</h1><br>      &lt; SearchBox searchChange={this.onSearchChange}/&gt;<br>      {/</em> state 传到这变 props 作为{robots} 传到 CardList*/}<br>      <CardList robots={filteredRobots}/><br>      </div><br>    );<br>   }<br>  }</p>
+<pre><code>
+
+
+### 可以发布啦！！
+
+step 1. npm run-script build
+
+react 会帮自动打包出一个可被用于生产环境的最优文件夹 build。
+
+![image-20201116174504858](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201116174504858.png)
+
+step 2. 把他们放到 HTTP 服务器 或者 github 中。
+
+比如 tomcat 或者 github page。
+
+（这个还可以单开个教程，如果大家感兴趣的话可能后续也会写写233）
+
+
+
+
+
+
+
+## ps. 
+
+### 关于 create-react-app
+
+本教程使用的是截止 2020.11.15 create-react-app 的最新版本。
+
+如果是以前装了旧版本的宝宝想要更新：
+
+1 在 package.json 中把 react-scripts 版本改到最新 或者和我一样的“4.0.0”。
+
+2 在终端 npm install
+
+就更新好了。
+
+对新版本感兴趣的宝宝还可以去官网看看。
+
+![image-20201114171737074](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201114171737074.png)
+
+
+
+### 
+</code></pre>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+            id: "【手把手教学】用前端 react 来做一个机器人🤖️网站",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/12/22/smartBrain%20react%20-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%BD%91%E7%AB%99/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">SmartBrain -  用 React 做一个人脸识别网站</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2021/03/19/%E9%9B%86%E6%88%90%20Auzure%20ad%20%E7%9A%84%20msal%20%E5%BA%93%20%E6%9D%A5%E7%AE%A1%E7%90%86&%E4%BE%BF%E5%88%A9%E6%88%91%E7%9A%84%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">集成 Auzure ad 的 msal 库</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    </body>
+</html>
+        

@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>React 简易教程</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet", href="/hexo_blog/./css/style.css">
+<link rel="shortcut icon", href="/hexo_blog/./favicon.ico">
+<link rel="apple-touch-icon", href="/hexo_blog/./apple-touch-icon.png">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/hexo_blog/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.4.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hi, It's Me! Irina Lu</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hi, It's Me! Irina Lu</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>wenjia lu</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Wenjia's Tech Blog</p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Contact Info description</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.facebook.com/facebook_username">
+                                <svg class="al_social_icon" id="facebook">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_facebook"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.instagram.com/instagram_username">
+                                <svg class="al_social_icon" id="instagram">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_instagram"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+
+                        
+                        
+                            <div class="al_social_icon_cnt" data_link="https://www.github.com/github_username">
+                                <svg class="al_social_icon" id="github">
+                                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#icon_github"></use>
+                                </svg>
+                            </div>
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        React 简易教程
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            December 09, 2020 07:12 AM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                385 words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                1 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#react-%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B"><span class="toc-text">react 简易教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Lifecycle-hooks"><span class="toc-text">Lifecycle hooks</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#mounting"><span class="toc-text">mounting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#updating"><span class="toc-text">updating</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unmounting"><span class="toc-text">Unmounting</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Chirdren"><span class="toc-text">Chirdren</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E6%A1%86%E6%9E%B6"><span class="toc-text">代码框架</span></a></li></ol></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <p>先做 react 介绍</p>
+<p>亮点 和 局限。<br>优化：<br>PureComponent 是优化 React 应用程序最重要的方法之一，易于实施，只要把继承类从 Component 换成 PureComponent 即可，可以减少不必要的 render 操作的次数，从而提高性能，而且可以少写 shouldComponentUpdate 函数，节省了点代码。</p>
+<p>和 vue区别</p>
+<p>然后案例 smartbrain</p>
+<h1 id="react-简易教程"><a href="#react-简易教程" class="headerlink" title="react 简易教程"></a>react 简易教程</h1><p>Component : 不仅包含html css 还有功能，可以之后被复用</p>
+<p>就像搭乐高一样搭 Component</p>
+<p>自上而下渲染，一个Component 节点修改，只有他孩子节点知道，父母节点不会知道。</p>
+<p>具体啥prop在主js里设定，</p>
+<p>组件js 的函数里面，prop只是个穿传去的参数 （所以具体prop是啥不知道，他只是个参数啊。具体的在主js里面定义），里面调用 this.prop.prop名</p>
+<p>export</p>
+<p>但凡要被import的文件 都要export</p>
+<h2 id="Lifecycle-hooks"><a href="#Lifecycle-hooks" class="headerlink" title="Lifecycle hooks"></a>Lifecycle hooks</h2><p><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html">https://reactjs.org/docs/react-component.html</a></p>
+<p>component </p>
+<p>every time  auto triggered</p>
+<h3 id="mounting"><a href="#mounting" class="headerlink" title="mounting"></a>mounting</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#constructor"><strong>constructor()</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops"><code>static getDerivedStateFromProps()</code></a></li>
+<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#render"><strong>render()</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://reactjs.org/docs/react-component.html#componentdidmount"><strong>componentDidMount()</strong></a></li>
+<li>render()</li>
+</ul>
+<h3 id="updating"><a href="#updating" class="headerlink" title="updating"></a>updating</h3><h3 id="Unmounting"><a href="#Unmounting" class="headerlink" title="Unmounting"></a>Unmounting</h3><h2 id="Chirdren"><a href="#Chirdren" class="headerlink" title="Chirdren"></a>Chirdren</h2><scroll>
+
+<p> 内部的内容就是它的chirldren</p>
+</scroll>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">function Scroll( props ) &#123;<br>    return (<br>     &lt;div style =&#123; &#123;overflowY:&quot;scroll&quot;, border: &quot;1px solid black&quot;, height: &quot;500px&quot;&#125;   &#125;&gt;<br>        &#123;props.children&#125;<br>     &lt;/div&gt;<br>    )<br>  &#125;;<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="代码框架"><a href="#代码框架" class="headerlink" title="代码框架"></a>代码框架</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>&#123;<br>		<span class="hljs-comment">// 设置状态初始值（创参）</span><br>     <span class="hljs-title">constructor</span> (<span class="hljs-params"></span>)&#123;<br>				<span class="hljs-built_in">super</span>();<br>    		<span class="hljs-built_in">this</span>.state = initialStatexxx;<br>     &#125;<br><br>    <span class="hljs-comment">// 给状态赋值的函数 (形参)</span><br>    <span class="hljs-comment">// 都是函数, 设定完了之后在组件里面使用 （用参），最后在 render 里面被调用 （实参）</span><br>    onRouteChange = <span class="hljs-function">() =&gt;</span>&#123;<br>      <span class="hljs-built_in">this</span>.setState(&#123;<span class="hljs-attr">route</span>: route&#125;);<br>    &#125;<br><br>    onXXX = <span class="hljs-function">() =&gt;</span>&#123;<br>      <br>    &#125;<br>    <br><span class="hljs-function"><span class="hljs-title">render</span>(<span class="hljs-params"></span>)</span>&#123;<br>  <span class="hljs-keyword">const</span> &#123;route, ...&#125; = <span class="hljs-built_in">this</span>.state;<br>  <span class="hljs-keyword">return</span>(<br>  )<br>&#125;<br>  <br>&#125;<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;<br></code></pre></td></tr></table></figure>
+
+
+
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "4d138679689d4087f0cb",
+            clientSecret: "c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7",
+            repo: "wenjialu.github.io",
+            owner: "wenjialu",
+            admin: "wenjialu",
+            id: "React 简易教程",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/electron/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">electron</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo_blog/2020/12/09/Git%20%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">git 疑难杂症大全 （更新中）</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        wenjia lu
+    </div>
+
+    
+    
+        <div class="al_index_footer_item" onclick="window.open('http://www.beian.miit.gov.cn')")>
+            Fill IPCLicense
+        </div>
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/hexo_blog/javascripts/acelog.js"></script>
+        
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4"
+        name=mta_analytics_name
+        sid=mta_analytics_sid></script>
+
+        
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=google_tracking_id"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    <script
+        src=extra_plugin_js_url
+        async="async"
+    ></script>
+    </body>
+</html>
+        
