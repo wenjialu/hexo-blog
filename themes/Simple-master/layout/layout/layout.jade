@@ -1,0 +1,32 @@
+
+- var pageTitle = page.title || config.title || ''
+- if (is_archive()) pageTitle = 'Archives'
+- if (is_tag()) pageTitle = 'Tag: ' + page.tag
+- if (is_category()) pageTitle = 'Category: ' + page.category
+- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
+- if (is_year()) pageTitle += ': ' + page.year
+
+doctype html
+html(lang=config.language)
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    title= pageTitle
+    !=css(['/css/layout.css', '/css/main.css'])
+    - if (theme.stylesheets && theme.stylesheets.length > 0)
+      !=css(theme.stylesheets)
+    !=favicon_tag(theme.favicon || '/img/favicon.png')
+  body
+    header.base-menu
+      include ../includes/menu.jade
+    header.base-mobile-menu
+      include ../includes/mobile-menu.jade
+    .base-content
+      .base-content-main
+        block page-content
+        include ../includes/discus.jade
+    footer.base-footer
+      include ../includes/footer.jade
+    .dom-ready
+      include ../includes/dom-ready.jade
+      block page-dom-ready

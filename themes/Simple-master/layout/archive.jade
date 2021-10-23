@@ -1,0 +1,63 @@
+extends layout/layout
+
+block page-content
+  - var archivesList = list_archives({ show_count: false, type: 'yearly' })
+
+  div.archive-main
+    if !is_year()
+
+      h1.page-title All Archives
+        .time-line-bg
+          span.time-line-disc
+      .main-content
+        - var postArray = site.posts.sort('date', 'desc').toArray()
+        each post in postArray
+          - var currentYear;
+          - post.year = date(post.date, 'YYYY');
+          if post.year !== currentYear
+            - currentYear = post.year;
+            h2.time-title
+              a.time-title-link(href=url_for(config.archive_dir + '/' + currentYear))
+                != currentYear
+              .time-line-bg
+                span.time-line-disc
+          h3.article-achive-title
+            span.title-date=date(post.date, 'MM-DD')
+            if post.link
+              a.title-link(href=post.link, target='_blank')
+                !=post.title
+            else
+              - var rulRegex = /(\/index\.html?$)|(\/?$)/;
+              - var path = post.path.replace(rulRegex, '');
+              a.title-link(href=url_for(path), target='_blank')
+                !=post.title
+            .time-line-bg
+              span.time-line-disc
+    else
+      .main-content        
+        each post in page.posts.toArray()
+          - var currentYear;
+          - post.year = date(post.date, 'YYYY');
+          if post.year !== currentYear
+            - currentYear = post.year;
+            h2.time-title
+              != currentYear
+              .time-line-bg
+                span.time-line-disc
+          h3.article-achive-title
+            span.title-date=date(post.date, 'MM-DD')
+            if post.link
+              a.title-link(href=post.link, target='_blank')
+                !=post.title
+            else
+              - var rulRegex = /(\/index\.html?$)|(\/?$)/;
+              - var path = post.path.replace(rulRegex, '');
+              a.title-link(href=url_for(path), target='_blank')
+                !=post.title
+            .time-line-bg
+              span.time-line-disc
+
+    // include includes/pagination
+
+block page-dom-ready
+  !=js(['/js/libs/jquery.sticky.js', '/js/archive.js'])

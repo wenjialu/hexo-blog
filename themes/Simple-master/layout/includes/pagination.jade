@@ -1,0 +1,11 @@
+-
+  var paginatorOpt = {
+    prev_text: '&lt;&lt;',
+    next_text: '&gt;&gt;',
+    mid_size: 1,
+    space: '...'
+  };
+  
+if page.prev || page.next
+  nav.pagination-wrapper
+    !=paginator(paginatorOpt)

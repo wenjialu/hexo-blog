@@ -1,0 +1,91 @@
+root: /
+
+Home: /
+
+language: en
+
+author: iGuan7u
+description: A beautiful & simple theme.
+
+# AvatorURL
+# it would be shown on sidecar.
+
+avatar: https://yourAvatorURL
+
+# Comment
+
+gitalk:
+  enable: true
+  clientID: 4d138679689d4087f0cb
+  clientSecret: c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7 #in hulu note ssh key
+  repo: wenjialu.github.io
+  owner: wenjialu
+  admin: wenjialu
+
+disqus:
+  enable: false
+  shortname: your_disqus_short_name
+
+# Contact_Info
+# Contact info will be shown on the side bar.
+
+contact:
+  enable: true
+  description: 'Contact Info description'
+
+  twitter:
+    enable: false
+    username: twitter_username
+
+  github:
+    enable: true
+    username: github_username
+
+  weibo:
+    enable: false
+    username: weibo_username
+
+  facebook:
+    enable: true
+    username: facebook_username
+
+  instagram:
+    enable: true
+    username: instagram_username
+
+
+# Analytice
+
+mta_analytics:
+  enable: true
+  name: mta_analytics_name
+  sid: mta_analytics_sid
+
+baidu_analytics:
+  enable: false
+  id: baidu_analytice_id
+
+google_analytice:
+  enable: true
+  tracking_id: google_tracking_id
+
+# Website ICPLicense
+# which is useful in China mainland.
+
+ICPLicense:
+  enable: true
+  content: "Fill IPCLicense"
+
+# EtraPlugin
+
+extra_plugin:
+  enable: true
+  url: extra_plugin_js_url
+
+# Development Setting
+
+node_sass:
+  # outputStyle: nested
+  outputStyle: compressed
+  precision: 5
+  sourceComments: false

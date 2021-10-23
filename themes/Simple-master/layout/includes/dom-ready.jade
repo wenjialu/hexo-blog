@@ -1,0 +1,18 @@
+!=js(['http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'])
+!=js(['/js/base.js'])
+
+- var baiduTongjiId = config.baidu_tongji_id || theme.baidu_tongji_id;
+
+if baiduTongjiId && baiduTongjiId.length > 0
+  script.
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?#{baiduTongjiId}";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+
+- var uyanId = config.uyan_id || theme.uyan_id;
+if uyanId
+  script(src="http://v2.uyan.cc/code/uyan.js?uid=#{uyanId}")
