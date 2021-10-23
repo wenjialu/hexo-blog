@@ -18,7 +18,7 @@ gitalk:
   enable: true
   clientID: 4d138679689d4087f0cb
   clientSecret: c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7 #in hulu note ssh key
-  repo: wenjialu.github.io
+  repo: hexo_blog
   owner: wenjialu
   admin: wenjialu
 
