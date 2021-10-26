@@ -1,3 +1,7 @@
+---
+categories:
+  - cv
+---
 "use strict";
 
 // Load plugins
