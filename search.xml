@@ -510,8 +510,12 @@
     <content><![CDATA[<p>可以把我之前的卡片web版做成app</p>
 <p>ref - <a href="https://flutter.dev/docs/get-started/test-drive#create-app">https://flutter.dev/docs/get-started/test-drive#create-app</a></p>
 ]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
       <tags>
         <tag>app</tag>
+        <tag>flutter</tag>
       </tags>
   </entry>
   <entry>
