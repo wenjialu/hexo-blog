@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>My first flutter app</title>
+        <title>Building a Facial Recognition website with Flask</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 <link rel="stylesheet", href="/hexo-blog/./css/style.css">
@@ -113,22 +113,22 @@
             <article class="al_article">
                 <header>
                     <h1 class="al_page_title">
-                        My first flutter app
+                        Building a Facial Recognition website with Flask
                     </h1>
                     <div class="al_page_info dis_flex">
                         <div class="al_page_content_info">
-                            October 13, 2021 06:10 AM
+                            November 08, 2021 07:11 AM
                         </div>
 
                         
                             <div class="al_page_content_info">
-                                24 words
+                                477 words
                             </div>
                         
 
                         
                             <div class="al_page_content_info">
-                                1 minutes read
+                                2 minutes read
                             </div>
                         
                         <span class="tags"></span>
@@ -139,9 +139,133 @@
 
                 
                 <section id="post-body">
-                    <p>可以把我之前的卡片web版做成app</p>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gvvqgncfx6j30xb0n0aau.jpg"></p>
-<p>ref - <a target="_blank" rel="noopener" href="https://flutter.dev/docs/get-started/test-drive#create-app">https://flutter.dev/docs/get-started/test-drive#create-app</a></p>
+                    <p>I purchase a course from Udemy teaching me from building the machine learning model to integrate it to a website using flask.</p>
+<p>I am happy to share my process of learning with you. The thing I need to notice you is that I am not writing every details about the course right now, this note just includes some tips that needs to be noticed and not mentioned by the teacher. If you brought the course, you might find my notes be helpful.</p>
+<p>Let’s get started ! </p>
+<p>First, open a terminal from jupyter.  (If you are not familar with jupyter and need a tutotial about it, tell me in the comment. I would wirte an acticle to explain it in more detail.)</p>
+<p>​    &gt; terminal can be access from here</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6ez6nj3j305x06omx3.jpg" alt="image.png"></p>
+<ul>
+<li><p> Install and import c2</p>
+</li>
+<li><p>if you can not import cv2 in terminal, try use the command “ipython” rather than “python”.</p>
+</li>
+<li><p>virtual environment</p>
+<ul>
+<li>create a virtual environment<ul>
+<li>virtualenv<ul>
+<li>since I use <a href="siyuan://blocks/20211112202240-mcpaqeo">“virtualenvwrapper”</a>, instead of using the command in the vedio, Mac user should use this:<ul>
+<li>mkvirtualenv  $<environment name: such as freeai>$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>activate it<ul>
+<li>without virtualenvwrapper<ul>
+<li>cd workplace</li>
+<li>source ./freeai/bin/activate</li>
+</ul>
+</li>
+<li>with virtualenvwrapper<ul>
+<li>workon $<virtual envir name>$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>once activate the virtualenv, you can either run code in the terminal or in jupyter notebook.</p>
+<ul>
+<li>if you need to use jupyter notebook, simply type “jupyter notebook” in the terminal. Once press enter, it would automatically open a homepage for you.</li>
+</ul>
+</li>
+</ul>
+<p>​    </p>
+<p>Now, let’s move on to the part of building a website that everyone can access!</p>
+<ul>
+<li>Build Flask App in VsCode<ul>
+<li>Open VsCode<ul>
+<li>First things first, enter the virtual environment!!<ul>
+<li>we have created the virtual environment named as freeai before.<ul>
+<li>upgrade<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">deactivate<br>pip install --upgrade pip virtualenv virtualenvwrapper<br>mkvirtualenv &lt;freeai2&gt;<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>we would get a package called freeai</li>
+<li>put the package under the directory of your project.<ul>
+<li><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6fvpovxj306f07faa1.jpg" alt="image.png"></li>
+</ul>
+</li>
+<li>1.<strong>Ctrl + Shift + P</strong> –&gt; python: select Interpreter<ul>
+<li>select the freeai environment</li>
+</ul>
+</li>
+<li><ol start="2">
+<li>File &gt; Preference &gt; Settings,  settings workspace, File:Associations click on “Edit in settings.json”<ol>
+<li>change “python.pythonPath” to your virtual environment python path (look up by “which python”)<ol>
+<li><code>&quot;python.pythonPath&quot;:&quot;/Users/lujiawen/workplaces/freeai2/bin/python&quot;</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>write code</li>
+<li>run it <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6g9f5o2j300x00v0cl.jpg" alt="image.png"><ul>
+<li>run it by click the button</li>
+<li>or in the VScode terminal<ul>
+<li>way1:<ul>
+<li>in vscode ternimal<ul>
+<li>export FLASK_APP=main.py</li>
+<li>python -m flask run</li>
+</ul>
+</li>
+<li>or in ternimal<ul>
+<li>FLASK_APP=main.py falsk run</li>
+<li>FLASK_APP=main.py FLASK_DEBUG=True falsk run</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>way2:</li>
+<li>cd to the directory of main.py</li>
+<li>python main.py</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>tips:<ul>
+<li>install some modules <ul>
+<li><p>which python； python –version</p>
+<ul>
+<li>Although python2.7 is oout of date, it’s not recommanded to delete it. We can always use virtual environment to use latest python and mange different versions of packages required by different projects</li>
+</ul>
+</li>
+<li><p>pip3 install opencv-python</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">pip3 install Pillow<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">pip3 install scikit-learn <br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>cheatsheets of postgres<ul>
+<li>\q (if you are in the psql);    createdb <databasename></li>
+<li>psql (<database> <user>)</li>
+<li><code>/Applications/Postgres.app/Contents/Versions/14/bin/psql -p5432 &quot;postgres&quot;</code></li>
+<li><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6gpvou5j30f803kmxb.jpg" alt="image.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>ref- udemy</p>
 
                 </section>
 
@@ -156,7 +280,7 @@
             repo: "hexo-blog",
             owner: "wenjialu",
             admin: "wenjialu",
-            id: "My first flutter app",
+            id: "Building a Facial Recognition website with Flask",
         });
         gitalk.render("al_gitalk_cnt")
     </script>
@@ -166,17 +290,17 @@
 
             
             <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo-blog/2021/10/29/ac%20lc%20%E6%B3%95/">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo-blog/2021/12/13/react%20%20%E5%BB%BA%E9%80%A0%E6%9C%BA%E5%99%A8%E4%BA%BA%F0%9F%A4%96%EF%B8%8F%E7%BD%91%E7%AB%99/">
                     
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
                         </svg>
-                        <span class="al_text_ellipsis al_post_nav_desc">卡片法 - 事半功倍刷力扣</span>
+                        <span class="al_text_ellipsis al_post_nav_desc">【手把手教学】用前端 react 来做一个机器人🤖️网站</span>
                     
                 </a>
-                <a class="al_post_nav_item dis_flex_acenter" href="/hexo-blog/2021/03/19/%E9%9B%86%E6%88%90%20Auzure%20ad%20%E7%9A%84%20msal%20%E5%BA%93%20%E6%9D%A5%E7%AE%A1%E7%90%86&%E4%BE%BF%E5%88%A9%E6%88%91%E7%9A%84%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/">
+                <a class="al_post_nav_item dis_flex_acenter" href="/hexo-blog/2021/10/29/ac%20lc%20%E6%B3%95/">
                     
-                        <span class="al_text_ellipsis al_post_nav_desc">集成 Auzure ad 的 msal 库</span>
+                        <span class="al_text_ellipsis al_post_nav_desc">卡片法 - 事半功倍刷力扣</span>
                         <svg class="al_arrow">
                             <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
                         </svg>

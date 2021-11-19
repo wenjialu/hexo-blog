@@ -508,6 +508,7 @@
     <title>My first flutter app</title>
     <url>/hexo-blog/2021/10/13/My%20first%20flutter%20app/</url>
     <content><![CDATA[<p>可以把我之前的卡片web版做成app</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gvvqgncfx6j30xb0n0aau.jpg"></p>
 <p>ref - <a href="https://flutter.dev/docs/get-started/test-drive#create-app">https://flutter.dev/docs/get-started/test-drive#create-app</a></p>
 ]]></content>
       <categories>
@@ -2148,6 +2149,170 @@ You can also download the ZIP file manually in your browser from here and place 
       </categories>
       <tags>
         <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>卡片法 - 事半功倍刷力扣</title>
+    <url>/hexo-blog/2021/10/29/ac%20lc%20%E6%B3%95/</url>
+    <content><![CDATA[<p>一句话解释： 把 excel 变成 Anki 卡片</p>
+<p>why 有效 导言</p>
+<p>how：</p>
+<p>思路：把excel 导出为 csv 格式（utf-8）</p>
+<p>anki： tool - notes management - field - </p>
+<p>anki 中新建一个 deck  </p>
+<p>导入 选中刚刚的模版</p>
+<p>jiangjiang 点击上方的浏览 就可以康啦 </p>
+<p>![image-20211029005310855](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029005310855.png)</p>
+<p>![image-20211029005407048](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029005407048.png)</p>
+<p>显示问题</p>
+<p>设置一下卡片模版： 浏览 – 点击 “卡片” – </p>
+<p>![image-20211029010600296](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029010600296.png)</p>
+<p>同步：</p>
+<p>pc端 – ankiweb 账号 – 手机端</p>
+<p>![image-20211029013942572](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029013942572.png)</p>
+<p>![](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029014117804.png)</p>
+<p>看起来非常的爽，真的可以实现“刷”题了啊哈哈哈</p>
+<p>![image-20211029014323000](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029014323000.png)</p>
+<p>![image-20211029014546334](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029014546334.png)</p>
+<p>ref -  <a href="https://www.youtube.com/watch?v=pYJh9yyMbPs">https://www.youtube.com/watch?v=pYJh9yyMbPs</a></p>
+<ul>
+<li><a href="https://docs.ankiweb.net/#/">https://docs.ankiweb.net/#/</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Building a Facial Recognition website with Flask</title>
+    <url>/hexo-blog/2021/11/08/building%20a%20facial%20recognition%20website%20with%20flask/</url>
+    <content><![CDATA[<p>I purchase a course from Udemy teaching me from building the machine learning model to integrate it to a website using flask.</p>
+<p>I am happy to share my process of learning with you. The thing I need to notice you is that I am not writing every details about the course right now, this note just includes some tips that needs to be noticed and not mentioned by the teacher. If you brought the course, you might find my notes be helpful.</p>
+<p>Let’s get started ! </p>
+<p>First, open a terminal from jupyter.  (If you are not familar with jupyter and need a tutotial about it, tell me in the comment. I would wirte an acticle to explain it in more detail.)</p>
+<p>​    &gt; terminal can be access from here</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6ez6nj3j305x06omx3.jpg" alt="image.png"></p>
+<ul>
+<li><p> Install and import c2</p>
+</li>
+<li><p>if you can not import cv2 in terminal, try use the command “ipython” rather than “python”.</p>
+</li>
+<li><p>virtual environment</p>
+<ul>
+<li>create a virtual environment<ul>
+<li>virtualenv<ul>
+<li>since I use <a href="siyuan://blocks/20211112202240-mcpaqeo">“virtualenvwrapper”</a>, instead of using the command in the vedio, Mac user should use this:<ul>
+<li>mkvirtualenv  $<environment name: such as freeai>$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>activate it<ul>
+<li>without virtualenvwrapper<ul>
+<li>cd workplace</li>
+<li>source ./freeai/bin/activate</li>
+</ul>
+</li>
+<li>with virtualenvwrapper<ul>
+<li>workon $<virtual envir name>$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>once activate the virtualenv, you can either run code in the terminal or in jupyter notebook.</p>
+<ul>
+<li>if you need to use jupyter notebook, simply type “jupyter notebook” in the terminal. Once press enter, it would automatically open a homepage for you.</li>
+</ul>
+</li>
+</ul>
+<p>​    </p>
+<p>Now, let’s move on to the part of building a website that everyone can access!</p>
+<ul>
+<li>Build Flask App in VsCode<ul>
+<li>Open VsCode<ul>
+<li>First things first, enter the virtual environment!!<ul>
+<li>we have created the virtual environment named as freeai before.<ul>
+<li>upgrade<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">deactivate<br>pip install --upgrade pip virtualenv virtualenvwrapper<br>mkvirtualenv &lt;freeai2&gt;<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>we would get a package called freeai</li>
+<li>put the package under the directory of your project.<ul>
+<li><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6fvpovxj306f07faa1.jpg" alt="image.png"></li>
+</ul>
+</li>
+<li>1.<strong>Ctrl + Shift + P</strong> –&gt; python: select Interpreter<ul>
+<li>select the freeai environment</li>
+</ul>
+</li>
+<li><ol start="2">
+<li>File &gt; Preference &gt; Settings,  settings workspace, File:Associations click on “Edit in settings.json”<ol>
+<li>change “python.pythonPath” to your virtual environment python path (look up by “which python”)<ol>
+<li><code>&quot;python.pythonPath&quot;:&quot;/Users/lujiawen/workplaces/freeai2/bin/python&quot;</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>write code</li>
+<li>run it <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6g9f5o2j300x00v0cl.jpg" alt="image.png"><ul>
+<li>run it by click the button</li>
+<li>or in the VScode terminal<ul>
+<li>way1:<ul>
+<li>in vscode ternimal<ul>
+<li>export FLASK_APP=main.py</li>
+<li>python -m flask run</li>
+</ul>
+</li>
+<li>or in ternimal<ul>
+<li>FLASK_APP=main.py falsk run</li>
+<li>FLASK_APP=main.py FLASK_DEBUG=True falsk run</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>way2:</li>
+<li>cd to the directory of main.py</li>
+<li>python main.py</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>tips:<ul>
+<li>install some modules <ul>
+<li><p>which python； python –version</p>
+<ul>
+<li>Although python2.7 is oout of date, it’s not recommanded to delete it. We can always use virtual environment to use latest python and mange different versions of packages required by different projects</li>
+</ul>
+</li>
+<li><p>pip3 install opencv-python</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">pip3 install Pillow<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">pip3 install scikit-learn <br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>cheatsheets of postgres<ul>
+<li>\q (if you are in the psql);    createdb <databasename></li>
+<li>psql (<database> <user>)</li>
+<li><code>/Applications/Postgres.app/Contents/Versions/14/bin/psql -p5432 &quot;postgres&quot;</code></li>
+<li><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6gpvou5j30f803kmxb.jpg" alt="image.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>ref- udemy</p>
+]]></content>
+      <tags>
+        <tag>AI; Flask</tag>
       </tags>
   </entry>
 </search>
