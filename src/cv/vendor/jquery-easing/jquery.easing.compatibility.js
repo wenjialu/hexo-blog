@@ -1,3 +1,9 @@
+---
+categories:
+  - cv
+  - vendor
+  - jquery-easing
+---
 /*
  * Easing Compatibility v1 - http://gsgd.co.uk/sandbox/jquery/easing
  *

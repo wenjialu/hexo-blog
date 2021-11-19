@@ -14,8 +14,8 @@ timezone: ''
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 #url: http://example.com
-url: https://wenjialu.github.io/hexo_blog/
-root: /hexo_blog/
+url: https://wenjialu.github.io/hexo-blog/
+root: /hexo-blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -71,9 +71,19 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: categorized
 category_map:
 tag_map:
+
+#auto-categories
+# Generate categories from directory-tree
+# Dependencies: https://github.com/xu-song/hexo-auto-category
+# depth: the max_depth of directory-tree you want to generate, should > 0
+auto_category:
+  enable: true
+  depth: 
+
+
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -114,7 +124,7 @@ theme: red
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/wenjialu/hexo_blog
+  repository: https://github.com/wenjialu/hexo-blog
   branch: master
 
 # animate

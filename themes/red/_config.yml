@@ -9,8 +9,10 @@ description: A beautiful & simple theme.
 
 # AvatorURL
 # it would be shown on sidecar.
+avatar: https://tva1.sinaimg.cn/large/008i3skNgy1gvp6392vmtj60lt0kq0wg02.jpg
+#https://tva1.sinaimg.cn/large/008i3skNgy1gvp63kt6g0j60lu0lt77902.jpg
+# https://tva1.sinaimg.cn/large/008i3skNgy1gvp63yb19aj60lw0lrwgy02.jpg
 
-avatar: https://yourAvatorURL
 
 # Comment
 
@@ -18,7 +20,7 @@ gitalk:
   enable: true
   clientID: 4d138679689d4087f0cb
   clientSecret: c21b2ec49a7736e5ee5c781e3ff28989cafd7ed7 #in hulu note ssh key
-  repo: hexo_blog
+  repo: hexo-blog
   owner: wenjialu
   admin: wenjialu
 

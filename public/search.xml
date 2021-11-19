@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>超级好用的 git 可视化软件</title>
-    <url>/hexo_blog/2021/01/14/%20git%20%E5%8F%AF%E8%A7%86%E5%8C%96%E8%BD%AF%E4%BB%B6/</url>
+    <url>/hexo-blog/2021/01/14/%20git%20%E5%8F%AF%E8%A7%86%E5%8C%96%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<p>![image-20210114214813891](/Users/lujiawen/Library/Application Support/typora-user-images/image-20210114214813891.png)</p>
 <p>![image-20210114214611594](/Users/lujiawen/Library/Application Support/typora-user-images/image-20210114214611594.png)</p>
 ]]></content>
@@ -12,7 +12,7 @@
   </entry>
   <entry>
     <title>how to create a new post in hexo</title>
-    <url>/hexo_blog/2020/10/12/%20how%20to%20create%20a%20new%20post%20in%20hexo/</url>
+    <url>/hexo-blog/2020/10/12/%20how%20to%20create%20a%20new%20post%20in%20hexo/</url>
     <content><![CDATA[<p>把以下路径放到系统变量中，就可以直接用以下命令创建新的博客内容啦。<br>路径以这个为结尾的 ….\hexo\node_modules.bin<br>[好像不行]</p>
 <p>hexo n “blog名”<br><a href="https://hexo.io/docs/writing">https://hexo.io/docs/writing</a><br>打开：<br>open ./blog名</p>
 ]]></content>
@@ -22,7 +22,7 @@
   </entry>
   <entry>
     <title>1～2～3 三步创建一个 Django 项目 【SOP】</title>
-    <url>/hexo_blog/2020/01/03/1%EF%BD%9E2%EF%BD%9E3%20%E4%B8%89%E6%AD%A5%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%20Django%20%E9%A1%B9%E7%9B%AE%20%E3%80%90SOP%E3%80%91/</url>
+    <url>/hexo-blog/2020/01/03/1%EF%BD%9E2%EF%BD%9E3%20%E4%B8%89%E6%AD%A5%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%20Django%20%E9%A1%B9%E7%9B%AE%20%E3%80%90SOP%E3%80%91/</url>
     <content><![CDATA[<p>进入到运行 Django 的虚拟环境。workon Django_web（虚拟环境篇）</p>
 <p>找一个自己喜欢的位置，比如桌面。</p>
 <h2 id="1-建-Django-项目"><a href="#1-建-Django-项目" class="headerlink" title="1 建 Django 项目"></a>1 建 Django 项目</h2><p>在系统终端 或者 VScode 终端：</p>
@@ -51,8 +51,14 @@
 ]]></content>
   </entry>
   <entry>
+    <title>50 projects - draw app</title>
+    <url>/hexo-blog/2021/01/12/50-projects-draw-app/</url>
+    <content><![CDATA[<p>可以把这个js 加到我的个人网站里。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>50 projects - to do list</title>
-    <url>/hexo_blog/2021/02/03/50%20proojects%20-%20to%20do%20list/</url>
+    <url>/hexo-blog/2021/02/03/50%20proojects%20-%20to%20do%20list/</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/wenjialu/todolist-app/main/todo-list-demo1.gif" alt="效果展示"></p>
 <h2 id="to-do-list"><a href="#to-do-list" class="headerlink" title="to do list"></a>to do list</h2><h3 id="静态样式及代码："><a href="#静态样式及代码：" class="headerlink" title="静态样式及代码："></a>静态样式及代码：</h3><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gmzxxii2xrj30k00ck0v6.jpg" />
 
@@ -113,25 +119,19 @@
       </tags>
   </entry>
   <entry>
-    <title>50 projects - draw app</title>
-    <url>/hexo_blog/2021/01/12/50-projects-draw-app/</url>
-    <content><![CDATA[<p>可以把这个js 加到我的个人网站里。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>50 projects - netflix navigation</title>
-    <url>/hexo_blog/2021/01/12/50-projects-netflix-navigation/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>About me</title>
-    <url>/hexo_blog/2020/09/20/About-me/</url>
+    <url>/hexo-blog/2020/09/20/About-me/</url>
     <content><![CDATA[<p>In 1996, a little girl was born in Shanghai, China. In 2019 at her age of 23, she pursued her dream of studying NeuroPsychology and Computer Science in the University of Edinburgh. What makes her her and what would happened to her during her journey of foreign    land?<br>Let’s come and have a look! </p>
 ]]></content>
   </entry>
   <entry>
+    <title>50 projects - netflix navigation</title>
+    <url>/hexo-blog/2021/01/12/50-projects-netflix-navigation/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>git 疑难杂症大全 （更新中）</title>
-    <url>/hexo_blog/2020/12/09/Git%20%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <url>/hexo-blog/2020/12/09/Git%20%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="Git-令人吐血使人窒息，看我如何与它斗智斗勇！"><a href="#Git-令人吐血使人窒息，看我如何与它斗智斗勇！" class="headerlink" title="Git 令人吐血使人窒息，看我如何与它斗智斗勇！"></a>Git 令人吐血使人窒息，看我如何与它斗智斗勇！</h1><p>最新更新：</p>
 <p>花了 68 元 买了 daisy</p>
 <p>把磁盘空间的问题解决之后。</p>
@@ -180,7 +180,7 @@
 <h4 id="猜测-1：密钥🔑不对，远程链接不上"><a href="#猜测-1：密钥🔑不对，远程链接不上" class="headerlink" title="猜测 1：密钥🔑不对，远程链接不上"></a>猜测 1：密钥🔑不对，远程链接不上</h4><h4 id="猜测-2-本地仓库和远程仓库之间没同步好"><a href="#猜测-2-本地仓库和远程仓库之间没同步好" class="headerlink" title="猜测 2:  本地仓库和远程仓库之间没同步好"></a>猜测 2:  本地仓库和远程仓库之间没同步好</h4><h4 id="猜测-3-难道是我本地空间不够？"><a href="#猜测-3-难道是我本地空间不够？" class="headerlink" title="猜测 3:  难道是我本地空间不够？"></a>猜测 3:  难道是我本地空间不够？</h4><h3 id="验证猜想-–-来嘛，咱一个一个来"><a href="#验证猜想-–-来嘛，咱一个一个来" class="headerlink" title="验证猜想 – 来嘛，咱一个一个来"></a>验证猜想 – 来嘛，咱一个一个来</h3><p>问题总是一个一个一个一个一个一个一个…一个一个一个一被解决的嘛。</p>
 <p>别怕，先来验证第一个猜想。</p>
 <h4 id="是不是因为公钥的问题，去查查看"><a href="#是不是因为公钥的问题，去查查看" class="headerlink" title="是不是因为公钥的问题，去查查看"></a>是不是因为公钥的问题，去查查看</h4><ul>
-<li>```bash<br>1.ssh-keygen -t rsa -C “<a href="mailto:&#121;&#x6f;&#x75;&#x72;&#101;&#x6d;&#x61;&#105;&#108;&#x40;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#109;">&#121;&#x6f;&#x75;&#x72;&#101;&#x6d;&#x61;&#105;&#108;&#x40;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#109;</a>” # 创建SSH-Key<br>将本地用户目录（用户目录/.ssh/id_rsa.pub）的ssh公钥添加到GitHub中<br>2.git bash中输入<br>cat ~/.ssh/id_rsa.pub<br>复制好出现的内容<br>3.打开github，在头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，名字随便。<br>把刚刚复制的内容全部黏贴到框中，点击确定保存。<h1 id="以上步骤我以前已经做过了。也就是说我已经在github添加了我的ssh。我现在只要验证下是不是还连接成功。"><a href="#以上步骤我以前已经做过了。也就是说我已经在github添加了我的ssh。我现在只要验证下是不是还连接成功。" class="headerlink" title="以上步骤我以前已经做过了。也就是说我已经在github添加了我的ssh。我现在只要验证下是不是还连接成功。"></a>以上步骤我以前已经做过了。也就是说我已经在github添加了我的ssh。我现在只要验证下是不是还连接成功。</h1>（这个ssh链接是和我的整个github的）<br>4输入ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;</a>，（ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#x63;&#111;&#x64;&#101;&#46;&#97;&#108;&#x69;&#121;&#x75;&#x6e;&#46;&#99;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#x63;&#111;&#x64;&#101;&#46;&#97;&#108;&#x69;&#121;&#x75;&#x6e;&#46;&#99;&#x6f;&#109;</a> ssh -T git@<a href="https://github.com/wenjialu/wenjialu.github.io%EF%BC%89">https://github.com/wenjialu/wenjialu.github.io）</a><br>如果如下图所示，出现我的用户名，那就成功了。<br>也可以直接进行项目的克隆或提交进行测试。我的建议是，在配置完成后，对各个平台都进行一次链接测试。<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>- 可以看到，我已经与我的github建立了远程联系了：![image-20201113010754206](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113010754206.png)<br><br>- 就是好像和仓库的ssh连接有些问题，但是git里面又已经加了这个仓库了。<br><br>- ![image-20201113011658853](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113011658853.png)<br><br>- ![image-20201113012049666](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113012049666.png)<br><br>暂且认为这个是没问题的吧。继续验证下一个猜想。<br><br><br><br>#### 本地仓库和远程仓库之间没同步好？<br><br>**那我就重新建立一次远程连接嘛**<br><br>```zsh<br>git init # 初始化本地仓库<br>git add ./ # 将文件添加到待提交区域<br>git commit -m “提交信息” # 提交<br>使用GitHub创建仓库（new Repository）<br>ssh-keygen -t rsa -C “youremail@example.com” # 创建SSH-Key<br>将本地用户目录（用户目录/.ssh/id_rsa.pub）的ssh公钥添加到GitHub中<br>git remote add origin git@github.com:XXXX.git # 将远程仓库与本地仓库建立连接<br>git pull origin master –allow-unrelated-histories # 首先将远程仓库的文件pull下来<br>#如果执行这句命令时，出现了“ couldn’t find remote ref –allow-unrelated-histories”的错误，输入如下命令即可解决：<br>​```git pull --rebase origin master<br>​```git push origin master<br>git push origin master # 将本地提交同步到远程仓库<br></code></pre></td></tr></table></figure></li>
+<li>```bash<br>1.ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#117;&#x72;&#101;&#109;&#97;&#x69;&#108;&#64;&#x65;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#111;&#109;">&#x79;&#111;&#117;&#x72;&#101;&#109;&#97;&#x69;&#108;&#64;&#x65;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#111;&#109;</a>” # 创建SSH-Key<br>将本地用户目录（用户目录/.ssh/id_rsa.pub）的ssh公钥添加到GitHub中<br>2.git bash中输入<br>cat ~/.ssh/id_rsa.pub<br>复制好出现的内容<br>3.打开github，在头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，名字随便。<br>把刚刚复制的内容全部黏贴到框中，点击确定保存。<h1 id="以上步骤我以前已经做过了。也就是说我已经在github添加了我的ssh。我现在只要验证下是不是还连接成功。"><a href="#以上步骤我以前已经做过了。也就是说我已经在github添加了我的ssh。我现在只要验证下是不是还连接成功。" class="headerlink" title="以上步骤我以前已经做过了。也就是说我已经在github添加了我的ssh。我现在只要验证下是不是还连接成功。"></a>以上步骤我以前已经做过了。也就是说我已经在github添加了我的ssh。我现在只要验证下是不是还连接成功。</h1>（这个ssh链接是和我的整个github的）<br>4输入ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;</a>，（ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#x63;&#111;&#100;&#x65;&#x2e;&#x61;&#108;&#x69;&#121;&#117;&#x6e;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#116;&#x40;&#x63;&#111;&#100;&#x65;&#x2e;&#x61;&#108;&#x69;&#121;&#117;&#x6e;&#46;&#99;&#111;&#x6d;</a> ssh -T git@<a href="https://github.com/wenjialu/wenjialu.github.io%EF%BC%89">https://github.com/wenjialu/wenjialu.github.io）</a><br>如果如下图所示，出现我的用户名，那就成功了。<br>也可以直接进行项目的克隆或提交进行测试。我的建议是，在配置完成后，对各个平台都进行一次链接测试。<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext"><br>- 可以看到，我已经与我的github建立了远程联系了：![image-20201113010754206](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113010754206.png)<br><br>- 就是好像和仓库的ssh连接有些问题，但是git里面又已经加了这个仓库了。<br><br>- ![image-20201113011658853](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113011658853.png)<br><br>- ![image-20201113012049666](/Users/lujiawen/Library/Application Support/typora-user-images/image-20201113012049666.png)<br><br>暂且认为这个是没问题的吧。继续验证下一个猜想。<br><br><br><br>#### 本地仓库和远程仓库之间没同步好？<br><br>**那我就重新建立一次远程连接嘛**<br><br>```zsh<br>git init # 初始化本地仓库<br>git add ./ # 将文件添加到待提交区域<br>git commit -m “提交信息” # 提交<br>使用GitHub创建仓库（new Repository）<br>ssh-keygen -t rsa -C “youremail@example.com” # 创建SSH-Key<br>将本地用户目录（用户目录/.ssh/id_rsa.pub）的ssh公钥添加到GitHub中<br>git remote add origin git@github.com:XXXX.git # 将远程仓库与本地仓库建立连接<br>git pull origin master –allow-unrelated-histories # 首先将远程仓库的文件pull下来<br>#如果执行这句命令时，出现了“ couldn’t find remote ref –allow-unrelated-histories”的错误，输入如下命令即可解决：<br>​```git pull --rebase origin master<br>​```git push origin master<br>git push origin master # 将本地提交同步到远程仓库<br></code></pre></td></tr></table></figure></li>
 </ul>
 <p>注意那个绿色的代码，重大突破来咯！！！</p>
 <p>当我用那行绿色代码解决error的时候，这个解决error的语句也出现了error。。</p>
@@ -218,7 +218,7 @@
   </entry>
   <entry>
     <title>Google Cloud 部署我的网站 (附宝塔面板安装教程)</title>
-    <url>/hexo_blog/2021/01/23/Google-Cloud-%E9%83%A8%E7%BD%B2%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/</url>
+    <url>/hexo-blog/2021/01/23/Google-Cloud-%E9%83%A8%E7%BD%B2%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>我曾经在github 上部署过我的个人网站，不过github上的静态网页已经越来越不能满足我对网站的需求了。</p>
 <p>于是，我选择把整个网站迁移到自己的云服务器上。</p>
 <p>如果你对我的网站感兴趣，可以点<a href="http://wenjialu.tech/">这里</a>参观。</p>
@@ -300,7 +300,7 @@
   </entry>
   <entry>
     <title>Google Cloud</title>
-    <url>/hexo_blog/2021/01/15/Google-Cloud/</url>
+    <url>/hexo-blog/2021/01/15/Google-Cloud/</url>
     <content><![CDATA[<p>What I want to do:<br>I need a server to depoly my applications, such as websites.<br>I used to depoly my websites on Github Pages, but that only works for static pages and it has many limitations.</p>
 <p>Why I use Google Cloud:<br>I now there are many companies could provide server service, such as Aliyun, HuaweiCloud, AWS, etc.<br>Most of they only provide 30-day trail.<br>Google Cloud, on the other hand, not only allows me to use it for free for a year but also give me 300 $ for trial, so I choose it.</p>
 <p>How to use it:<br>It is quite easy as long as you have a Visa.</p>
@@ -318,7 +318,7 @@
   </entry>
   <entry>
     <title>Growth Hacking -- ins 篇</title>
-    <url>/hexo_blog/2021/01/05/Growth%20Hacking%20--%20ins%20%E7%AF%87/</url>
+    <url>/hexo-blog/2021/01/05/Growth%20Hacking%20--%20ins%20%E7%AF%87/</url>
     <content><![CDATA[<p>Ins 是个很多元的公域流量平台。 只要有一技之长/自己的特色，无论高矮胖瘦，都有可能成为红人。</p>
 <p>我有朋友就通过持续在 ins 上输出高质量图片 而获得找上门的广告机会。</p>
 <p>这就激发了我在 ins 上分享图片的想法。</p>
@@ -353,7 +353,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/hexo_blog/2021/01/06/Growth%20Hacking%20/</url>
+    <url>/hexo-blog/2021/01/06/Growth%20Hacking%20/</url>
     <content><![CDATA[<p>-–</p>
 <p>title: Growth Hacking – general 篇</p>
 <p>date: 2021-01-05 22:30:48</p>
@@ -369,8 +369,19 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Intro Of the Sidebar Widgets</title>
+    <url>/hexo-blog/2020/09/23/Intro-Of-the-Sidebar-Widgets/</url>
+    <content><![CDATA[<p>Hey, this is actually a blog for reminding myself of the usage of the Sidebar Widgets.</p>
+<p>The sidebar widgets are shown on the right side of my website. They includes “About”, “Tag”, “Tagcloud”, “archives” and “recent_posts”.</p>
+<p>Please do not confused sidebar widgets with article types.</p>
+]]></content>
+      <tags>
+        <tag>trail</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>How I build this website with Hexo</title>
-    <url>/hexo_blog/2020/09/23/How-I-build-this-website-with-Hexo/</url>
+    <url>/hexo-blog/2020/09/23/How-I-build-this-website-with-Hexo/</url>
     <content><![CDATA[<p>折腾的来源：好看但是难搞的 the Space Cadet theme<br>npm install bootstrap@next<br>本模版灵感来源于 bootstrap ： <a href="https://getbootstrap.com/docs/4.0/examples/blog/">https://getbootstrap.com/docs/4.0/examples/blog/</a><br>npm install hexo-tag-bootstrap –save</p>
 <p>渲染策略：<a href="https://blog.csdn.net/kinggoZhang/article/details/96192344">https://blog.csdn.net/kinggoZhang/article/details/96192344</a></p>
 <p>主题排名：<br>我挑出来好看的<br><a href="https://github.com/huan-qiu/lemon-lime">https://github.com/huan-qiu/lemon-lime</a><br>Simple<br><a href="https://github.com/philippkeller/hexo-theme-twbootstrap">https://github.com/philippkeller/hexo-theme-twbootstrap</a><br>这个简约又好看，和我简历系列也很搭：<a href="https://www.iguan7u.cn/">https://www.iguan7u.cn/ </a>  下载地址 <a href="https://github.com/iGuan7u/Acetolog">https://github.com/iGuan7u/Acetolog</a></p>
@@ -383,19 +394,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Intro Of the Sidebar Widgets</title>
-    <url>/hexo_blog/2020/09/23/Intro-Of-the-Sidebar-Widgets/</url>
-    <content><![CDATA[<p>Hey, this is actually a blog for reminding myself of the usage of the Sidebar Widgets.</p>
-<p>The sidebar widgets are shown on the right side of my website. They includes “About”, “Tag”, “Tagcloud”, “archives” and “recent_posts”.</p>
-<p>Please do not confused sidebar widgets with article types.</p>
-]]></content>
-      <tags>
-        <tag>trail</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
-    <url>/hexo_blog/2020/11/18/LISP/</url>
+    <url>/hexo-blog/2020/11/18/LISP/</url>
     <content><![CDATA[<h1 id="LISP"><a href="#LISP" class="headerlink" title="LISP"></a>LISP</h1><p>Physics: limitation of really world</p>
 <p>cs: just limitation of our mind</p>
 <p><strong>techniques for controlling complexity</strong></p>
@@ -407,7 +407,7 @@
   </entry>
   <entry>
     <title>Mac顺滑启动Node.js项目指南</title>
-    <url>/hexo_blog/2021/01/28/Mac%E9%A1%BA%E6%BB%91%E5%90%AF%E5%8A%A8Node.js%E9%A1%B9%E7%9B%AE%E6%8C%87%E5%8D%97/</url>
+    <url>/hexo-blog/2021/01/28/Mac%E9%A1%BA%E6%BB%91%E5%90%AF%E5%8A%A8Node.js%E9%A1%B9%E7%9B%AE%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<p><strong>可视化</strong></p>
 <p>建议可以用一个仪表盘来可视化管理vue项目</p>
 <p>1 启动</p>
@@ -505,8 +505,23 @@
 ]]></content>
   </entry>
   <entry>
+    <title>My first flutter app</title>
+    <url>/hexo-blog/2021/10/13/My%20first%20flutter%20app/</url>
+    <content><![CDATA[<p>可以把我之前的卡片web版做成app</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gvvqgncfx6j30xb0n0aau.jpg"></p>
+<p>ref - <a href="https://flutter.dev/docs/get-started/test-drive#create-app">https://flutter.dev/docs/get-started/test-drive#create-app</a></p>
+]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
+      <tags>
+        <tag>app</tag>
+        <tag>flutter</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>React 简易教程</title>
-    <url>/hexo_blog/2020/12/09/React%20%E6%95%99%E7%A8%8B/</url>
+    <url>/hexo-blog/2020/12/09/React%20%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>先做 react 介绍</p>
 <p>亮点 和 局限。<br>优化：<br>PureComponent 是优化 React 应用程序最重要的方法之一，易于实施，只要把继承类从 Component 换成 PureComponent 即可，可以减少不必要的 render 操作的次数，从而提高性能，而且可以少写 shouldComponentUpdate 函数，节省了点代码。</p>
 <p>和 vue区别</p>
@@ -548,7 +563,7 @@
   </entry>
   <entry>
     <title>node.js</title>
-    <url>/hexo_blog/2020/12/09/Server%20%E7%AE%80%E4%BB%8B%20%20(node.js)/</url>
+    <url>/hexo-blog/2020/12/09/Server%20%E7%AE%80%E4%BB%8B%20%20(node.js)/</url>
     <content><![CDATA[<h1 id="node-js-（用作Server）"><a href="#node-js-（用作Server）" class="headerlink" title="node.js （用作Server）"></a>node.js （用作Server）</h1><p>allow  js run everywhere, not only brewer.</p>
 <h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><p>Node -v 检查有没有安装</p>
 <p>没有的话去官网安装一下就好了</p>
@@ -646,7 +661,7 @@ console.log(file.toString());
   </entry>
   <entry>
     <title>SpringBoot 数据库操作指南</title>
-    <url>/hexo_blog/2021/01/20/SpringBoot-%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <url>/hexo-blog/2021/01/20/SpringBoot-%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
     <content><![CDATA[<p>[toc]</p>
 <h2 id="SpringBoot-连接数据库"><a href="#SpringBoot-连接数据库" class="headerlink" title="SpringBoot 连接数据库"></a>SpringBoot 连接数据库</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>Spring中，数据从数据库到前端的流程：</p>
 <p><strong>Jdbc配置（pom.xml，application.yml，cofig工程中：cof-dev.yal: spring.datasource:url?useSSL=false  usrname password ） –&gt;   <del>model</del>  HandlerMapping  –&gt; service(interface -&gt; impl(继承接口+@Override方法 ： 调用RoundDictExample（增删改查，验证）)) –&gt; controller –&gt; @responsebodey (包装响应 ResultStatus设置响应) –&gt; [swagger(/v2/api-docs)] 怎么返回实体类？？？–&gt; 前端</strong></p>
@@ -741,7 +756,7 @@ o.apache.coyote.http11.Http11Processor:Error parsing HTTP request header</li>
   </entry>
   <entry>
     <title>Tomcat on Google Cloud</title>
-    <url>/hexo_blog/2021/01/15/Tomcat%20on%20Google%20Cloud/</url>
+    <url>/hexo-blog/2021/01/15/Tomcat%20on%20Google%20Cloud/</url>
     <content><![CDATA[<p>What I want to do:<br>To deploy my webiste which is written by Jave, I also need to install jdk and tomcat on the Cloud.</p>
 <p>What is Tomcat:</p>
 <p>How to do it:<br>ssh<br><a href="https://www.jianshu.com/p/1a7ee8cbf665">https://www.jianshu.com/p/1a7ee8cbf665</a></p>
@@ -753,7 +768,7 @@ o.apache.coyote.http11.Http11Processor:Error parsing HTTP request header</li>
   </entry>
   <entry>
     <title>about 50 projects</title>
-    <url>/hexo_blog/2021/01/11/about-50-projects/</url>
+    <url>/hexo-blog/2021/01/11/about-50-projects/</url>
     <content><![CDATA[<p>I am going to build 50 interesting fontend projects and update the tutorials of them.<br>All those projects would be used in my personal websites to make it greater.<br>LOL</p>
 ]]></content>
       <tags>
@@ -762,14 +777,14 @@ o.apache.coyote.http11.Http11Processor:Error parsing HTTP request header</li>
   </entry>
   <entry>
     <title>electron</title>
-    <url>/hexo_blog/2020/12/09/electron/</url>
+    <url>/hexo-blog/2020/12/09/electron/</url>
     <content><![CDATA[<p>Electron 是一个框架，可以让您使用 JavaScript, HTML 和 CSS 创建桌面应用程序。 然后这些应用程序可以打包在macOS、Windows和Linux上直接运行，或者通过Mac App Store或微软商店分发。</p>
 <p>通常，您使用每个操作系统特定的本地应用程序框架为操作系统 (OS)创建一个桌面应用程序。 Electron 可以在使用您已经知道的技术后写入您的应用程序。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js">sudo npm install -g electron --unsafe-perm=<span class="hljs-literal">true</span> --allow-root<br></code></pre></td></tr></table></figure>
 
 
 
-<p>&gt; <a href="mailto:&#x65;&#x6c;&#101;&#x63;&#x74;&#114;&#111;&#110;&#x40;&#x39;&#x2e;&#x34;&#x2e;&#48;">&#x65;&#x6c;&#101;&#x63;&#x74;&#114;&#111;&#110;&#x40;&#x39;&#x2e;&#x34;&#x2e;&#48;</a> postinstall /usr/local/lib/node_modules/react-devtools/node_modules/electron</p>
+<p>&gt; <a href="mailto:&#101;&#108;&#101;&#99;&#x74;&#x72;&#x6f;&#110;&#64;&#x39;&#46;&#x34;&#46;&#48;">&#101;&#108;&#101;&#99;&#x74;&#x72;&#x6f;&#110;&#64;&#x39;&#46;&#x34;&#46;&#48;</a> postinstall /usr/local/lib/node_modules/react-devtools/node_modules/electron</p>
 <p>&gt; node install.js</p>
 <p>官方文档：</p>
 <p><a href="https://www.electronjs.org/docs/tutorial/quick-start#create-a-basic-application">https://www.electronjs.org/docs/tutorial/quick-start#create-a-basic-application</a></p>
@@ -780,7 +795,7 @@ o.apache.coyote.http11.Http11Processor:Error parsing HTTP request header</li>
   </entry>
   <entry>
     <title>liunx服务器 上的各种操作</title>
-    <url>/hexo_blog/2021/01/16/liunx%E6%9C%8D%E5%8A%A1%E5%99%A8%20%E4%B8%8A%E7%9A%84%E5%90%84%E7%A7%8D%E6%93%8D%E4%BD%9C/</url>
+    <url>/hexo-blog/2021/01/16/liunx%E6%9C%8D%E5%8A%A1%E5%99%A8%20%E4%B8%8A%E7%9A%84%E5%90%84%E7%A7%8D%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[<p>liunx 命令大全： <a href="https://www.runoob.com/linux/linux-command-manual.html">https://www.runoob.com/linux/linux-command-manual.html</a></p>
 <p>1 安装 jdk 包</p>
 <p>第一种：已经安装好了，那么解压就行了</p>
@@ -850,7 +865,7 @@ o.apache.coyote.http11.Http11Processor:Error parsing HTTP request header</li>
   </entry>
   <entry>
     <title></title>
-    <url>/hexo_blog/2021/01/09/nvm%20%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%A4%A7%E5%85%A8/</url>
+    <url>/hexo-blog/2021/01/09/nvm%20%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%A4%A7%E5%85%A8/</url>
     <content><![CDATA[<p>nvm</p>
 <p>What:</p>
 <p><code>nvm</code> as a mechanism for managing node versions</p>
@@ -900,7 +915,7 @@ o.apache.coyote.http11.Http11Processor:Error parsing HTTP request header</li>
   </entry>
   <entry>
     <title>【手把手教学】用前端 react 来做一个机器人🤖️网站</title>
-    <url>/hexo_blog/2021/12/13/react%20%20%E5%BB%BA%E9%80%A0%E6%9C%BA%E5%99%A8%E4%BA%BA%F0%9F%A4%96%EF%B8%8F%E7%BD%91%E7%AB%99/</url>
+    <url>/hexo-blog/2021/12/13/react%20%20%E5%BB%BA%E9%80%A0%E6%9C%BA%E5%99%A8%E4%BA%BA%F0%9F%A4%96%EF%B8%8F%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h1 id="【手把手教学】用前端-react-来做一个机器人🤖️网站"><a href="#【手把手教学】用前端-react-来做一个机器人🤖️网站" class="headerlink" title="【手把手教学】用前端 react 来做一个机器人🤖️网站"></a>【手把手教学】用前端 react 来做一个机器人🤖️网站</h1><h2 id="先来看下最后的成果～～"><a href="#先来看下最后的成果～～" class="headerlink" title="先来看下最后的成果～～"></a>先来看下最后的成果～～</h2><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
 <li><p>先用 npm 安装 create-react-app </p>
 <p>（ps. npm 是个很好用的前端包管理器。没有安装 npm 的小伙伴可以通过这个链接 <a href="https://www.npmjs.com/get-npm">https://www.npmjs.com/get-npm</a> 下载）</p>
@@ -1087,7 +1102,7 @@ step 2. 把他们放到 HTTP 服务器 或者 github 中。
   </entry>
   <entry>
     <title>Growth Hacking -- Linkedin 篇</title>
-    <url>/hexo_blog/2021/01/06/title-%20Growth%20Hacking%20--%20linkedin%20%E7%AF%87/</url>
+    <url>/hexo-blog/2021/01/06/title-%20Growth%20Hacking%20--%20linkedin%20%E7%AF%87/</url>
     <content><![CDATA[<h1 id="lt-Title-gt"><a href="#lt-Title-gt" class="headerlink" title="&lt;#Title#&gt;"></a>&lt;#Title#&gt;</h1><p>应该在那场酒会上互fo大家的 linkedin 的<br>不过 我现在可以完善自己的主页后，在群里让大家互相关注。</p>
 ]]></content>
       <tags>
@@ -1096,7 +1111,7 @@ step 2. 把他们放到 HTTP 服务器 或者 github 中。
   </entry>
   <entry>
     <title>文章一键发布脚本操作</title>
-    <url>/hexo_blog/2020/12/09/%E4%B8%80%E9%94%AE%E5%8F%91%E5%B8%83%E8%84%9A%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
+    <url>/hexo-blog/2020/12/09/%E4%B8%80%E9%94%AE%E5%8F%91%E5%B8%83%E8%84%9A%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[<p><strong>写在前面： 知乎用工具发文会被封号！</strong></p>
 <p>文章一键发布工具： <a href="https://openwrite.cn/">https://openwrite.cn/</a> 和 ArtiPub </p>
 <p>但是考虑到有封号的风险，并且仅仅是批量发布文章，失去了平台社区的互动，感觉没有灵魂。<br>所以我最后放弃了两者，选择了部分平台手动发布文章。</p>
@@ -1115,7 +1130,7 @@ You can also download the ZIP file manually in your browser from here and place 
   </entry>
   <entry>
     <title>自己造轮子</title>
-    <url>/hexo_blog/2020/12/23/%E4%B8%8B%E4%B8%80%E4%B8%AA%E4%B8%BB%E9%A2%98%20-%20%E8%87%AA%E5%B7%B1%E9%80%A0%E8%AE%BA%E5%AD%90/</url>
+    <url>/hexo-blog/2020/12/23/%E4%B8%8B%E4%B8%80%E4%B8%AA%E4%B8%BB%E9%A2%98%20-%20%E8%87%AA%E5%B7%B1%E9%80%A0%E8%AE%BA%E5%AD%90/</url>
     <content><![CDATA[<p>下一个主题</p>
 <p>自己造轮子</p>
 <p>开发一个组件或库，被人引用。</p>
@@ -1124,7 +1139,7 @@ You can also download the ZIP file manually in your browser from here and place 
   </entry>
   <entry>
     <title>再也不用担心我搞不懂高并发啦</title>
-    <url>/hexo_blog/2020/02/19/%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E6%8B%85%E5%BF%83%E6%88%91%E6%90%9E%E4%B8%8D%E6%87%82%E9%AB%98%E5%B9%B6%E5%8F%91%E5%95%A6/</url>
+    <url>/hexo-blog/2020/02/19/%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E6%8B%85%E5%BF%83%E6%88%91%E6%90%9E%E4%B8%8D%E6%87%82%E9%AB%98%E5%B9%B6%E5%8F%91%E5%95%A6/</url>
     <content><![CDATA[<p><strong>高并发</strong></p>
 <p>线程安全：</p>
 <p>what：</p>
@@ -1152,7 +1167,7 @@ You can also download the ZIP file manually in your browser from here and place 
   </entry>
   <entry>
     <title>怎么写好技术文章 -- 知乎live</title>
-    <url>/hexo_blog/2020/12/09/%E6%80%8E%E4%B9%88%E5%86%99%E5%A5%BD%E7%9F%A5%E4%B9%8E%E6%96%87%E7%AB%A0--%E7%9F%A5%E4%B9%8Elive/</url>
+    <url>/hexo-blog/2020/12/09/%E6%80%8E%E4%B9%88%E5%86%99%E5%A5%BD%E7%9F%A5%E4%B9%8E%E6%96%87%E7%AB%A0--%E7%9F%A5%E4%B9%8Elive/</url>
     <content><![CDATA[<h1 id="技术文章-问答部分还没看完～干货满满"><a href="#技术文章-问答部分还没看完～干货满满" class="headerlink" title="技术文章 - 问答部分还没看完～干货满满"></a>技术文章 - 问答部分还没看完～干货满满</h1><p>有满满套路</p>
 <h2 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h2><h3 id="阐述问题-解决问题"><a href="#阐述问题-解决问题" class="headerlink" title="阐述问题 解决问题"></a>阐述问题 解决问题</h3><h3 id="翻译类"><a href="#翻译类" class="headerlink" title="翻译类"></a>翻译类</h3><h3 id="系列教程"><a href="#系列教程" class="headerlink" title="系列教程"></a>系列教程</h3><h2 id="怎么算好"><a href="#怎么算好" class="headerlink" title="怎么算好"></a>怎么算好</h2><h3 id="内容-能读懂"><a href="#内容-能读懂" class="headerlink" title="内容-能读懂"></a>内容-能读懂</h3><h4 id="抓住问题本质，做出最精准定义。"><a href="#抓住问题本质，做出最精准定义。" class="headerlink" title="抓住问题本质，做出最精准定义。"></a>抓住问题本质，做出最精准定义。</h4><p>任何复杂事情其实是简单事情错综复杂交织在一起组成的。 因此想要搞懂问题要先学会拆分。</p>
 <p>拆分前要先去除无关紧要的东西</p>
@@ -1243,7 +1258,7 @@ You can also download the ZIP file manually in your browser from here and place 
   </entry>
   <entry>
     <title>【教程】Mac 怎么启动第一个 SpringBoot项目</title>
-    <url>/hexo_blog/2021/01/22/%E6%80%8E%E4%B9%88%E5%90%AF%E5%8A%A8%E7%AC%AC%E4%B8%80%E4%B8%AA%20SpringBoot%20%E9%A1%B9%E7%9B%AE/</url>
+    <url>/hexo-blog/2021/01/22/%E6%80%8E%E4%B9%88%E5%90%AF%E5%8A%A8%E7%AC%AC%E4%B8%80%E4%B8%AA%20SpringBoot%20%E9%A1%B9%E7%9B%AE/</url>
     <content><![CDATA[<h3 id="背景知识："><a href="#背景知识：" class="headerlink" title="背景知识："></a>背景知识：</h3><h3 id="Spring-Maven-SpringBoot"><a href="#Spring-Maven-SpringBoot" class="headerlink" title="Spring -Maven - SpringBoot"></a>Spring -Maven - SpringBoot</h3><p>一句话简单讲述三者关系： “ The quickest way to create a Spring application is to use a <a href="https://spring.io/projects/spring-boot">Spring Boot</a> Maven project.”</p>
 <p>— 官方教程指路： <a href="https://www.jetbrains.com/help/idea/2020.3/your-first-spring-application.html">https://www.jetbrains.com/help/idea/2020.3/your-first-spring-application.html</a></p>
 <h4 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h4><p>What：包管理器</p>
@@ -1373,7 +1388,7 @@ You can also download the ZIP file manually in your browser from here and place 
   </entry>
   <entry>
     <title>我是怎么让我的网站变得国际化的</title>
-    <url>/hexo_blog/2021/02/07/%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%A9%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99%E5%8F%98%E5%BE%97%E5%9B%BD%E9%99%85%E5%8C%96%E7%9A%84/</url>
+    <url>/hexo-blog/2021/02/07/%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%A9%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99%E5%8F%98%E5%BE%97%E5%9B%BD%E9%99%85%E5%8C%96%E7%9A%84/</url>
     <content><![CDATA[<p>资料： <a href="https://tstrs.me/1448.html">https://tstrs.me/1448.html</a> ⭐️</p>
 <p><a href="https://juejin.cn/post/6844904155073478670">https://juejin.cn/post/6844904155073478670</a></p>
 <p>一个可爱的slackbot <a href="https://tstrs.me/1431.html#">https://tstrs.me/1431.html#</a></p>
@@ -1381,7 +1396,7 @@ You can also download the ZIP file manually in your browser from here and place 
   </entry>
   <entry>
     <title>由操作系统衍生开的学习心法</title>
-    <url>/hexo_blog/2021/01/06/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%20--%20%E4%BB%A5%E5%8F%8A%E5%90%84%E7%A7%8D%E5%AD%A6%E4%B9%A0%E5%BF%83%E6%B3%95/</url>
+    <url>/hexo-blog/2021/01/06/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%20--%20%E4%BB%A5%E5%8F%8A%E5%90%84%E7%A7%8D%E5%AD%A6%E4%B9%A0%E5%BF%83%E6%B3%95/</url>
     <content><![CDATA[<p>操作系统得要对电脑硬件有个直观的认识，学起来会事半功倍</p>
 <p>这类感觉，这种概念信息，积累的越多，解决问题的能力越强，脑子越好使。</p>
 <p>「随机把你丢到你们家附近的哪个地方，你看一眼就知道家在哪儿了，就能走回去。这无法用语言表达，如果是别人去你家，你得先确认他位置，然后给他描述各种标志，各种路口，到哪儿怎么走。无论你用多少词汇，说多少话，怎么形容，这在他脑海里都是一篇朦胧。语言传达不了，只有他自己走一遍才明白。</p>
@@ -1399,7 +1414,7 @@ You can also download the ZIP file manually in your browser from here and place 
   </entry>
   <entry>
     <title>数据库的那些事儿</title>
-    <url>/hexo_blog/2021/01/28/%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</url>
+    <url>/hexo-blog/2021/01/28/%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</url>
     <content><![CDATA[<p>pojo 实体类</p>
 <p>mapper。xml有问题: <result column="dictdetail" jdbcType="VARCHAR" property="dictDetail" /> </p>
 <p>Q：Dict_id 自动顺序增长，而不是自己设的值。</p>
@@ -1500,7 +1515,7 @@ You can also download the ZIP file manually in your browser from here and place 
   </entry>
   <entry>
     <title>知乎流量之谜</title>
-    <url>/hexo_blog/2020/12/19/%E7%9F%A5%E4%B9%8E%20csdn%E5%8F%91%E6%96%87%E7%AB%A0%20%E6%94%BE%E9%93%BE%E6%8E%A5%E5%88%B0%E7%9F%A5%E4%B9%8E%EF%BC%9F/</url>
+    <url>/hexo-blog/2020/12/19/%E7%9F%A5%E4%B9%8E%20csdn%E5%8F%91%E6%96%87%E7%AB%A0%20%E6%94%BE%E9%93%BE%E6%8E%A5%E5%88%B0%E7%9F%A5%E4%B9%8E%EF%BC%9F/</url>
     <content><![CDATA[<p>知乎流量之谜 <a href="https://www.zhihu.com/question/26004404/answer/916451048%E3%80%81">https://www.zhihu.com/question/26004404/answer/916451048、</a></p>
 <p>选题：</p>
 <p>除了技术流水账 还写些啥有自己感想的鸡汤文 批判文</p>
@@ -1512,7 +1527,7 @@ You can also download the ZIP file manually in your browser from here and place 
   </entry>
   <entry>
     <title>给自己的网站配置ssl证书</title>
-    <url>/hexo_blog/2021/01/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AEssl%E8%AF%81%E4%B9%A6/</url>
+    <url>/hexo-blog/2021/01/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AEssl%E8%AF%81%E4%B9%A6/</url>
     <content><![CDATA[<h2 id="添加-ssl-证书"><a href="#添加-ssl-证书" class="headerlink" title="添加 ssl 证书"></a>添加 ssl 证书</h2><p>首先在平台上挑选一个免费的证书。</p>
 <p>我尝试过 lets-encrypt， Zerossl， FreeSSL。</p>
 <p>不过这些都比较不好，一方面是只有90天免费，另一方面是操作比较繁琐。</p>
@@ -1589,8 +1604,17 @@ You can also download the ZIP file manually in your browser from here and place 
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/hexo-blog/2021/01/12/%E9%A1%B9%E7%9B%AE%E9%81%97%E7%95%99%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p>项目重要问题记录：</p>
+<p>smart brain： 后端接口</p>
+<p>bloghelper：es6 语法的支持</p>
+<p>to do list : local storage</p>
+]]></content>
+  </entry>
+  <entry>
     <title>集成 Auzure ad 的 msal 库</title>
-    <url>/hexo_blog/2021/03/19/%E9%9B%86%E6%88%90%20Auzure%20ad%20%E7%9A%84%20msal%20%E5%BA%93%20%E6%9D%A5%E7%AE%A1%E7%90%86&amp;%E4%BE%BF%E5%88%A9%E6%88%91%E7%9A%84%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/</url>
+    <url>/hexo-blog/2021/03/19/%E9%9B%86%E6%88%90%20Auzure%20ad%20%E7%9A%84%20msal%20%E5%BA%93%20%E6%9D%A5%E7%AE%A1%E7%90%86&amp;%E4%BE%BF%E5%88%A9%E6%88%91%E7%9A%84%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/</url>
     <content><![CDATA[<p>之前我写了一个简单的 web app：<a href="https://wenjialu.github.io/hexo_blog/2021/12/22/smartBrain%20react%20-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%BD%91%E7%AB%99/">文章链接</a>🔗。</p>
 <p>但是登录注册功能比较简单，而且要自己建数据库存储用户的信息。</p>
 <p>正好最近有接触到微软的azure ad，它是企业级的授权验证方案，。。</p>
@@ -1610,17 +1634,8 @@ You can also download the ZIP file manually in your browser from here and place 
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/hexo_blog/2021/01/12/%E9%A1%B9%E7%9B%AE%E9%81%97%E7%95%99%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p>项目重要问题记录：</p>
-<p>smart brain： 后端接口</p>
-<p>bloghelper：es6 语法的支持</p>
-<p>to do list : local storage</p>
-]]></content>
-  </entry>
-  <entry>
     <title>SmartBrain -  用 React 做一个人脸识别网站</title>
-    <url>/hexo_blog/2021/12/22/smartBrain%20react%20-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%BD%91%E7%AB%99/</url>
+    <url>/hexo-blog/2021/12/22/smartBrain%20react%20-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>[TOC]</p>
 <h1 id="用-React-做一个人脸识别网站"><a href="#用-React-做一个人脸识别网站" class="headerlink" title="用 React 做一个人脸识别网站"></a>用 React 做一个人脸识别网站</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>React 可以说是近些年最热门的前端框架啦， 并且非常非常的好用 ~</p>
 <p>很多的国外公司比如 <a href="https://zh.wikipedia.org/wiki/Netflix">Netflix</a>、<a href="https://zh.wikipedia.org/wiki/Feedly">Feedly</a>、<a href="https://zh.wikipedia.org/wiki/Airbnb">Airbnb</a> 都是用它来实现的网站主页。</p>
@@ -2129,8 +2144,175 @@ You can also download the ZIP file manually in your browser from here and place 
 
 
 <h3 id="部署数据库"><a href="#部署数据库" class="headerlink" title="部署数据库"></a>部署数据库</h3>]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
       <tags>
         <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>卡片法 - 事半功倍刷力扣</title>
+    <url>/hexo-blog/2021/10/29/ac%20lc%20%E6%B3%95/</url>
+    <content><![CDATA[<p>一句话解释： 把 excel 变成 Anki 卡片</p>
+<p>why 有效 导言</p>
+<p>how：</p>
+<p>思路：把excel 导出为 csv 格式（utf-8）</p>
+<p>anki： tool - notes management - field - </p>
+<p>anki 中新建一个 deck  </p>
+<p>导入 选中刚刚的模版</p>
+<p>jiangjiang 点击上方的浏览 就可以康啦 </p>
+<p>![image-20211029005310855](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029005310855.png)</p>
+<p>![image-20211029005407048](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029005407048.png)</p>
+<p>显示问题</p>
+<p>设置一下卡片模版： 浏览 – 点击 “卡片” – </p>
+<p>![image-20211029010600296](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029010600296.png)</p>
+<p>同步：</p>
+<p>pc端 – ankiweb 账号 – 手机端</p>
+<p>![image-20211029013942572](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029013942572.png)</p>
+<p>![](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029014117804.png)</p>
+<p>看起来非常的爽，真的可以实现“刷”题了啊哈哈哈</p>
+<p>![image-20211029014323000](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029014323000.png)</p>
+<p>![image-20211029014546334](/Users/lujiawen/Library/Application Support/typora-user-images/image-20211029014546334.png)</p>
+<p>ref -  <a href="https://www.youtube.com/watch?v=pYJh9yyMbPs">https://www.youtube.com/watch?v=pYJh9yyMbPs</a></p>
+<ul>
+<li><a href="https://docs.ankiweb.net/#/">https://docs.ankiweb.net/#/</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Building a Facial Recognition website with Flask</title>
+    <url>/hexo-blog/2021/11/08/building%20a%20facial%20recognition%20website%20with%20flask/</url>
+    <content><![CDATA[<p>I purchase a course from Udemy teaching me from building the machine learning model to integrate it to a website using flask.</p>
+<p>I am happy to share my process of learning with you. The thing I need to notice you is that I am not writing every details about the course right now, this note just includes some tips that needs to be noticed and not mentioned by the teacher. If you brought the course, you might find my notes be helpful.</p>
+<p>Let’s get started ! </p>
+<p>First, open a terminal from jupyter.  (If you are not familar with jupyter and need a tutotial about it, tell me in the comment. I would wirte an acticle to explain it in more detail.)</p>
+<p>​    &gt; terminal can be access from here</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6ez6nj3j305x06omx3.jpg" alt="image.png"></p>
+<ul>
+<li><p> Install and import c2</p>
+</li>
+<li><p>if you can not import cv2 in terminal, try use the command “ipython” rather than “python”.</p>
+</li>
+<li><p>virtual environment</p>
+<ul>
+<li>create a virtual environment<ul>
+<li>virtualenv<ul>
+<li>since I use <a href="siyuan://blocks/20211112202240-mcpaqeo">“virtualenvwrapper”</a>, instead of using the command in the vedio, Mac user should use this:<ul>
+<li>mkvirtualenv  $<environment name: such as freeai>$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>activate it<ul>
+<li>without virtualenvwrapper<ul>
+<li>cd workplace</li>
+<li>source ./freeai/bin/activate</li>
+</ul>
+</li>
+<li>with virtualenvwrapper<ul>
+<li>workon $<virtual envir name>$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>once activate the virtualenv, you can either run code in the terminal or in jupyter notebook.</p>
+<ul>
+<li>if you need to use jupyter notebook, simply type “jupyter notebook” in the terminal. Once press enter, it would automatically open a homepage for you.</li>
+</ul>
+</li>
+</ul>
+<p>​    </p>
+<p>Now, let’s move on to the part of building a website that everyone can access!</p>
+<ul>
+<li>Build Flask App in VsCode<ul>
+<li>Open VsCode<ul>
+<li>First things first, enter the virtual environment!!<ul>
+<li>we have created the virtual environment named as freeai before.<ul>
+<li>upgrade<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">deactivate<br>pip install --upgrade pip virtualenv virtualenvwrapper<br>mkvirtualenv &lt;freeai2&gt;<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>we would get a package called freeai</li>
+<li>put the package under the directory of your project.<ul>
+<li><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6fvpovxj306f07faa1.jpg" alt="image.png"></li>
+</ul>
+</li>
+<li>1.<strong>Ctrl + Shift + P</strong> –&gt; python: select Interpreter<ul>
+<li>select the freeai environment</li>
+</ul>
+</li>
+<li><ol start="2">
+<li>File &gt; Preference &gt; Settings,  settings workspace, File:Associations click on “Edit in settings.json”<ol>
+<li>change “python.pythonPath” to your virtual environment python path (look up by “which python”)<ol>
+<li><code>&quot;python.pythonPath&quot;:&quot;/Users/lujiawen/workplaces/freeai2/bin/python&quot;</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>write code</li>
+<li>run it <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6g9f5o2j300x00v0cl.jpg" alt="image.png"><ul>
+<li>run it by click the button</li>
+<li>or in the VScode terminal<ul>
+<li>way1:<ul>
+<li>in vscode ternimal<ul>
+<li>export FLASK_APP=main.py</li>
+<li>python -m flask run</li>
+</ul>
+</li>
+<li>or in ternimal<ul>
+<li>FLASK_APP=main.py falsk run</li>
+<li>FLASK_APP=main.py FLASK_DEBUG=True falsk run</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>way2:</li>
+<li>cd to the directory of main.py</li>
+<li>python main.py</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>tips:<ul>
+<li>install some modules <ul>
+<li><p>which python； python –version</p>
+<ul>
+<li>Although python2.7 is oout of date, it’s not recommanded to delete it. We can always use virtual environment to use latest python and mange different versions of packages required by different projects</li>
+</ul>
+</li>
+<li><p>pip3 install opencv-python</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">pip3 install Pillow<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">pip3 install scikit-learn <br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>cheatsheets of postgres<ul>
+<li>\q (if you are in the psql);    createdb <databasename></li>
+<li>psql (<database> <user>)</li>
+<li><code>/Applications/Postgres.app/Contents/Versions/14/bin/psql -p5432 &quot;postgres&quot;</code></li>
+<li><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gwk6gpvou5j30f803kmxb.jpg" alt="image.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>ref- udemy</p>
+]]></content>
+      <tags>
+        <tag>AI; Flask</tag>
       </tags>
   </entry>
 </search>

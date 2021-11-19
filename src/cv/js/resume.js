@@ -1,3 +1,8 @@
+---
+categories:
+  - cv
+  - js
+---
 (function($) {
   "use strict"; // Start of use strict
 

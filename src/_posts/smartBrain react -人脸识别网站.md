@@ -2,6 +2,7 @@
 title: SmartBrain -  用 React 做一个人脸识别网站
 date: 2021-12-22 02:35:48
 tags: react
+categories: tech
 ---
 
 [TOC]
